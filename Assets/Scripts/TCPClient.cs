@@ -24,6 +24,10 @@ public class TcpClientScript : MonoBehaviour
     private ConcurrentQueue<string> _messageQueue = new ConcurrentQueue<string>();
     private bool _isConnected;
 
+    void Start()
+    {
+        ConnectToServer();
+    }
     void Update()
     {
         while (_messageQueue.TryDequeue(out string message))
