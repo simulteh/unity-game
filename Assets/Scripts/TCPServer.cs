@@ -9,13 +9,13 @@ using System.Collections.Concurrent;
 public class TcpServer : MonoBehaviour
 {
     [Header("Server Settings")]
-    public int port = 12345; // Port for listening to incoming connections
-    public string serverIpAddress = "127.0.0.1"; // Server IP address
+    private int _port = 12345; // Port for listening to incoming connections
+    private string _serverIpAddress = "127.0.0.1"; // Server IP address
 
     [Header("Status")]
-    public string status = "Idle";
-    public string lastReceivedMessage = "N/A";
-    public int connectedClientsCount;
+    private string _status = "Idle";
+    private string _lastReceivedMessage = "N/A";
+    private int _connectedClientsCount;
     
     //[SerializeField]
     private int _receivedMessageCount;
@@ -35,13 +35,13 @@ public class TcpServer : MonoBehaviour
     {
         while (_messageQueue.TryDequeue(out string message))
         {
-            lastReceivedMessage = message;
+            _lastReceivedMessage = message;
             Debug.Log($"[Server] Received in main thread: {message}");
             _receivedMessageCount++;
 
         }
 
-        connectedClientsCount = _connectedClients.Count;
+        _connectedClientsCount = _connectedClients.Count;
     }
 
     void OnApplicationQuit()
@@ -59,12 +59,12 @@ public class TcpServer : MonoBehaviour
 
         try
         {
-            IPAddress ipAddress = IPAddress.Parse(serverIpAddress);
-            _tcpListener = new TcpListener(ipAddress, port);
+            IPAddress ipAddress = IPAddress.Parse(_serverIpAddress);
+            _tcpListener = new TcpListener(ipAddress, _port);
             _tcpListener.Start();
             _isListening = true;
-            status = $"Listening on {serverIpAddress}:{port}";
-            Debug.Log($"[Server] {status}");
+            _status = $"Listening on {_serverIpAddress}:{_port}";
+            Debug.Log($"[Server] {_status}");
             
             _listenThread = new Thread(ListenForClients);
             _listenThread.IsBackground = true;
@@ -72,8 +72,8 @@ public class TcpServer : MonoBehaviour
         }
         catch (Exception e)
         {
-            status = $"Error starting server: {e.Message}";
-            Debug.LogError($"[Server] {status}");
+            _status = $"Error starting server: {e.Message}";
+            Debug.LogError($"[Server] {_status}");
             _isListening = false;
         }
     }
@@ -86,7 +86,7 @@ public class TcpServer : MonoBehaviour
         }
 
         _isListening = false;
-        status = "Stopping...";
+        _status = "Stopping...";
         Debug.Log("[Server] Stopping server...");
 
         if (_tcpListener != null)
@@ -105,7 +105,7 @@ public class TcpServer : MonoBehaviour
             _listenThread.Join(); 
         }
 
-        status = "Stopped";
+        _status = "Stopped";
         Debug.Log("[Server] Server stopped.");
     }
 

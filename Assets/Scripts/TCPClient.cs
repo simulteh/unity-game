@@ -8,12 +8,12 @@ using System.Collections.Concurrent;
 public class TcpClientScript : MonoBehaviour
 {
     [Header("Client Settings")]
-    public string serverIp = "127.0.0.1";
-    public int serverPort = 12345;
+    private string _serverIp = "127.0.0.1"; 
+    private int _serverPort = 12345;
 
     [Header("Status")]
-    public string status = "Disconnected";
-    public string lastReceivedMessage = "N/A";
+    private string _status = "Disconnected";
+    private string _lastReceivedMessage = "N/A";
     
     //[SerializeField]
     private  int _receivedMessageCount;
@@ -32,7 +32,7 @@ public class TcpClientScript : MonoBehaviour
     {
         while (_messageQueue.TryDequeue(out string message))
         {
-            lastReceivedMessage = message;
+            _lastReceivedMessage = message;
             Debug.Log($"[Client] Received in main thread: {message}");
             _receivedMessageCount++;
         }
@@ -51,8 +51,8 @@ public class TcpClientScript : MonoBehaviour
             return;
         }
 
-        status = "Connecting...";
-        Debug.Log($"[Client] Attempting to connect to {serverIp}:{serverPort}...");
+        _status = "Connecting...";
+        Debug.Log($"[Client] Attempting to connect to {_serverIp}:{_serverPort}...");
 
         _clientThread = new Thread(ConnectThread);
         _clientThread.IsBackground = true;
@@ -64,31 +64,31 @@ public class TcpClientScript : MonoBehaviour
         try
         {
             _client = new TcpClient();
-            _client.Connect(serverIp, serverPort);
+            _client.Connect(_serverIp, _serverPort);
             _stream = _client.GetStream();
             _isConnected = true;
-            status = $"Connected to {serverIp}:{serverPort}";
-            Debug.Log($"[Client] {status}");
+            _status = $"Connected to {_serverIp}:{_serverPort}";
+            Debug.Log($"[Client] {_status}");
 
             ListenForData();
         }
         catch (SocketException e)
         {
-            status = $"Connection Error: {e.Message}";
-            Debug.LogError($"[Client] {status}");
+            _status = $"Connection Error: {e.Message}";
+            Debug.LogError($"[Client] {_status}");
             _isConnected = false;
         }
         catch (Exception e)
         {
-            status = $"Unexpected Error: {e.Message}";
-            Debug.LogError($"[Client] {status}");
+            _status = $"Unexpected Error: {e.Message}";
+            Debug.LogError($"[Client] {_status}");
             _isConnected = false;
         }
         finally
         {
             if (!_isConnected)
             {
-                status = "Disconnected";
+                _status = "Disconnected";
             }
         }
     }
@@ -101,7 +101,7 @@ public class TcpClientScript : MonoBehaviour
         }
 
         _isConnected = false;
-        status = "Disconnecting...";
+        _status = "Disconnecting...";
         Debug.Log("[Client] Disconnecting...");
 
         if (_stream != null) _stream.Close();
@@ -116,7 +116,7 @@ public class TcpClientScript : MonoBehaviour
             }
         }
 
-        status = "Disconnected";
+        _status = "Disconnected";
         Debug.Log("[Client] Disconnected.");
     }
 
