@@ -1,31 +1,42 @@
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
+
+[RequireComponent(typeof(MouseDetector))]
 public class CableConnector : MonoBehaviour
 {
-
-    private GameObject cable;
+    const bool auto = true;
+    [SerializeField] private GameObject cable;
     private GameObject from;
     private GameObject to;
-    private string statusText = "Waiting...";
-    /*private void OnGUI()
+
+    public void Update()
     {
-        from = EditorGUILayout.ObjectField("From", from, typeof(GameObject), true) as GameObject;
-        to = EditorGUILayout.ObjectField("To", to, typeof(GameObject), true) as GameObject;
-        bool enabled = (from != null && to != null);
-        if (!enabled)
+        var comp = GetComponent<MouseDetector>();
+        if (comp == null)
+            return;
+        if (from == null)
         {
-            statusText = "Add a From and To object to proceed.";
+            from = comp.target;
         }
-        UnityEngine.GUI.enabled = enabled;
-        if (GUILayout.Button("Update Cable Connection"))
+        else if (to == null)
         {
-            statusText = "== Connecting cable... ==";
-            statusText += System.Environment.NewLine + "Done!";
+            to = comp.target;
+
+            if (auto)
+            {
+                var dist = Vector3.Distance(from.transform.position, to.transform.position);
+                var direction = Vector3.Normalize(from.transform.position - to.transform.position);
+                var len = Mathf.CeilToInt(dist);
+                for (int i = 0; i < len; i++)
+                {
+                    Instantiate(cable, from.transform.position + direction * i, new Quaternion());
+                }
+            }
+            else
+            {
+                // TODO: reset choosed from and to ?
+            }
         }
-        // Draw status because yeh why not?
-        statusContent.text = statusText;
-        EditorStyles.label.wordWrap = true;
-        GUILayout.Label(statusContent);
-    }*/
+    }
 }
