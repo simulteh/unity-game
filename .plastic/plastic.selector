@@ -1,4 +1,0 @@
-repository "Networks@GeorgeProleev@cloud"
-  path "/"
-    smartbranch "/main/DevelopG"       
-     
