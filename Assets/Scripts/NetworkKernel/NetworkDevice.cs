@@ -9,7 +9,7 @@ public abstract class NetworkDevice : MonoBehaviour
     [SerializeField] private string subnetMask;
     [SerializeField] private string gateway;
     [SerializeField] private Dictionary<string, string> arpTable;
-    [SerializeField] private EthernetPort ethernetPort;
+    //[SerializeField] private EthernetPort ethernetPort;
 
     public string MacAddress
     {
@@ -41,17 +41,17 @@ public abstract class NetworkDevice : MonoBehaviour
         protected set => arpTable = value;
     }
 
-    public EthernetPort EthernetPort
-    {
-        get => ethernetPort;
-        protected set => ethernetPort = value;
-    }
+   /// public EthernetPort EthernetPort
+   ///////{
+       //////// get => ethernetPort;
+      ///////// protected set => ethernetPort = value;
+    ////////}
 
     protected void Start()
     {
         GenerateMacAddress();
         ArpTable = new Dictionary<string, string>();
-        EthernetPort = new EthernetPort(this);
+        //////EthernetPort = new EthernetPort(this);
     }
 
     protected void GenerateMacAddress()

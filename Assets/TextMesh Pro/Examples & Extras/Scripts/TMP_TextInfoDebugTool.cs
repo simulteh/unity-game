@@ -197,11 +197,11 @@ namespace TMPro.Examples
                 // Draw text labels for metrics
                if (m_HandleSize < 0.5f)
                {
-                   GUIStyle style = new GUIStyle(GUI.skin.GetStyle("Label"));
-                   style.normal.textColor = new Color(0.6f, 0.6f, 0.6f, 1.0f);
-                   style.fontSize = 12;
-                   style.fixedWidth = 200;
-                   style.fixedHeight = 20;
+                 /////////  GUIStyle style = new GUIStyle(GUI.skin.GetStyle("Label"));
+                 /////////  style.normal.textColor = new Color(0.6f, 0.6f, 0.6f, 1.0f);
+                  ////////// style.fontSize = 12;
+                  ////////// style.fixedWidth = 200;
+                  //////// style.fixedHeight = 20;
 
                    Vector3 labelPosition;
                    float center = (origin + advance) / 2;
@@ -214,43 +214,43 @@ namespace TMPro.Examples
 
                    // Ascent Line
                    labelPosition = m_Transform.TransformPoint(new Vector3(center, ascentline, 0));
-                   style.alignment = TextAnchor.UpperCenter;
-                   Handles.Label(labelPosition, "Ascent Line", style);
+                  /////// style.alignment = TextAnchor.UpperCenter;
+                  /////// Handles.Label(labelPosition, "Ascent Line", style);
                    //Handles.Label(labelPosition, "Ascent Line (" + ascentlineMetrics.ToString("f3") + ")" , style);
 
                    // Base Line
                    labelPosition = m_Transform.TransformPoint(new Vector3(center, baseline, 0));
-                   Handles.Label(labelPosition, "Base Line", style);
+                   ////////Handles.Label(labelPosition, "Base Line", style);
                    //Handles.Label(labelPosition, "Base Line (" + baselineMetrics.ToString("f3") + ")" , style);
 
                    // Descent line
                    labelPosition = m_Transform.TransformPoint(new Vector3(center, descentline, 0));
-                   Handles.Label(labelPosition, "Descent Line", style);
+                  //////// Handles.Label(labelPosition, "Descent Line", style);
                    //Handles.Label(labelPosition, "Descent Line (" + descentlineMetrics.ToString("f3") + ")" , style);
 
                    if (characterInfo.isVisible)
                    {
                        // Cap Line
                        labelPosition = m_Transform.TransformPoint(new Vector3(center, capline, 0));
-                       style.alignment = TextAnchor.UpperCenter;
-                       Handles.Label(labelPosition, "Cap Line", style);
+                     //////  style.alignment = TextAnchor.UpperCenter;
+                      ///////// Handles.Label(labelPosition, "Cap Line", style);
                        //Handles.Label(labelPosition, "Cap Line (" + caplineMetrics.ToString("f3") + ")" , style);
 
                        // Mean Line
                        labelPosition = m_Transform.TransformPoint(new Vector3(center, meanline, 0));
-                       style.alignment = TextAnchor.UpperCenter;
-                       Handles.Label(labelPosition, "Mean Line", style);
+                      ////////// style.alignment = TextAnchor.UpperCenter;
+                      /////// Handles.Label(labelPosition, "Mean Line", style);
                        //Handles.Label(labelPosition, "Mean Line (" + ascentlineMetrics.ToString("f3") + ")" , style);
 
                        // Origin
                        labelPosition = m_Transform.TransformPoint(new Vector3(origin, baseline, 0));
-                       style.alignment = TextAnchor.UpperRight;
-                       Handles.Label(labelPosition, "Origin ", style);
+                      // style.alignment = TextAnchor.UpperRight;
+                      // Handles.Label(labelPosition, "Origin ", style);
 
                        // Advance
                        labelPosition = m_Transform.TransformPoint(new Vector3(advance, baseline, 0));
-                       style.alignment = TextAnchor.UpperLeft;
-                       Handles.Label(labelPosition, "  Advance", style);
+                      // style.alignment = TextAnchor.UpperLeft;
+                      // Handles.Label(labelPosition, "  Advance", style);
                    }
                }
             }
