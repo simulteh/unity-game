@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(MouseDetector))]
 public class CableConnector : MonoBehaviour
@@ -9,26 +10,35 @@ public class CableConnector : MonoBehaviour
     [SerializeField] private GameObject cable;
     private GameObject from;
     private GameObject to;
+    public NavMeshAgent agent;
 
-    public void Update()
+    public void OnEnable()
     {
         var comp = GetComponent<MouseDetector>();
-        if (comp == null)
-            return;
-        if (from == null)
+        comp.OnDetection += OnNewTarget;
+    }
+
+    private void OnNewTarget(object sender, DetectionEventArgs args)
+    {
+        if (from == null && args.Target != null)
         {
-            from = comp.target;
+            from = args.Target;
+            print($"New from target: {from.name}");
         }
-        else if (to == null)
+        else if (to == null && args.Target != null)
         {
-            to = comp.target;
+            to = args.Target;
+            
+            print($"New to target: {from.name}");
 
             if (auto)
             {
+                agent.SetDestination(to.transform.position);
+
                 var dist = Vector3.Distance(from.transform.position, to.transform.position);
-                var direction = Vector3.Normalize(from.transform.position - to.transform.position);
+                var direction = Vector3.Normalize(to.transform.position - from.transform.position);
                 var len = Mathf.CeilToInt(dist);
-                for (int i = 0; i < len; i++)
+                for (float i = 0; i < len; i+=0.07f)
                 {
                     Instantiate(cable, from.transform.position + direction * i, new Quaternion());
                 }
@@ -38,5 +48,12 @@ public class CableConnector : MonoBehaviour
                 // TODO: reset choosed from and to ?
             }
         }
+        else if (from != null && to != null && args.Target != null)
+        {
+            from = args.Target;
+            to = null;
+            print("Reset selection for cable");
+        }
     }
+    
 }

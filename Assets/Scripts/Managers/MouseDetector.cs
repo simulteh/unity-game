@@ -1,8 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine;
 
+public class DetectionEventArgs
+{
+    public GameObject Target;
+    public GameObject? PrevTarget;
+
+    public DetectionEventArgs(GameObject target, GameObject prevTarget)
+    {
+        Target = target;
+        PrevTarget = prevTarget;
+    }
+}
 public class MouseDetector : MonoBehaviour
 {
     public GameObject target = null;
@@ -12,6 +22,8 @@ public class MouseDetector : MonoBehaviour
     [SerializeField] GUI gui;
     [SerializeField] InfoPanel infoPanel;
     [SerializeField] TMP_InputField inputTargetName;
+    public delegate void DetectionHandler(object sender, DetectionEventArgs args);
+    public event DetectionHandler OnDetection;
 
     void Update()
     {
@@ -35,6 +47,7 @@ public class MouseDetector : MonoBehaviour
 
                 if (prevTarget) prevTarget.GetComponent<Outline>().enabled = false;
                 target.GetComponent<Outline>().enabled = true;
+                OnDetection.Invoke(this, new DetectionEventArgs(target, prevTarget));
             }
         }
     }

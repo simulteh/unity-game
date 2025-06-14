@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GUI : MonoBehaviour
 {
@@ -47,4 +48,6 @@ public class GUI : MonoBehaviour
     {
         target.SetActive(true);
     }
+
 }
+
