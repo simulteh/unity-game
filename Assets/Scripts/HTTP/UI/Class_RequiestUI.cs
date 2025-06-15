@@ -4,23 +4,26 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(TMP_InputField))]
+
 
 
 public class Class_RequiestUI : MonoBehaviour
 {
-    Enum_HTTPMethods HTTPMethod = Enum_HTTPMethods.NULL;
-    Enum_ContentType ContentType = Enum_ContentType.NULL;
-
+    public Enum_HTTPMethods HTTPMethod = Enum_HTTPMethods.NULL;
+    public Enum_ContentType ContentType = Enum_ContentType.NULL;
+    
+    [SerializeField] private TMP_InputField inputField;
     public string URL;
     public TMP_Text StatusText;
+    
 
-    private void Start() //стартовая функция
+    public void Start()  //стартовая функция
     {
-        TMP_InputField InputURL = GetComponent<TMP_InputField>();
-        InputURL.onEndEdit.AddListener(ChangeURLText);
-        
+        inputField = GetComponent<TMP_InputField>();
+        inputField.onEndEdit.AddListener(ChangeURLText);
     }
+
+  
     public void ChangeContentType(string name) //изменение типа контента
     {
         switch (name)
@@ -42,10 +45,9 @@ public class Class_RequiestUI : MonoBehaviour
         print(ContentType + " ContentType");
     }
 
-    private void ChangeURLText(string text) //изменение юрл
+    public void ChangeURLText(string text) //изменение юрл
     {
-       this.URL = text;
-       print(URL); 
+       URL = text;
     }
     public void ChangeMethod(string name) //изменения метода
     {
@@ -70,7 +72,7 @@ public class Class_RequiestUI : MonoBehaviour
 
     public void SendRequest() //отправка запроса
     {
-        if ((this.URL != null && this.URL != "") && (HTTPMethod != Enum_HTTPMethods.NULL) && (ContentType != Enum_ContentType.NULL))
+        if ((URL != null && URL != "") && (HTTPMethod != Enum_HTTPMethods.NULL) && (ContentType != Enum_ContentType.NULL))
         {
             StatusText.text = "Запрос успешно отправлен";
             StatusText.color = Color.green;
@@ -80,21 +82,12 @@ public class Class_RequiestUI : MonoBehaviour
             StatusText.text = "Ошибка. Невозможно отправить запрос";
             StatusText.color = Color.red;
             //вывод в консоль
-            print("INFO");
-            print(URL);
-            print(ContentType);
-            print(HTTPMethod);
-           
-            
-            
         }
-
-        
+        Debug.LogWarning("INFO");
+        Debug.LogWarning(URL + " -- URL");
+        Debug.LogWarning(ContentType + " -- ContentType");
+        Debug.LogWarning(HTTPMethod + " -- HTTPMethod");
     }
-
-
-    
-  
 }
 
 
