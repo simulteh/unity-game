@@ -35,13 +35,13 @@ public class CableConnector : MonoBehaviour
             {
                 agent.SetDestination(to.transform.position);
 
-                var dist = Vector3.Distance(from.transform.position, to.transform.position);
+/*                var dist = Vector3.Distance(from.transform.position, to.transform.position);
                 var direction = Vector3.Normalize(to.transform.position - from.transform.position);
                 var len = Mathf.CeilToInt(dist);
                 for (float i = 0; i < len; i+=0.07f)
                 {
                     Instantiate(cable, from.transform.position + direction * i, new Quaternion());
-                }
+                }*/
             }
             else
             {
