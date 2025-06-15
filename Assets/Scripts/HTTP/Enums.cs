@@ -2,6 +2,7 @@ using UnityEngine;
 // какие то енамы
 public enum Enum_HTTPMethods // методы
 {
+    NULL = 0,
     GET = 1,
     POST = 2,
     PUT = 3,
@@ -10,6 +11,7 @@ public enum Enum_HTTPMethods // методы
 
 public enum Enum_ContentType //тип контента
 {
+    NULL,
     HTML,
     JSON,
     TEXT,
