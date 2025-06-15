@@ -2,10 +2,10 @@ using UnityEngine;
 // какие то енамы
 public enum Enum_HTTPMethods // методы
 {
-    GET,
-    POST,
-    PUT,
-    DELETE,
+    GET = 1,
+    POST = 2,
+    PUT = 3,
+    DELETE = 4,
 }
 
 public enum Enum_ContentType //тип контента
