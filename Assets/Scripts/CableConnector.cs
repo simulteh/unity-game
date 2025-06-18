@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine.AI;
+using System;
 
 [RequireComponent(typeof(MouseDetector))]
 public class CableConnector : MonoBehaviour
@@ -33,15 +34,23 @@ public class CableConnector : MonoBehaviour
 
             if (auto)
             {
-                agent.SetDestination(to.transform.position);
+                //agent.SetDestination(to.transform.position);
 
-/*                var dist = Vector3.Distance(from.transform.position, to.transform.position);
+                var dist = Vector3.Distance(from.transform.position, to.transform.position);
                 var direction = Vector3.Normalize(to.transform.position - from.transform.position);
+                var rotation = Quaternion.FromToRotation(from.transform.position, to.transform.position);
                 var len = Mathf.CeilToInt(dist);
                 for (float i = 0; i < len; i+=0.07f)
                 {
-                    Instantiate(cable, from.transform.position + direction * i, new Quaternion());
-                }*/
+                    var spawn = from.transform.position + direction * i;
+
+                    var segment = Instantiate(cable, new Vector3(), new Quaternion());
+                    
+                    //segment.transform.localScale = new Vector3(dist, segment.transform.localScale.y, segment.transform.localScale.z);
+                    segment.transform.position = spawn;
+                    segment.transform.up = to.transform.position - from.transform.position;
+                    //segment.transform.LookAt(to.transform.position);
+                }
             }
             else
             {
