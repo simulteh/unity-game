@@ -1,4 +1,4 @@
-repository "Networks@GeorgeProleev@cloud"
+repository "OSPF_Simulator/OSPF_Simulator@10171514244912@cloud"
   path "/"
-    smartbranch "/main/DevelopG"       
-     
+    br "/main"
+    co "/main"
