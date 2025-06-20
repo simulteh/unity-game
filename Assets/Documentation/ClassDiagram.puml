@@ -1,0 +1,17 @@
+@startuml
+class Router {
+  + routerID : string
+  + neighbors : Dictionary<string, int>
+  + routingTable : Dictionary<string, (string, int)>
+  + UpdateTopology()
+  + Dijkstra()
+}
+
+class Network {
+  + routers : Dictionary<string, Router>
+  + AddRouter()
+  + SimulateLinkChange()
+}
+
+Router "1" --o "0..*" Network
+@enduml
