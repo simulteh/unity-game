@@ -10,7 +10,7 @@ public class MoveDirectionalPoint : MonoBehaviour
 
     Vector3 localRot;
 
-    Vector3 startPoint = new Vector3(8, 16, -30);
+    Vector3 startPoint = new Vector3(0, 2, -15);
 
     private void Start()
     {
