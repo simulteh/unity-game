@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MoveDirectionalPoint : MonoBehaviour
 {
-    const float velocity = 5f;
-    public float mouseSpeed = 5f;
+    const float velocity = 7f;
+    public float mouseSpeed = 10f;
     public float orbitDamping = 10f;
 
     Vector3 localRot;
@@ -47,12 +47,12 @@ public class MoveDirectionalPoint : MonoBehaviour
             transform.position -= transform.forward * velocity * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.Space))
         {
             transform.position += transform.up * velocity * Time.deltaTime;
         }
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             transform.position -= transform.up * velocity * Time.deltaTime;
         }
