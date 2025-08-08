@@ -48,6 +48,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
+*.png
 *.pdb
 *.mdb
 *.opendb
