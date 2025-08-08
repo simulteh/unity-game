@@ -8,8 +8,11 @@ public class CameraZoom : MonoBehaviour
 
     [SerializeField] CinemachineVirtualCamera virtualCamera;
     CinemachineComponentBase componentBase;
-    float cameraDistance;
+    float cameraDistanceOffset;
     [SerializeField] float sensivity = 10f;
+
+    const float MIN_DISTANCE = 0;
+    const float MAX_DISTANCE = 150;
 
     void Update()
     {
@@ -22,11 +25,23 @@ public class CameraZoom : MonoBehaviour
         }
         if (scroll != 0)
         {
-            cameraDistance = scroll * sensivity;
             if (componentBase is CinemachineFramingTransposer)
             {
-                (componentBase as CinemachineFramingTransposer).m_CameraDistance -= cameraDistance;
-            }
+                float currentDistance = (componentBase as CinemachineFramingTransposer).m_CameraDistance;
+
+
+
+                if (currentDistance >= MIN_DISTANCE && currentDistance <= MAX_DISTANCE)
+                {
+                    cameraDistanceOffset = scroll * sensivity;
+                    float future_distance = currentDistance - cameraDistanceOffset;
+                    if (future_distance < MIN_DISTANCE) future_distance = MIN_DISTANCE;
+                    if (future_distance > MAX_DISTANCE) future_distance = MAX_DISTANCE;
+                    
+                    (componentBase as CinemachineFramingTransposer).m_CameraDistance = future_distance;
+                    //Debug.Log((componentBase as CinemachineFramingTransposer).m_CameraDistance);
+                }
+            }            
         }
     }
 }

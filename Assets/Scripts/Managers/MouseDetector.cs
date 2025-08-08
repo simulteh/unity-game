@@ -9,7 +9,7 @@ public class MouseDetector : MonoBehaviour
     GameObject prevTarget = null;
 
     [Header("UI")]
-    [SerializeField] GUI gui;
+    [SerializeField] ONC ONC;
     [SerializeField] InfoPanel infoPanel;
     [SerializeField] TMP_InputField inputTargetName;
 
@@ -30,8 +30,7 @@ public class MouseDetector : MonoBehaviour
                 //infoPanel.SetInfo(clickedObject);
                 inputTargetName.text = clickedObject.name;
                 inputTargetName.onValueChanged.AddListener(OnTargetNameChanged);
-                gui.OpenGUI();
-                gui.OpenTargetPanel();
+                //ONC.OpenTargetPanel();
 
                 if (prevTarget) prevTarget.GetComponent<Outline>().enabled = false;
                 target.GetComponent<Outline>().enabled = true;
