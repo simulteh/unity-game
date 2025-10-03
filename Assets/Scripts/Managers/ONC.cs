@@ -1,29 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class ONC : MonoBehaviour
 {
+    [Header("Desktop Panels")]
     [SerializeField] GameObject consolePan;
     [SerializeField] GameObject webPan;
     [SerializeField] GameObject settingsPan;
+    [SerializeField] GameObject wifiPan;
     [SerializeField] GameObject desktopPan;
 
     [Header ("Canvases")]
     [SerializeField] GameObject compCanvas;
     [SerializeField] GameObject HUDCanvas;
-    [SerializeField] GameObject panelsCanvas;
+    [SerializeField] GameObject tabsCanvas;
+    [SerializeField] GameObject endScreenCanvas;
 
     [Header("Tabs")]
     [SerializeField] GameObject[] tabs;
     [SerializeField] GameObject[] tabsPanels;
-    int currentID = -1;
+    int currentTabID = -1;
     //tabMenu;
     //[SerializeField] GameObject tabSettings;
     //[SerializeField] GameObject tabManual;
     //[SerializeField] GameObject tabTablet;
+
+    [Header("Tabs")]
+    [SerializeField] GameObject[] appsPanels;
 
     [Header ("Sprites")]
     [SerializeField] Sprite tabActivedButtonSprite;
@@ -33,13 +36,15 @@ public class ONC : MonoBehaviour
     {
         compCanvas.SetActive(true);
         HUDCanvas.SetActive(true);
-        panelsCanvas.SetActive(true);
+        tabsCanvas.SetActive(true);
         consolePan.SetActive(false);
         webPan.SetActive(false);
         settingsPan.SetActive(false);
         desktopPan.SetActive(false);
+        wifiPan.SetActive(false);
 
         SetActivatedTab(-1);
+        SetActivateApp(0);
         
     }
 
@@ -55,18 +60,28 @@ public class ONC : MonoBehaviour
             tabsPanels[i].SetActive(false);
         }
 
-        if (currentID == id)
+        if (currentTabID == id)
         {
-            currentID = -1;
+            currentTabID = -1;
         }
         else
         {
             tabs[id].GetComponent<Image>().sprite = tabActivedButtonSprite;
             tabsPanels[id].SetActive(true);
-            currentID = id;
+            currentTabID = id;
         }
 
     
+    }
+
+    public void SetActivateApp(int id)
+    {
+        for (int i = 0; i < appsPanels.Length; i++)
+        {
+            appsPanels[i].SetActive(false);
+        }
+
+        appsPanels[id].SetActive(true);   
     }
 
     public void OpenConsolePan()
@@ -74,12 +89,22 @@ public class ONC : MonoBehaviour
         if (!consolePan.activeSelf)
         {
             consolePan.SetActive(true);
-            consolePan.GetComponent<Console>().RestartConsole();
+            consolePan.GetComponent<Console>().InitializeConsole();
         }
         else
         {
             consolePan.SetActive(false);
         }
+    }
+
+    public void OpenWifiPan()
+    {
+        wifiPan.SetActive(!wifiPan.activeSelf);
+    }
+
+    public void CloseWifiPan()
+    {
+        wifiPan.SetActive(false);
     }
 
     public void CloseConsolePan()
@@ -115,6 +140,21 @@ public class ONC : MonoBehaviour
     public void CloseDesktopPan()
     {
         desktopPan.SetActive(false);
+    }
+
+    public void OpenEndScreenCanvas()
+    {
+        endScreenCanvas.SetActive(true);
+    }
+
+    public void CloseCompCanvas()
+    {
+        compCanvas.SetActive(false);
+    }
+
+    public void OpenCompCanvas()
+    {
+        compCanvas.SetActive(true);
     }
 }
 

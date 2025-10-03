@@ -41,12 +41,12 @@ public class WebInterface : MonoBehaviour
     [SerializeField] Button buttonSame;
     [SerializeField] Button buttonSwitchWifi_5g;
     [SerializeField] Button buttonSwitchWifi_2g;
-    [SerializeField] TMP_InputField nameWifiInput;
-    [SerializeField] TMP_InputField passwordWifiInput;
+    [SerializeField] TMP_InputField nameWifiInput_5g;
+    [SerializeField] TMP_InputField passwordWifiInput_5g;
     [SerializeField] TMP_InputField nameWifiInput_2g;
     [SerializeField] TMP_InputField passwordWifiInput_2g;
-    public string nameWifi = "";
-    public string passwordWifi = "";
+    public string nameWifi_5g = "";
+    public string passwordWifi_5g = "";
     public string nameWifi_2g = "";
     public string passwordWifi_2g = "";
     public bool isSame = false;
@@ -91,12 +91,20 @@ public class WebInterface : MonoBehaviour
 
         //Range
         buttonSame.onClick.AddListener(SwitchSame);
-        buttonSwitchWifi_5g.onClick.AddListener(() => { isOn_wifi5g = !isOn_wifi5g;  });
-        buttonSwitchWifi_2g.onClick.AddListener(() => { isOn_wifi2g = !isOn_wifi2g; });
+        buttonSwitchWifi_5g.onClick.AddListener(SwitchWifi5G);
+        buttonSwitchWifi_2g.onClick.AddListener(SwitchWifi2G);
+        SwitchSame();
+        SwitchWifi2G();
+        SwitchWifi5G();
+        nameWifiInput_5g.onEndEdit.AddListener((string text) => { nameWifi_5g = text; });
+        passwordWifiInput_5g.onEndEdit.AddListener((string text) => { passwordWifi_5g = text; });
+        nameWifiInput_2g.onEndEdit.AddListener((string text) => { nameWifi_2g = text; });
+        passwordWifiInput_2g.onEndEdit.AddListener((string text) => { passwordWifi_2g = text; });
 
         //DHCP
-        buttonDHCP.onClick.AddListener(() => { isDHCP = true;  });
-        buttonManual.onClick.AddListener(() => { isDHCP = false;  } );
+        buttonDHCP.onClick.AddListener(SwitchDHCPOn);
+        buttonManual.onClick.AddListener(SwitchDHCPOn);
+        SwitchDHCPOn();
 
         //IPV4
         ipRouterInput.onEndEdit.AddListener((string text) => { ip = text;  });
@@ -123,7 +131,9 @@ public class WebInterface : MonoBehaviour
 
         if (ip_input == "192.168.1.1")
         {
-            NextPanel();
+            GlobalEvents.Instance.EnterToRouter();
+
+            ShowPanel();
         }
         else
         {
@@ -164,7 +174,7 @@ public class WebInterface : MonoBehaviour
             }
 
         }
-        Debug.Log(passwordAuth);
+        //Debug.Log(passwordAuth);
     }
 
     public void EndAuthInput()
@@ -172,7 +182,7 @@ public class WebInterface : MonoBehaviour
         if (loginAuthInput.text.Trim() == loginRouter && passwordAuth.Trim() == passwordRouter)
         {
             currentID += 1;
-            NextPanel();
+            ShowPanel();
         }
         else
         {
@@ -192,14 +202,17 @@ public class WebInterface : MonoBehaviour
         loginRouter = loginSettingsInput.text;
         passwordRouter = passwordSettingsInput.text;
 
+
+        GlobalEvents.Instance.RouterChangeAuthData();
+
         currentID += 1;
-        NextPanel();
+        ShowPanel();
     }
 
     public void EndWorkmodeInput()
     {
         currentID += 1;
-        NextPanel();
+        ShowPanel();
     }
 
     void ChangeWorkmode(string workmode)
@@ -207,16 +220,50 @@ public class WebInterface : MonoBehaviour
         if (workmode == "gateway")
         {
             isGateway = true;
+            buttonGateway.GetComponent<Image>().color = Color.blue;
+            buttonBridge.GetComponent<Image>().color = Color.gray;
         } else
         {
             isGateway = false;
+            buttonGateway.GetComponent<Image>().color = Color.gray;
+            buttonBridge.GetComponent<Image>().color = Color.blue;
         }
     }
 
     public void EndRangeInput()
     {
+
+        if (isOn_wifi5g && (nameWifiInput_5g.text == "" || passwordWifiInput_5g.text == ""))
+        {
+            return;
+        }
+
+        if (!isSame && isOn_wifi2g && (nameWifiInput_2g.text == "" || passwordWifiInput_2g.text == ""))
+        {
+            return;
+        }
+
+        if (isOn_wifi5g)
+        {
+            nameWifi_5g = nameWifiInput_5g.text;
+            passwordWifi_5g = passwordWifiInput_5g.text;
+        }
+        if (isSame)
+        {
+            nameWifi_2g = nameWifi_5g;
+            passwordWifi_2g = passwordWifi_5g;
+        }
+        else if (isOn_wifi2g)
+        {
+            nameWifi_2g = nameWifiInput_2g.text;
+            passwordWifi_2g = passwordWifiInput_2g.text;
+        }
+
+        GlobalEvents.Instance.RouterChangeWifiData5g();
+        GlobalEvents.Instance.RouterChangeWifiData2g();
+
         currentID += 1;
-        NextPanel();
+        ShowPanel();
     }
 
     void SwitchSame()
@@ -224,36 +271,113 @@ public class WebInterface : MonoBehaviour
         isSame = !isSame;
         if (isSame)
         {
-            isOn_wifi2g = false;
             buttonSwitchWifi_2g.enabled = false;
 
             nameWifiInput_2g.gameObject.SetActive(false);
             passwordWifiInput_2g.gameObject.SetActive(false);
 
+            buttonSame.GetComponent<Image>().color = Color.blue;
+            buttonSwitchWifi_2g.GetComponent<Image>().color = Color.gray;
+        } else
+        {
+            isOn_wifi2g = true;
+            buttonSwitchWifi_2g.enabled = true;
+
+            nameWifiInput_2g.gameObject.SetActive(true);
+            passwordWifiInput_2g.gameObject.SetActive(true);
+
+            buttonSame.GetComponent<Image>().color = Color.gray;
+            buttonSwitchWifi_2g.GetComponent<Image>().color = Color.gray;
+        }
+    }
+
+    void SwitchWifi5G()
+    {
+        isOn_wifi5g = !isOn_wifi5g;
+
+        if (isOn_wifi5g)
+        {
+            nameWifiInput_5g.gameObject.SetActive(true);
+            passwordWifiInput_5g.gameObject.SetActive(true);
+
+            buttonSwitchWifi_5g.GetComponent<Image>().color = Color.blue;
+        }
+        else
+        {
+            nameWifiInput_5g.gameObject.SetActive(false);
+            passwordWifiInput_5g.gameObject.SetActive(false);
+
+            buttonSwitchWifi_5g.GetComponent<Image>().color = Color.gray;
+        }
+    }
+
+    void SwitchWifi2G()
+    {
+        isOn_wifi2g = !isOn_wifi2g;
+
+        if (isOn_wifi2g)
+        {
+            nameWifiInput_2g.gameObject.SetActive(true);
+            passwordWifiInput_2g.gameObject.SetActive(true);
+
+            buttonSwitchWifi_2g.GetComponent<Image>().color = Color.blue;
+        }
+        else
+        {
+            nameWifiInput_2g.gameObject.SetActive(false);
+            passwordWifiInput_2g.gameObject.SetActive(false);
+
+            buttonSwitchWifi_2g.GetComponent<Image>().color = Color.gray;
+        }
+    }
+
+    void SwitchDHCPOn()
+    {
+        isDHCP = !isDHCP;
+
+        if (isDHCP)
+        {
+            buttonDHCP.GetComponent<Image>().color = Color.blue;
+            buttonDHCP.enabled = false;
+
+            buttonManual.GetComponent<Image>().color = Color.gray;
+            buttonManual.enabled = true;
+
+        } else
+        {
+            buttonDHCP.GetComponent<Image>().color = Color.gray;
+            buttonDHCP.enabled = true;
+
+            buttonManual.GetComponent<Image>().color = Color.blue;
+            buttonManual.enabled = false;
         }
     }
 
     public void EndDHCPInput()
     {
         currentID += 1;
-        NextPanel();
+        ShowPanel();
     }
 
     public void EndIPV4Input()
     {
-        bool isOk = CheckCorrectnessInput();
+        bool isOk = CheckCorrectnessInput(ip);
         if (!isOk)
         {
             return;
         }
         currentID += 1;
-        NextPanel();
+        ShowPanel();
     }
 
-    bool CheckCorrectnessInput()
+    bool CheckCorrectnessInput(string ipAddress)
     {
+        if (ipAddress == "")
+        {
+            return true;
+        }
 
-        string[] ip_parts = ip.Split('.');
+        string[] ip_parts = ipAddress.Split('.');
         for (int i = 0; i < ip_parts.Length; i++)
         {
             if (int.Parse(ip_parts[i]) > 255)
@@ -295,7 +419,7 @@ public class WebInterface : MonoBehaviour
         return true;
     }
 
-    public void NextPanel()
+    public void ShowPanel()
     {
         if (currentID == 0)
         {
@@ -321,12 +445,6 @@ public class WebInterface : MonoBehaviour
         else if (currentID == 3)
         {
 
-            if (isSame && isOn_wifi2g)
-            {
-                nameWifi_2g = nameWifi;
-                passwordWifi_2g = passwordWifi;
-            }
-
             CloseAllPanels();
             rangePanel.SetActive(true);
         }
@@ -340,10 +458,20 @@ public class WebInterface : MonoBehaviour
             CloseAllPanels();
             ipv4Panel.SetActive(true);
         }
+        else if (currentID == 6)
+        {
+            CloseAllPanels();
+        }
         else
         {
             return;
         }
+    }
+
+    public void PrevPanel()
+    {
+        currentID -= 1;
+        ShowPanel();
     }
 
     void CloseAllPanels()

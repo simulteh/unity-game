@@ -51,7 +51,7 @@ public class Router : INetworkDevice
                     TTL = packet.TTL
                 };
 
-                Ethernet.SendFrame(newPacket, this, networkDevices);
+                //Ethernet.SendFrame(newPacket, this, networkDevices);
             }
         }
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveDirectionalPoint : MonoBehaviour
 {
-    const float velocity = 7f;
+    const float velocity = 10f;
     public float mouseSpeed = 10f;
     public float orbitDamping = 10f;
 
