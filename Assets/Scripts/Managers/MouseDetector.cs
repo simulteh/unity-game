@@ -13,6 +13,9 @@ public class MouseDetector : MonoBehaviour
     [SerializeField] InfoPanel infoPanel;
     [SerializeField] TMP_InputField inputTargetName;
 
+    private float lastClickTime;
+    public float doubleClickTimeThreshold = 0.3f; // Time in seconds to register a double-click
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -26,14 +29,21 @@ public class MouseDetector : MonoBehaviour
                 prevTarget = target;
                 target = clickedObject;
 
-                //GUI
-                //infoPanel.SetInfo(clickedObject);
-                inputTargetName.text = clickedObject.name;
-                inputTargetName.onValueChanged.AddListener(OnTargetNameChanged);
-                //ONC.OpenTargetPanel();
+                float timeSinceLastClick = Time.time - lastClickTime;
 
-                if (prevTarget) prevTarget.GetComponent<Outline>().enabled = false;
-                target.GetComponent<Outline>().enabled = true;
+                if (timeSinceLastClick <= doubleClickTimeThreshold)
+                {
+                    DoubleClick();
+                }
+                else
+                {
+                    SingleClick();
+                }
+
+                // Update last click time
+                lastClickTime = Time.time;
+
+                
             }
         }
     }
@@ -43,4 +53,24 @@ public class MouseDetector : MonoBehaviour
         target.name = inputTargetName.text;
     }
 
+    void SingleClick()
+    {
+        //GUI
+        //infoPanel.SetInfo(clickedObject);
+        inputTargetName.text = target.name;
+        inputTargetName.onValueChanged.AddListener(OnTargetNameChanged);
+        //ONC.OpenTargetPanel();
+
+        if (prevTarget) prevTarget.GetComponent<Outline>().enabled = false;
+        target.GetComponent<Outline>().enabled = true;
+    }
+
+    void DoubleClick()
+    {
+        if (target.name == "PC")
+        {
+            ONC.OpenDesktopPan();
+            ONC.OpenCompCanvas();
+        }
+    }
 }
