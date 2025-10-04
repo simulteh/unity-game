@@ -11,7 +11,7 @@ public class CameraZoom : MonoBehaviour
     float cameraDistanceOffset;
     [SerializeField] float sensivity = 10f;
 
-    const float MIN_DISTANCE = 0;
+    const float MIN_DISTANCE = 5;
     const float MAX_DISTANCE = 150;
 
     void Update()
