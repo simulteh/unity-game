@@ -1,49 +1,54 @@
-Unity Editor version:    6000.3.12f1 (fca03ac9b0d5)
-Branch:                  6000.3/staging
-Build type:              Release
-Batch mode:              YES
-macOS version:           Version 15.7.3 (Build 24G419)
-Darwin version:          24.6.0
-Architecture:            x86_64
-Running under Rosetta:   NO
-Available memory:        8192 MB
-Date:                    2026-04-11T11:44:30Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-george" at "2026-04-11T11:44:30.033258Z"
+Built from '6000.3/staging' branch; Version is '6000.3.12f1 (fca03ac9b0d5) revision 16556090'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32395 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Asus" at "2026-04-15T16:47:52.4512792Z"
+System  architecture: x64
+Process architecture: x64
+Date: 2026-04-15T16:47:52Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 23320, path: "D:/Unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Asus"
+[Licensing::IpcConnector] LicenseClient-Asus channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Asus-6000.3.12" at "2026-04-15T16:47:52.4887734Z"
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/MacOS/Unity
+D:\Unity\6000.3.12f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-/Users/george/Networks
+C:/UnityProjects/unity-game
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-53870
+50939
 -licensingIpc
-LicenseClient-george
+LicenseClient-Asus
 -job-worker-count
-3
+9
 -background-job-worker-count
 8
 -gc-helper-count
 1
--name AssetImport
-Successfully changed project path to: /Users/george/Networks
-/Users/george/Networks
+-name
+AssetImport
+Successfully changed project path to: C:/UnityProjects/unity-game
+C:/UnityProjects/unity-game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
     "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-temp-allocator-size-job-worker=262144"
     "memorysetup-temp-allocator-size-preload-manager=33554432"
-    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
-    "memorysetup-temp-allocator-size-audio-worker=65536"
-    "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
@@ -69,14 +74,14 @@ Successfully changed project path to: /Users/george/Networks
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-    "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140704375140608]  Target information:
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [20220]  Target information:
 
-Player connection [140704375140608]  * "[IP] 192.168.100.44 [Port] 0 [Flags] 2 [Guid] 616648949 [EditorId] 616648949 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-Georgij-4.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [20220]  * "[IP] 192.168.1.5 [Port] 0 [Flags] 2 [Guid] 2422435002 [EditorId] 2422435002 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HURISGV) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [140704375140608] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [140704375140608] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 3
+Player connection [20220] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [20220] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -87,107 +92,96 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 2.21 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.12f1 (fca03ac9b0d5)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/george/Networks/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/6000.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/unity-game/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-Metal devices available: 1
-0: Intel(R) Iris(TM) Plus Graphics 645 (low power)
-Using device Intel(R) Iris(TM) Plus Graphics 645 (low power)
-Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 645
-Mac GPU Family: 2
-Apple GPU Family: 0
-MSL Version: 3.0
-Has Float MSAA: 1
-Has Float Filtering: 1
-ReadWrite Texture Tier: 1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7956 MB
+    Driver:   32.0.15.9571
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
-Mono config path = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Mono path[0] = 'D:/Unity/6000.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/6000.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/6000.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56624
 Begin MonoManager ReloadAssembly
-[Licensing::Client] Error: HandshakeResponse reported an error:
-	ResponseCode: 505
-	ResponseStatus: Unsupported protocol version '1.18.1'.
-[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-george"
-[Licensing::IpcConnector] LicenseClient-george channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-george-6000.3.12" at "2026-04-11T11:44:30.979869Z"
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000822 seconds.
-- Loaded All Assemblies, in  0.924 seconds
+Register platform support module: D:/Unity/6000.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.1+9fbee8e
-  Session Id:              aeeda83a5c0c43879f31d34474779869
-  Correlation Id:          9c9ea2f4cd41e46fd882eaddd1628a92
-  External correlation Id: 8989138561331506036
-  Machine Id:              u0nlxKUBwl41LOkohYxMrG4k/3A=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-george-6000.3.12" (connect: 0.00s, validation: 0.00s, handshake: 0.94s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-george-6000.3.12-notifications" at "2026-04-11T11:44:31.919685Z"
-[Licensing::Module] Licensing Background thread has ended after 1.89s
-Native extension for OSXStandalone target not found
+  Session Id:              ffa0e1d64b5c43e68d0753c942b81161
+  Correlation Id:          889d717c11848516f0f00140ec1cf197
+  External correlation Id: 2345727855962521677
+  Machine Id:              5eqm7/Sc8zmpXLkggXchpY/XWdQ=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Asus-6000.3.12" (connect: 0.00s, validation: 0.00s, handshake: 1.10s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Asus-6000.3.12-notifications" at "2026-04-15T16:47:53.5870673Z"
+[Licensing::Module] Licensing Background thread has ended after 1.14s
+[Licensing::Module] Licensing is initialized (took 0.34s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 10171373764644-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: D:/Unity/6000.3.12f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.345255 seconds.
+- Loaded All Assemblies, in  0.888 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.918 seconds
-Domain Reload Profiling: 1841ms
-	BeginReloadAssembly (218ms)
+- Finished resetting the current domain, in  0.508 seconds
+Domain Reload Profiling: 1396ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (108ms)
-	RebuildNativeTypeToScriptingClass (35ms)
-	initialDomainReloadingComplete (102ms)
-	LoadAllAssembliesAndSetupDomain (460ms)
-		LoadAssemblies (217ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (404ms)
+	LoadAllAssembliesAndSetupDomain (246ms)
+		LoadAssemblies (167ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (455ms)
-			TypeCache.Refresh (450ms)
-				TypeCache.ScanAssembly (398ms)
+		AnalyzeDomain (241ms)
+			TypeCache.Refresh (239ms)
+				TypeCache.ScanAssembly (220ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (918ms)
+	FinalizeReload (509ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (825ms)
+		SetupLoadedEditorAssemblies (462ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (114ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (374ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
+			InitializePlatformSupportModulesInManaged (72ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (178ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
-[CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: F4-JZ8C-JA8A-V8AB-RRQW-XXXX
-  Product: Unity Personal
-  Type: ULF
-  Expiration: Unlimited
-[Licensing::Module] License group:
-  Id: 10170591881692-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-- Loaded All Assemblies, in  0.935 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Native extension for OSXStandalone target not found
+- Loaded All Assemblies, in  0.717 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -196,605 +190,1405 @@ Native extension for OSXStandalone target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.115 seconds
-Domain Reload Profiling: 2051ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  0.721 seconds
+Domain Reload Profiling: 1437ms
+	BeginReloadAssembly (183ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (69ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (563ms)
-		LoadAssemblies (363ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (430ms)
+		LoadAssemblies (306ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (306ms)
-			TypeCache.Refresh (248ms)
-				TypeCache.ScanAssembly (231ms)
-			BuildScriptInfoCaches (43ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1116ms)
+		AnalyzeDomain (221ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (47ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (722ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (926ms)
+		SetupLoadedEditorAssemblies (576ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (176ms)
-			ProcessInitializeOnLoadAttributes (678ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (372ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launching external process: /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Helpers/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.40 ms, found 1 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3770 unused Assets / (1.0 MB). Loaded Objects now: 4395.
-Memory consumption went from 97.2 MB to 96.3 MB.
-Total: 9.078805 ms (FindLiveObjects: 0.517514 ms CreateObjectMapping: 0.650381 ms MarkObjects: 6.896543 ms  DeleteObjects: 1.013550 ms)
+Unloading 3770 unused Assets / (1.1 MB). Loaded Objects now: 4370.
+Memory consumption went from 93.7 MB to 92.7 MB.
+Total: 5.123200 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.325100 ms MarkObjects: 3.550400 ms  DeleteObjects: 0.915900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 102270.661297 seconds.
-  path: Assets/Prefabs/Canvases.prefab
-  artifactKey: Guid(34ce4da5429da47aab2436b9342035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Canvases.prefab using Guid(34ce4da5429da47aab2436b9342035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89d38b7eadc6f752ea7c90d162d2ac36') in 0.208772587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1163
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.550715 seconds.
-  path: Assets/Prefabs/Network/Icons/free-icon-database-3470472.png
-  artifactKey: Guid(90ffc53d958c14dfa9d427de61ee16b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Network/Icons/free-icon-database-3470472.png using Guid(90ffc53d958c14dfa9d427de61ee16b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79426768b27d6b7ed926b9a3edfb6228') in 0.105941576 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.030844 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/085_2_83.001.mat
-  artifactKey: Guid(9970f6f7c4c654b52a1116a094acd757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/085_2_83.001.mat using Guid(9970f6f7c4c654b52a1116a094acd757) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ca3f5d14aa531855bbb541e1a76da54') in 0.076323797 seconds
+  Time since last request: 717849.713615 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/M_vase 1.mat
+  artifactKey: Guid(a4f1a9d1f6cda4ebdb1868da4530e361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/M_vase 1.mat using Guid(a4f1a9d1f6cda4ebdb1868da4530e361) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f129f9ff983afa1c6610a1a62ce6450b') in 0.1114231 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_display2_2sided.mat
-  artifactKey: Guid(8a5cc3c255c5748048b87568f1a6211d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_display2_2sided.mat using Guid(8a5cc3c255c5748048b87568f1a6211d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68b9b4bc62e449e367b836d850de9240') in 0.01081792 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.009 2.mat
+  artifactKey: Guid(f082e0c3fe05645529f97c90cd455715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.009 2.mat using Guid(f082e0c3fe05645529f97c90cd455715) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6492f0a5887129bd78df83279100ee0c') in 0.0065102 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/Aluminium sand.mat
-  artifactKey: Guid(bd41e6de2b30b42a3bda1efdcac2a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/Aluminium sand.mat using Guid(bd41e6de2b30b42a3bda1efdcac2a082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06daefd0e2f4d8df8dc7592faec01505') in 0.121858586 seconds
+  Time since last request: 0.000075 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.008 2.mat
+  artifactKey: Guid(83816ac70b5c64159bce270195f7221a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.008 2.mat using Guid(83816ac70b5c64159bce270195f7221a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc001d2c65bfec0b2dea3c01de466532') in 0.0060343 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000107 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/_metall_.002.mat
-  artifactKey: Guid(b8515eb646f034d89884345b401d4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/_metall_.002.mat using Guid(b8515eb646f034d89884345b401d4cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2784145f139fbb3df7e91fad7e55c24b') in 0.020893858 seconds
+  Time since last request: 0.000103 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/material.002 1.mat
+  artifactKey: Guid(3b5f47fc6562848fda072407c571f6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/material.002 1.mat using Guid(3b5f47fc6562848fda072407c571f6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10d1ad8c241a906b0ee1ebfcbe5e4dc4') in 0.0063287 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/Base_01.003.mat
-  artifactKey: Guid(32b64009ba8e44a3cb4bef7a66e1ca07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/Base_01.003.mat using Guid(32b64009ba8e44a3cb4bef7a66e1ca07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b18741deac18d94c8e9f6bfc5484b892') in 0.011321731 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_receipt.mat
-  artifactKey: Guid(c487fcaa1adfc42fa8ea986cd3d2d7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_receipt.mat using Guid(c487fcaa1adfc42fa8ea986cd3d2d7fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9439304c8cfc3e21f8cb1236366d35ee') in 0.024463569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000085 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_scanner_black_insert.mat
-  artifactKey: Guid(6d0f8c8f8799a4c299fa7203889af3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_scanner_black_insert.mat using Guid(6d0f8c8f8799a4c299fa7203889af3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fdd4a392868e65cdf4993e639cea8616') in 0.026968185 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/auto_2.mat
-  artifactKey: Guid(b3e6191e2847e43119ec0f214f64f287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/auto_2.mat using Guid(b3e6191e2847e43119ec0f214f64f287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c53ed085ef659f69283f4887f3760b43') in 0.016092059 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_glass.mat
-  artifactKey: Guid(857a7aea35ea44c66bfdb5c3eee0abba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_glass.mat using Guid(857a7aea35ea44c66bfdb5c3eee0abba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '723b80904f0623cad046d699ac36a32c') in 0.009921891 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_display3_2sided.mat
-  artifactKey: Guid(c20b547cf78f5446cb6dfb3b83c5c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_display3_2sided.mat using Guid(c20b547cf78f5446cb6dfb3b83c5c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '742bbc767812328759bd222934990076') in 0.015132024 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/auto_1.mat
-  artifactKey: Guid(ad516fee1608340c08bb091b0b8390b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/auto_1.mat using Guid(ad516fee1608340c08bb091b0b8390b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fcbd12de43af90d6ef644d9e7332b5b') in 0.008957007 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/Alum brush.mat
-  artifactKey: Guid(0bb67d9b5c8b548ec9068e21a459df7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/Alum brush.mat using Guid(0bb67d9b5c8b548ec9068e21a459df7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9727d72bcddc6f2cecfec556bfc34ef1') in 0.015774569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/Banquette Couch_Wood.mat
-  artifactKey: Guid(3bda7ecf1f59c4c8784d4b2aa53de31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/Banquette Couch_Wood.mat using Guid(3bda7ecf1f59c4c8784d4b2aa53de31b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d62a39d3547878c0db9617fc0cc6543') in 0.011052328 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/back panel.mat
-  artifactKey: Guid(61863541304aa468db02677a2e18e459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/back panel.mat using Guid(61863541304aa468db02677a2e18e459) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22298d8a9f98bfd792ac6e7b20148331') in 0.017746964 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_red_light.mat
-  artifactKey: Guid(1d95dc24b889241adb9f13d85567d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_red_light.mat using Guid(1d95dc24b889241adb9f13d85567d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1ff6ec7f1349348347a2714add682ac') in 0.010189665 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/7191_on_off.mat
-  artifactKey: Guid(cffcda8eb6b2a438aa4601c313fb4657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/7191_on_off.mat using Guid(cffcda8eb6b2a438aa4601c313fb4657) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b6fdded580c409c960fff8cf6920c96') in 0.021618801 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Prefabs/Rooms/CafeMaterials/_metall_1.mat
-  artifactKey: Guid(0116b96f7829d433dbb2b82f66140a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/CafeMaterials/_metall_1.mat using Guid(0116b96f7829d433dbb2b82f66140a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '953b0a294be5f4255796cdcfebfc98b9') in 0.008083188 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 9617.767564 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/15_-_Default.mat
-  artifactKey: Guid(bb26b444061bc4b5486540271fa5b862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/15_-_Default.mat using Guid(bb26b444061bc4b5486540271fa5b862) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05d2147719fbbd7cf2422c6e991230b7') in 0.238538671 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000379 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Material.063.mat
-  artifactKey: Guid(3ee9da8c5cf374b54a9a8aa30720fa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Material.063.mat using Guid(3ee9da8c5cf374b54a9a8aa30720fa26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fbc63afe88be474a34a6d4b47f1d45e') in 0.010778485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Material.041.mat
-  artifactKey: Guid(943b7bd3e0a5b4152a2cfe63a54ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Material.041.mat using Guid(943b7bd3e0a5b4152a2cfe63a54ccb68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4be313f9896ab0b170193625b37fd0c') in 0.025748339 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Floor.mat
-  artifactKey: Guid(9a8cae5ea66034906a4ae8616342df08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Floor.mat using Guid(9a8cae5ea66034906a4ae8616342df08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de168048d7312a368957b173a70606f0') in 0.010892316 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Black_Frame_Window.mat
-  artifactKey: Guid(e4b9a5de8bec34976b26c677c996cd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Black_Frame_Window.mat using Guid(e4b9a5de8bec34976b26c677c996cd7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b59642059b941274ba2af934a3bf9417') in 0.008440621 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_BLACK_FRAME.mat
-  artifactKey: Guid(c253bfdabcf4746caa510581a6b95278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_BLACK_FRAME.mat using Guid(c253bfdabcf4746caa510581a6b95278) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5d7b00908ad2bfb57ae7245e2deb3d8') in 0.010549641 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000108 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Cabinet_Handle.001.mat
-  artifactKey: Guid(9bcc4f60e5d8c404599c9b7a609be6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Cabinet_Handle.001.mat using Guid(9bcc4f60e5d8c404599c9b7a609be6f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d9afe74f55b64a909ee049847736dd4') in 0.007706367 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Material.039.mat
-  artifactKey: Guid(974f8fa7e80e146d29aea9768b930b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Material.039.mat using Guid(974f8fa7e80e146d29aea9768b930b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8accde4c572ae8baceccedd066732d65') in 0.007606471 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_BODY.mat
-  artifactKey: Guid(e612b99c5b12d4bf38eb52a731e0340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_BODY.mat using Guid(e612b99c5b12d4bf38eb52a731e0340b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21977f6691ec4191dc650319a81c647a') in 0.008322556 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000118 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Material.010.mat
-  artifactKey: Guid(c48dd9ad0a2374941a1294d938324ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Material.010.mat using Guid(c48dd9ad0a2374941a1294d938324ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc04fb6db122182ca0a6181dd96978ef') in 0.00899002 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.001 1.mat
+  artifactKey: Guid(d3655fcd32dcd4af084c9a0911d8c4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.001 1.mat using Guid(d3655fcd32dcd4af084c9a0911d8c4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82f44974d56cfee7136451bce4e98105') in 0.0194417 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000138 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Roof.mat
-  artifactKey: Guid(00fc752380acc4b66a5774bab8f2b995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Roof.mat using Guid(00fc752380acc4b66a5774bab8f2b995) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d64be24f807da92e2ad9cf4ad598f2e') in 0.011132294 seconds
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.005 1.mat
+  artifactKey: Guid(cca2f763b7e7a4b8ea50a2283e35e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.005 1.mat using Guid(cca2f763b7e7a4b8ea50a2283e35e305) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f87b25ef87c46d2f87c1fadbcb9b5143') in 0.0061104 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Cabinet_Wood.001.mat
-  artifactKey: Guid(e04bd76fe2b4d43db8eac10557135d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Cabinet_Wood.001.mat using Guid(e04bd76fe2b4d43db8eac10557135d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '56e0b8da0852b602601392f7bc0098bd') in 0.024388637 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.014 2.mat
+  artifactKey: Guid(a16d151ddb9484a09882fcd0ed7e5ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.014 2.mat using Guid(a16d151ddb9484a09882fcd0ed7e5ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39d5f34947c6f672d0b95ebbea430b0b') in 0.0083433 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/paint_blue_0.mat
-  artifactKey: Guid(c97682b9af3dc4da69a827fa97bc67f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/paint_blue_0.mat using Guid(c97682b9af3dc4da69a827fa97bc67f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1235fdef7d67ce28f4d6b4ea640ff0be') in 0.008056355 seconds
+  Time since last request: 0.000038 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/M_window_frames 2.mat
+  artifactKey: Guid(5e1440747146346928a9c9ca0ac7fff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/M_window_frames 2.mat using Guid(5e1440747146346928a9c9ca0ac7fff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '158a214c4b53c42c2aa30779efc343e8') in 0.0057127 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/paint_blue.mat
-  artifactKey: Guid(bde55d1c2d30148ecb1aea4086fa834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/paint_blue.mat using Guid(bde55d1c2d30148ecb1aea4086fa834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa8e52f41b05fa99e2f5d038e1016742') in 0.0097609 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.004.mat
+  artifactKey: Guid(70f320bdcfcd9489d8198e6b2deceedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.004.mat using Guid(70f320bdcfcd9489d8198e6b2deceedd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70548e4f4b645990bf9053da4f429b75') in 0.0058639 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000102 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_KEYBOARD.mat
-  artifactKey: Guid(4d9eb16dbcda94de48666e7cc42ffdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/LAP_1_KEYBOARD.mat using Guid(4d9eb16dbcda94de48666e7cc42ffdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d951d6f66c826cfdab4d2d4b25effc0') in 0.010014953 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.013 1.mat
+  artifactKey: Guid(2111e3f93f3c8467ba99634a480faa65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.013 1.mat using Guid(2111e3f93f3c8467ba99634a480faa65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '500488b339959b7105e49f7679652e3c') in 0.0103022 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/PC-1Wallpaper.mat
-  artifactKey: Guid(991e3f863c6044103a6a2cc2347159c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/PC-1Wallpaper.mat using Guid(991e3f863c6044103a6a2cc2347159c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3292aa4b7858d1d5d33aeb3cc1174d6c') in 0.008501891 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.018.mat
+  artifactKey: Guid(9c66812c1495e4809bb93d0f5327c001) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.018.mat using Guid(9c66812c1495e4809bb93d0f5327c001) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e8c1202b379db4e3f7d5cc1c3079a937') in 0.0063719 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/PC1MOUSE.mat
-  artifactKey: Guid(c05fb2593dc154c9ab31007988907c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/PC1MOUSE.mat using Guid(c05fb2593dc154c9ab31007988907c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ae6977209de2c9f5bd5b87530aae90a') in 0.009630037 seconds
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.019.mat
+  artifactKey: Guid(4d0e3a6da921e47bfb4278db61b1b608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.019.mat using Guid(4d0e3a6da921e47bfb4278db61b1b608) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '276b24a55d105c9b43b4430658351465') in 0.0060107 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/PC-1Stand.mat
-  artifactKey: Guid(837b2a1f647b04a16b0bb5b6949836fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/PC-1Stand.mat using Guid(837b2a1f647b04a16b0bb5b6949836fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec994ed3077ed30c6205eee8c3dd9e54') in 0.025325889 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.009 1.mat
+  artifactKey: Guid(9ea45ced9e5c042bb9b6681903e74a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.009 1.mat using Guid(9ea45ced9e5c042bb9b6681903e74a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12768ddec85673ef6d7e8549ff3bc413') in 0.005821 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/Window_Glass.mat
-  artifactKey: Guid(820699a11f41b45218d9de983a351b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/Window_Glass.mat using Guid(820699a11f41b45218d9de983a351b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3a6969843bc242253eb2abe80d82452b') in 0.020996195 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.016.mat
+  artifactKey: Guid(9db5970739c82412981eb98ec5eab708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.016.mat using Guid(9db5970739c82412981eb98ec5eab708) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0cd72687a82630aa4f702ff8261520d') in 0.0061768 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Prefabs/Rooms/OfficeMaterials/SURFACE_1_KEYBOARD.mat
-  artifactKey: Guid(70baee3ab4c374d58807db80f7ccbd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/OfficeMaterials/SURFACE_1_KEYBOARD.mat using Guid(70baee3ab4c374d58807db80f7ccbd33) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c224b151577e9e2af480d1c8468e3ed') in 0.009002785 seconds
+  Time since last request: 0.000165 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.017 2.mat
+  artifactKey: Guid(802b2c37b339041eebfc3b037d455119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.017 2.mat using Guid(802b2c37b339041eebfc3b037d455119) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bf8fa96f9b752a4d5e56303987f913c2') in 0.0059438 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.106196 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002.mat
-  artifactKey: Guid(f1dd2e690d97e488fb99bd2f6a9acc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002.mat using Guid(f1dd2e690d97e488fb99bd2f6a9acc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3bf97816e4a255ee9e8baa07755763ca') in 0.009001384 seconds
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.014 1.mat
+  artifactKey: Guid(ed5d9fe8ae4fb4ea2826ab10a202b7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.014 1.mat using Guid(ed5d9fe8ae4fb4ea2826ab10a202b7cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7721cf3bed0025e268df39d0ccc91d53') in 0.0068237 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk 1.mat
-  artifactKey: Guid(fe7f75ea7140b4bad96460bf99510d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk 1.mat using Guid(fe7f75ea7140b4bad96460bf99510d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67a17172baf011f3e17373875c6401dd') in 0.006538939 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/material.002 4.mat
+  artifactKey: Guid(4e2f4ca11b10a4e709d8596babb57e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/material.002 4.mat using Guid(4e2f4ca11b10a4e709d8596babb57e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ed487f3d15d1ac94ba5e91055d8be67') in 0.0062412 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk 2.mat
-  artifactKey: Guid(555b98149122a424b9eb30730b382c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk 2.mat using Guid(555b98149122a424b9eb30730b382c23) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7abd53d323333040295fb1333aaa98c') in 0.008158004 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.016 2.mat
+  artifactKey: Guid(db03475e6791f4e10878a2d2b3561691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.016 2.mat using Guid(db03475e6791f4e10878a2d2b3561691) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51962fca193e1574a6f7513bc5ffdf88') in 0.0053254 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_button 2.mat
-  artifactKey: Guid(f0e461d3e5ccd432e8e76c084b4f2209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_button 2.mat using Guid(f0e461d3e5ccd432e8e76c084b4f2209) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec2a04987a531cf5b59bba2eda05c998') in 0.009325281 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.003 1.mat
+  artifactKey: Guid(c39dc7350c363442a93af60675bb3de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.003 1.mat using Guid(c39dc7350c363442a93af60675bb3de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29fc401b478ac4e968190cb7243ed998') in 0.0080066 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_button.mat
-  artifactKey: Guid(4a168407e8d6f4064bae75d44241c27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_button.mat using Guid(4a168407e8d6f4064bae75d44241c27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9a34be9a91144209195f0377f98e7d14') in 0.010971784 seconds
+  Time since last request: 0.000070 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/M_vase 2.mat
+  artifactKey: Guid(1eb169424f76640ea8accbfe316b9c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/M_vase 2.mat using Guid(1eb169424f76640ea8accbfe316b9c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e0e2d30240ab55072f8cf83f7a08648') in 0.0075881 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_top.mat
-  artifactKey: Guid(6087195f6662b44f79816c0870d7f304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_top.mat using Guid(6087195f6662b44f79816c0870d7f304) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34821be2a330c9f2406a9d5501f9e6b9') in 0.010194352 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.012 2.mat
+  artifactKey: Guid(8d40c5558d2cf41d2bc8ffef0f591dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.012 2.mat using Guid(8d40c5558d2cf41d2bc8ffef0f591dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d092090b1aea228480cfd892b64a005') in 0.0063382 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/GamerStorm_logo 1.mat
-  artifactKey: Guid(41e4b032950df4059b41f4466b003e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/GamerStorm_logo 1.mat using Guid(41e4b032950df4059b41f4466b003e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f38a556b521e0b6c01d2870bdb5605b') in 0.0075722 seconds
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.018 2.mat
+  artifactKey: Guid(0dc31a1c3b5cc4a8c9f2e164ee6b9c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.018 2.mat using Guid(0dc31a1c3b5cc4a8c9f2e164ee6b9c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '152fef4f0021fbb6382ee3095d2e8650') in 0.00763 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000110 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_remote 2.mat
-  artifactKey: Guid(8581d7af68df9428aadbf671f51de466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_remote 2.mat using Guid(8581d7af68df9428aadbf671f51de466) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90097a636ebad93c345c6510b98bf4c7') in 0.009406796 seconds
+  Time since last request: 0.000137 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.006 1.mat
+  artifactKey: Guid(04b5c7d14e34f40068f6ba88016f008c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.006 1.mat using Guid(04b5c7d14e34f40068f6ba88016f008c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1d5c383f23fe1a4375319c2cd26d7d5') in 0.0062896 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b.mat
-  artifactKey: Guid(625b0948f12d14bc4927df9d49cfc2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b.mat using Guid(625b0948f12d14bc4927df9d49cfc2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b51579d5ea3e98beb88945ef590f5ed') in 0.011940407 seconds
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.007 2.mat
+  artifactKey: Guid(a36c7321998114a94affa3d32844cabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.007 2.mat using Guid(a36c7321998114a94affa3d32844cabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d375e050af6a64551653578b61e99a6') in 0.006555 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000148 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0 1.mat
-  artifactKey: Guid(43ddda46b5c4b41ac8139332a73bd750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0 1.mat using Guid(43ddda46b5c4b41ac8139332a73bd750) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '042e8b694e4d67bdbb555f1039e2cbbe') in 0.00998123 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material 1.mat
+  artifactKey: Guid(9005aac38586e438dae70f73a4617d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material 1.mat using Guid(9005aac38586e438dae70f73a4617d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d7d7b7c6cec6f92ef17fae1deec35ba') in 0.0060366 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b 1.mat
-  artifactKey: Guid(8e49bb21dd5784a7bab227e172c604f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b 1.mat using Guid(8e49bb21dd5784a7bab227e172c604f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c835849e439a0d4727d24c9d4c9b7ca') in 0.009796015 seconds
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.007 1.mat
+  artifactKey: Guid(9e40283af4c0f4c9782ea9fe520cd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.007 1.mat using Guid(9e40283af4c0f4c9782ea9fe520cd71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2cbeabd55b7aa21f40d2ba569a2f3321') in 0.0134329 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_a.mat
-  artifactKey: Guid(72922fe238e114760898f7417b33aebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_a.mat using Guid(72922fe238e114760898f7417b33aebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a8dcfc8c22c5d43493a2dbfe3cfabd6') in 0.015710842 seconds
+  Time since last request: 0.975255 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.019 2.mat
+  artifactKey: Guid(74f8b76259ea6463d8a8a8ab6d085cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.019 2.mat using Guid(74f8b76259ea6463d8a8a8ab6d085cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1702cca2f6055d08bcce7d014c938242') in 0.0060616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.022 1.mat
+  artifactKey: Guid(8ff7e2861d2264652a47f5f77810c87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.022 1.mat using Guid(8ff7e2861d2264652a47f5f77810c87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '889a960bbc358ed54b007ad486f74901') in 0.0064725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.020 1.mat
+  artifactKey: Guid(13aba96db760c4e41a01969d2b4e9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.020 1.mat using Guid(13aba96db760c4e41a01969d2b4e9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae205dd5c685c48ed9f226ea74373ce8') in 0.0071167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.023 1.mat
+  artifactKey: Guid(26d6917b820c54b5fad25cba4ead1476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.023 1.mat using Guid(26d6917b820c54b5fad25cba4ead1476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4e039b0ea0e2ff1fb32c9a631d56262') in 0.0060213 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.020 2.mat
+  artifactKey: Guid(559483e4a14af427581031468f00b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.020 2.mat using Guid(559483e4a14af427581031468f00b94b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7f7239be3121c20249c4a1016b3c1dc') in 0.005446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.021 2.mat
+  artifactKey: Guid(ec081ee8bd45e42b28356c52c0338fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.021 2.mat using Guid(ec081ee8bd45e42b28356c52c0338fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3f9617366eb7f90c277e564f6e68e85') in 0.0055389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.020.mat
+  artifactKey: Guid(eddead8de18ce4c7c934f54a4c66929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.020.mat using Guid(eddead8de18ce4c7c934f54a4c66929a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '358a8179b1a63c50f35c63e17de35a3a') in 0.0058705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.021.mat
+  artifactKey: Guid(45d52605964454bcaa9361f02e8b2a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.021.mat using Guid(45d52605964454bcaa9361f02e8b2a61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '959ca3199d704123566106b806bb9e65') in 0.0054983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008751 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.024 1.mat
+  artifactKey: Guid(7b59a9885d68649b3b93dc155487f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.024 1.mat using Guid(7b59a9885d68649b3b93dc155487f0d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '798dee4083404e98ade9e951ecdad587') in 0.0080156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.025 2.mat
+  artifactKey: Guid(27124c9120f1448a99b52c66b524a4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.025 2.mat using Guid(27124c9120f1448a99b52c66b524a4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7675bc666a8ac259248bd21967d4aab2') in 0.005757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.026.mat
+  artifactKey: Guid(0428a6bf58732489ebd0cb167fae22f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.026.mat using Guid(0428a6bf58732489ebd0cb167fae22f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77e604592982c20f1a80a21aea199ab6') in 0.0070039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.027 2.mat
+  artifactKey: Guid(a4d97a76f35d64b858ef69d82a7939e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.027 2.mat using Guid(a4d97a76f35d64b858ef69d82a7939e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b17b58e750d51eb73aff5e44c4fd2b12') in 0.0066676 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000083 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_top 2.mat
-  artifactKey: Guid(9aec1d64b76ff47a89fc87743338b059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_top 2.mat using Guid(9aec1d64b76ff47a89fc87743338b059) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcfb2f7f2b17538119395c7559a83523') in 0.022275187 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/GamerStorm_logo 2.mat
-  artifactKey: Guid(3d3fc9b8f04294a308d0a7b570b5a692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/GamerStorm_logo 2.mat using Guid(3d3fc9b8f04294a308d0a7b570b5a692) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c37cfc5bcd261ad0fa2b7e2d18b619d') in 0.009246115 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/lamp_metal 1.mat
-  artifactKey: Guid(2d14ce6f5a481406fbd62413f3d8d59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/lamp_metal 1.mat using Guid(2d14ce6f5a481406fbd62413f3d8d59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69f5a5a146090daa0e6554893d6c30df') in 0.007402865 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_2remote 1.mat
-  artifactKey: Guid(f8441055a90f74da7a967774eda0f51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_2remote 1.mat using Guid(f8441055a90f74da7a967774eda0f51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7439eebf09891e15623d6a8f8320b99') in 0.009264676 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_2remote 2.mat
-  artifactKey: Guid(b0afac59181d546dabfd54b7c506b733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_2remote 2.mat using Guid(b0afac59181d546dabfd54b7c506b733) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76899a57752b30627866397a13ddf56b') in 0.019560022 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000470 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk.mat
-  artifactKey: Guid(88ac0ac4fdc4d4708a69f2ea809e44c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk.mat using Guid(88ac0ac4fdc4d4708a69f2ea809e44c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac8ec168b309d2498db12681733d40fd') in 0.015956036 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000084 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002 2.mat
-  artifactKey: Guid(dda2cc9c7c4d1464f9f6bb887d0d880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002 2.mat using Guid(dda2cc9c7c4d1464f9f6bb887d0d880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '822422194bab11d6e74c943828f2bff7') in 0.010493256 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000104 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b 2.mat
-  artifactKey: Guid(c3f97ec192c6e43979a551ab1dd79436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_b 2.mat using Guid(c3f97ec192c6e43979a551ab1dd79436) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be11ff8b19a1b4e9b3f95280311a2549') in 0.009622065 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_remote.mat
-  artifactKey: Guid(39f354976e7c64129803dcb309786f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_remote.mat using Guid(39f354976e7c64129803dcb309786f3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9c22faaedeefbf623698e8c55e941b64') in 0.019402464 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000119 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_a 1.mat
-  artifactKey: Guid(d659e5cfce8e1452b9303f7a5e4b66ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_a 1.mat using Guid(d659e5cfce8e1452b9303f7a5e4b66ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6263b2d73d97b147088f251b2d39e6f4') in 0.017224668 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000075 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_1remote 1.mat
-  artifactKey: Guid(11ce475cdb5994f6b9ad57134572724f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_1remote 1.mat using Guid(11ce475cdb5994f6b9ad57134572724f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '53c9aaf357d8725791594e2ff80a5900') in 0.008845737 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0 2.mat
-  artifactKey: Guid(c107c9895d6194abe850ae64abd3bde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0 2.mat using Guid(c107c9895d6194abe850ae64abd3bde4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01a4d06ae361957d9296f3db83d9a895') in 0.010356393 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/lamp_cloth.mat
-  artifactKey: Guid(6c3693932dc66480294e0091c7fba217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/lamp_cloth.mat using Guid(6c3693932dc66480294e0091c7fba217) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b791d43b3cfc3784ba8cfa4ed3e0b933') in 0.010377684 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002 1.mat
-  artifactKey: Guid(a6e61fe87f1234e9da082e037e3d370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/chair_top.002 1.mat using Guid(a6e61fe87f1234e9da082e037e3d370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea663bb94902e7bda9e7595e4344c802') in 0.009627587 seconds
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.028.mat
+  artifactKey: Guid(6a71c89052ba84e02927aca53b2f09bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.028.mat using Guid(6a71c89052ba84e02927aca53b2f09bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ec4fc1b04757743b48baef03073d4fb') in 0.0226619 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000096 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_c 2.mat
-  artifactKey: Guid(d4bd8d03c160946269eaa54f444b471a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_c 2.mat using Guid(d4bd8d03c160946269eaa54f444b471a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d06c5f2ee619b1297ce0b6323fe4c59') in 0.016548405 seconds
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.030 2.mat
+  artifactKey: Guid(af201002c8ca241a3a75eb724cc0c8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.030 2.mat using Guid(af201002c8ca241a3a75eb724cc0c8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9e2b67b5f653d7a6d2d1620fa5dfd74') in 0.0054878 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0.mat
-  artifactKey: Guid(8c062bebb718a4f1183e304ddc2ab789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/Cube.091__0.mat using Guid(8c062bebb718a4f1183e304ddc2ab789) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '90a8148027780b5d973551b345decc07') in 0.019656105 seconds
+  Time since last request: 0.000091 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.032 2.mat
+  artifactKey: Guid(ae1d9c2a0c0cb41439062c58ca5053ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.032 2.mat using Guid(ae1d9c2a0c0cb41439062c58ca5053ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '865eb035e8402b05d725aabbaef987a4') in 0.0066775 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/lamp_metal.mat
-  artifactKey: Guid(a554f65796e8d486784379a464cc7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/lamp_metal.mat using Guid(a554f65796e8d486784379a464cc7ab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc394fb242c010dbe1ff9c462965a28e') in 0.007827369 seconds
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.029 2.mat
+  artifactKey: Guid(c766ab030d460484ebe63e6b0b059145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.029 2.mat using Guid(c766ab030d460484ebe63e6b0b059145) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e51d74dd860384e453b5d09a2b9a4766') in 0.0099042 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/lamp_cloth 1.mat
-  artifactKey: Guid(2ba059b5bef5c424b9c2f098d688b685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/lamp_cloth 1.mat using Guid(2ba059b5bef5c424b9c2f098d688b685) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f99756a63b55a54dfe1bfbb2e064f187') in 0.017880951 seconds
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.027 1.mat
+  artifactKey: Guid(1fce0210dc0a743b0bb1d1021f9aff9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.027 1.mat using Guid(1fce0210dc0a743b0bb1d1021f9aff9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3da8e7f71e73bfc5af08e543224bd4fd') in 0.0111879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.035.mat
+  artifactKey: Guid(a76e9c8d4e1aa4371b5b59677606b69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.035.mat using Guid(a76e9c8d4e1aa4371b5b59677606b69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c13827341ecde72831c8e89b820d078') in 0.0068494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.037 2.mat
+  artifactKey: Guid(dd4d4e03a2dd94f6ab6e706d35939ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.037 2.mat using Guid(dd4d4e03a2dd94f6ab6e706d35939ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '166a5981f425f8f2580da0f8ba9a5c97') in 0.006167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.038 1.mat
+  artifactKey: Guid(b127a2ca270224ba0a4564ff69416225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.038 1.mat using Guid(b127a2ca270224ba0a4564ff69416225) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c884b84bf7ac02f17088d74832c245e') in 0.0075928 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.043 2.mat
+  artifactKey: Guid(a063aab4bf7924663a036fdcf968cb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.043 2.mat using Guid(a063aab4bf7924663a036fdcf968cb97) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e448bad741714e18045ae3ecd511a11') in 0.0059903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.033 2.mat
+  artifactKey: Guid(620e5643ab1e14e53b8468be59c7420c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.033 2.mat using Guid(620e5643ab1e14e53b8468be59c7420c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dcc3cd0775a58c260f0455ea7352502') in 0.0065523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.043.mat
+  artifactKey: Guid(9bc582adbb27842768537782b34d82be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.043.mat using Guid(9bc582adbb27842768537782b34d82be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c836c4eeeec0a380876eb3e82315e1a5') in 0.0082246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.037 1.mat
+  artifactKey: Guid(c278a800509fd42aab1015b0dc2e4a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.037 1.mat using Guid(c278a800509fd42aab1015b0dc2e4a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe56bbc68999bd139ea1cf97953776a5') in 0.0093632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.042 2.mat
+  artifactKey: Guid(9cf34693ae24a4aa7840bb3c9cb44c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.042 2.mat using Guid(9cf34693ae24a4aa7840bb3c9cb44c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e381c5c55c4eb04795de09acf470428') in 0.0084075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.040 2.mat
+  artifactKey: Guid(eb71143df0c444c45b4edae201c6c9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.040 2.mat using Guid(eb71143df0c444c45b4edae201c6c9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec377b8065e813100b16ae00ea6fa407') in 0.0123468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.038 2.mat
+  artifactKey: Guid(d2b710055c1f548569650c01217669bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.038 2.mat using Guid(d2b710055c1f548569650c01217669bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78a39539935e44f86fcc8f4580a18be8') in 0.0080089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.044 1.mat
+  artifactKey: Guid(9fe34ed5bd7c14c16a98359883050358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.044 1.mat using Guid(9fe34ed5bd7c14c16a98359883050358) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b2b9fb216564e68cfebfb0966b8a75e') in 0.0056418 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.030 1.mat
+  artifactKey: Guid(d913afd414cd04308840f7738913b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.030 1.mat using Guid(d913afd414cd04308840f7738913b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67c23ed8752f639f6520f32a476b518a') in 0.0057834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.029.mat
+  artifactKey: Guid(759b54ea1002d4f37a284c42f19bdf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.029.mat using Guid(759b54ea1002d4f37a284c42f19bdf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31e4b7bd870821ec33b533d562099bf5') in 0.0063132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.030.mat
+  artifactKey: Guid(b09deab92767944d0b9e6ddd63eea714) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.030.mat using Guid(b09deab92767944d0b9e6ddd63eea714) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42813552d7eb2096e2c73916f8beeca2') in 0.0065398 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.043 1.mat
+  artifactKey: Guid(9afe3382780704a85a059a19ae311959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.043 1.mat using Guid(9afe3382780704a85a059a19ae311959) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14f68bb1d83846397b9876cac4a1d9ef') in 0.0056079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.025 1.mat
+  artifactKey: Guid(8ca340e97c06b47e3b59297bdb97ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.025 1.mat using Guid(8ca340e97c06b47e3b59297bdb97ab35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '743afd664d5064d6af1a9a68a34807db') in 0.0073071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.040 1.mat
+  artifactKey: Guid(7f21f1ebfbe344fb889e593845a5710c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.040 1.mat using Guid(7f21f1ebfbe344fb889e593845a5710c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c2ca26bf6e3014f8f169ee450ec12fb') in 0.0053661 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.042.mat
+  artifactKey: Guid(6de207da954054a9b9a40d7b41542ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.042.mat using Guid(6de207da954054a9b9a40d7b41542ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6347735a66341a94a1d7fe180ebdf7d') in 0.006036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.318232 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.045.mat
+  artifactKey: Guid(477fac928f81140f0935610cd2adad2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.045.mat using Guid(477fac928f81140f0935610cd2adad2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33721f8d0ceff2e5be4d8e9dd270d0ed') in 0.0291511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.046.mat
+  artifactKey: Guid(b245ccaf21db145c2bddcf272f4a8da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.046.mat using Guid(b245ccaf21db145c2bddcf272f4a8da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '21cdb0c5d384aa5a7ce27dc92b06d13e') in 0.0061991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.048 1.mat
+  artifactKey: Guid(40a04ed07a03e46528ad067fcd6fb7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.048 1.mat using Guid(40a04ed07a03e46528ad067fcd6fb7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3ec78a9e24e89770525356c73c2f815') in 0.0205566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.052 2.mat
+  artifactKey: Guid(9291e1187d6134db4b70f6b53b59315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.052 2.mat using Guid(9291e1187d6134db4b70f6b53b59315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80d94410e1008868fd45045fbed1ae8b') in 0.0052678 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.058.mat
+  artifactKey: Guid(051ecea2fc2c94877b7883cc2186132a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.058.mat using Guid(051ecea2fc2c94877b7883cc2186132a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '241457405d0aa1b9aa58935e2bdfdb43') in 0.0062681 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.057 1.mat
+  artifactKey: Guid(e5e8c393930fc44589733c4b99580314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.057 1.mat using Guid(e5e8c393930fc44589733c4b99580314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4732048fbed0eea2c5a3ec7af5bffe77') in 0.0059656 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.052 1.mat
+  artifactKey: Guid(9fb2b705efc6f4ba59634cd2b6e6ce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.052 1.mat using Guid(9fb2b705efc6f4ba59634cd2b6e6ce14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bfe67d01f7845cbf4f9960b3a07ebec8') in 0.0069544 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.050.mat
+  artifactKey: Guid(be717ff0e233341aea910cd8a82b80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.050.mat using Guid(be717ff0e233341aea910cd8a82b80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e62fc3575600ca17610c2c826d8a450') in 0.0065643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.060 2.mat
+  artifactKey: Guid(e3d2a171cdbee4a889abddd886b5f2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.060 2.mat using Guid(e3d2a171cdbee4a889abddd886b5f2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ae3a5d1434f704f8e1c6307a5618e06') in 0.0061094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.060.mat
+  artifactKey: Guid(32060859ea18e42559f3c80702fd6217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.060.mat using Guid(32060859ea18e42559f3c80702fd6217) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbef514e4bfe48e111f300b8b8bcd7ad') in 0.0059065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.058 2.mat
+  artifactKey: Guid(3104e250982dd4d0c8566152015eab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.058 2.mat using Guid(3104e250982dd4d0c8566152015eab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1afce9d038baee564e7a790348e38e2f') in 0.0052481 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.062 2.mat
+  artifactKey: Guid(de3f80878d71b45cbb3d3fa9ebe31c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.062 2.mat using Guid(de3f80878d71b45cbb3d3fa9ebe31c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a06f1750ecd6a624d2a0febbdf645947') in 0.005858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.047 2.mat
+  artifactKey: Guid(2b5c3fd0fec1f42ee9d237ab9522e7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.047 2.mat using Guid(2b5c3fd0fec1f42ee9d237ab9522e7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a0161c24d2d78424318a7a95a476f95') in 0.0055731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.049.mat
+  artifactKey: Guid(b08b3282cbb8a40fc80392064fdac5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.049.mat using Guid(b08b3282cbb8a40fc80392064fdac5fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '428ac45ca9a4b2a1e7d32a895c1dd56e') in 0.0064627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.045 1.mat
+  artifactKey: Guid(9f863bae722ea4c58a97e05b15cfa164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.045 1.mat using Guid(9f863bae722ea4c58a97e05b15cfa164) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f026e4273aa97843eeb4c51100fb5735') in 0.0059613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.062 1.mat
+  artifactKey: Guid(6d685a55a605a4ec580484cc315e5801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.062 1.mat using Guid(6d685a55a605a4ec580484cc315e5801) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cc08d3b3d807ef4ec8ffe078120d7d2') in 0.0058212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.054 1.mat
+  artifactKey: Guid(f79cc93940568403e86d9fe3e0bb4112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.054 1.mat using Guid(f79cc93940568403e86d9fe3e0bb4112) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c985dc1cbcb73e1408da8fea1ded8d0f') in 0.0059322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.050 2.mat
+  artifactKey: Guid(d6cb14319a9074203b0960818d316260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.050 2.mat using Guid(d6cb14319a9074203b0960818d316260) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eac1cb46e7b8f90034397341e35d7ea4') in 0.0055997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.066 1.mat
+  artifactKey: Guid(7f464e617f8eb432684774ce9d1d034d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.066 1.mat using Guid(7f464e617f8eb432684774ce9d1d034d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c64fce5a947238e2ccaf1e98b48806c') in 0.0061115 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.065 1.mat
+  artifactKey: Guid(2d0c2cee5973a4881834c4382603d2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.065 1.mat using Guid(2d0c2cee5973a4881834c4382603d2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b968debe6182f5042b0f38d41a0d819') in 0.0047362 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.064 2.mat
+  artifactKey: Guid(7bfee931c193b4d08b573c1750893367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.064 2.mat using Guid(7bfee931c193b4d08b573c1750893367) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4994abf254ca226b9a152171b7ee32bf') in 0.0056741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.066.mat
+  artifactKey: Guid(04fb6cfcc89314db99769d3385d50cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.066.mat using Guid(04fb6cfcc89314db99769d3385d50cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89a05f467536b7ed19a29ac9b56c3d6e') in 0.005657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.067 1.mat
+  artifactKey: Guid(5fda25d857474409e9f4abfc60d3b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.067 1.mat using Guid(5fda25d857474409e9f4abfc60d3b5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73b22b7211888d80963c7fc694a251ff') in 0.0063842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.059.mat
+  artifactKey: Guid(cd511738ca5b844b2b6475c5e4170027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.059.mat using Guid(cd511738ca5b844b2b6475c5e4170027) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab4c9db864ce2f052f59bcea378a6ffc') in 0.0059098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.067 2.mat
+  artifactKey: Guid(397f8bba95ec6407eacd3aad7b8b4c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.067 2.mat using Guid(397f8bba95ec6407eacd3aad7b8b4c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b8548d450122c41c6ccf03cad2c2fd89') in 0.0061711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.055 2.mat
+  artifactKey: Guid(da421d43229dd4c7b94d6d7661f56909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.055 2.mat using Guid(da421d43229dd4c7b94d6d7661f56909) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63320a83f2367bba33b9316c21fb5ffc') in 0.0056214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.054.mat
+  artifactKey: Guid(419cc3238d4614aee9afbc7f6bc31567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.054.mat using Guid(419cc3238d4614aee9afbc7f6bc31567) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '983f4ed46beef1027e18e706641d3ceb') in 0.0057402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.061 1.mat
+  artifactKey: Guid(b53b217560f5e4387a53ec693ffecb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.061 1.mat using Guid(b53b217560f5e4387a53ec693ffecb38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c76bf53e26246d5556749098e8a9c09b') in 0.0058511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.061.mat
+  artifactKey: Guid(c737c6c9fb54e46b1a6a0705c6726e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.061.mat using Guid(c737c6c9fb54e46b1a6a0705c6726e26) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '607dc1e31db86861f0dc7fdf865c4f3b') in 0.017433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.053.mat
+  artifactKey: Guid(ef070c6fa1b9842958ea1e95b97a448b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.053.mat using Guid(ef070c6fa1b9842958ea1e95b97a448b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82bae04e35b291eaf70683792f585f78') in 0.0057961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.050 1.mat
+  artifactKey: Guid(ff0caf6fa9d5d4cc2a20c48ebcedfa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.050 1.mat using Guid(ff0caf6fa9d5d4cc2a20c48ebcedfa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd1068187dbec725420bdb10228d358ec') in 0.005349 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000092 seconds.
-  path: Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_1remote.mat
-  artifactKey: Guid(66c884940d3a04063ac0e9e51d497a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rooms/RoomsMaterials/comp_desk_1remote.mat using Guid(66c884940d3a04063ac0e9e51d497a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c502afb206f4747ae5b8b701899495f1') in 0.018701073 seconds
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.048 2.mat
+  artifactKey: Guid(af5e6e125e7434180ba3c8cc0584e17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.048 2.mat using Guid(af5e6e125e7434180ba3c8cc0584e17f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b1602b67923f0f775f6f4eec43e8221') in 0.0056128 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.059 1.mat
+  artifactKey: Guid(381c57fd2a0ac43e7b86ee895fc59475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.059 1.mat using Guid(381c57fd2a0ac43e7b86ee895fc59475) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cb6dc7c36d2d75c1cb2dbe036b8239e') in 0.005682 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.046 1.mat
+  artifactKey: Guid(5c60f8ddee6d544a98269a53826c31cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.046 1.mat using Guid(5c60f8ddee6d544a98269a53826c31cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '28b8cfcc17372bd7448773ad013d7fb1') in 0.0058671 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.779471 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.069 1.mat
+  artifactKey: Guid(f96832b1d7ebf456dafeea31bd7fe3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.069 1.mat using Guid(f96832b1d7ebf456dafeea31bd7fe3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5b80db12c5659abfc443ee0e7ccdc164') in 0.0094145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.073.mat
+  artifactKey: Guid(bb4b5f26630d24c40b4dc161c32601ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.073.mat using Guid(bb4b5f26630d24c40b4dc161c32601ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b499cd80004a899f1be6177155119aa') in 0.0068429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.070 2.mat
+  artifactKey: Guid(98ae71ef1f28d4d1cba965332f7f7cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.070 2.mat using Guid(98ae71ef1f28d4d1cba965332f7f7cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19190c2541b90f0d8f7ac96635ef6dca') in 0.0096338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.070 1.mat
+  artifactKey: Guid(dcfe3fd47331c47e5969ab2f0d4f0851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.070 1.mat using Guid(dcfe3fd47331c47e5969ab2f0d4f0851) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd032c00943c43fe71a5f560ba1f79b96') in 0.0063079 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.071.mat
+  artifactKey: Guid(c2b6f0c168cf14f1186fed2dad0ed57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.071.mat using Guid(c2b6f0c168cf14f1186fed2dad0ed57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62a3031c4fc46e7c2ac5b9a1f25fb562') in 0.0071472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.072 1.mat
+  artifactKey: Guid(0da82af0f37a94c26ade6ba9f93485ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.072 1.mat using Guid(0da82af0f37a94c26ade6ba9f93485ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc6e62c06a928a2c55459148af2adcda') in 0.0070858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.070.mat
+  artifactKey: Guid(cf010879bf8684f9a9b39eda9daaa5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.070.mat using Guid(cf010879bf8684f9a9b39eda9daaa5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7d8c3cb47da82568933e9c70105651dc') in 0.0067393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017372 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.074.mat
+  artifactKey: Guid(3e71d152b7d754331b93b3ae5b59ea4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.074.mat using Guid(3e71d152b7d754331b93b3ae5b59ea4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f1200015d67311061a406491e2726c4') in 0.0078021 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.076 2.mat
+  artifactKey: Guid(29112fcd79d8c4822bbed6be64df6d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.076 2.mat using Guid(29112fcd79d8c4822bbed6be64df6d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdf44dc9e41f80b89694c3e1bec4f460') in 0.0129937 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.077 2.mat
+  artifactKey: Guid(31c8afddf42264211b15e30b37de9158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.077 2.mat using Guid(31c8afddf42264211b15e30b37de9158) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73b38de5e9f226a01445f35dab887fac') in 0.0060116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.075 1.mat
+  artifactKey: Guid(4961c2d622cac403bb5786b3d37af689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.075 1.mat using Guid(4961c2d622cac403bb5786b3d37af689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae63c0c23205ae0ff20e2c3194379969') in 0.0073542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.075.mat
+  artifactKey: Guid(6ee898feafe5642378df8b0560f20578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.075.mat using Guid(6ee898feafe5642378df8b0560f20578) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89abf39195c3bd0079a7be4e06b4bcef') in 0.0064094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.081 1.mat
+  artifactKey: Guid(85a576e5388cd49a2b629f3bd6cab04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.081 1.mat using Guid(85a576e5388cd49a2b629f3bd6cab04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46f63ed18f7847eb8699b3d44d2cf614') in 0.0062948 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.078 1.mat
+  artifactKey: Guid(d041368d0e57e488fa2506d413917680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.078 1.mat using Guid(d041368d0e57e488fa2506d413917680) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37cb919229d2a59c8e6e13a825fd251c') in 0.0067322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.082 1.mat
+  artifactKey: Guid(276fda5e25fd34471936d2974fe8795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.082 1.mat using Guid(276fda5e25fd34471936d2974fe8795a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a59837d56237d14c8b8059cec9705ec5') in 0.0116731 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.083 1.mat
+  artifactKey: Guid(4676f244f71d545d7806a115421fe89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.083 1.mat using Guid(4676f244f71d545d7806a115421fe89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96b601902c56e74dd2318c84989997ad') in 0.0067267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.083.mat
+  artifactKey: Guid(c2b8c81854dd04b7db6e282674e9d1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.083.mat using Guid(c2b8c81854dd04b7db6e282674e9d1c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e20f4de1c8eb80f2dd5126b79b79050') in 0.0074107 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.076 1.mat
+  artifactKey: Guid(896a5d1ebce8f4c9aa43c3c93ab42ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.076 1.mat using Guid(896a5d1ebce8f4c9aa43c3c93ab42ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2700966c9589d81e8d281d65a9b5b973') in 0.0066511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.079 1.mat
+  artifactKey: Guid(f54dfc1d05db6498fa66f584e9f394fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.079 1.mat using Guid(f54dfc1d05db6498fa66f584e9f394fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5e459bdc4975ae3195cffad4ab556eb') in 0.0060784 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.075 2.mat
+  artifactKey: Guid(d77bbe6be63864e6ea7ff3b9e0adf78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.075 2.mat using Guid(d77bbe6be63864e6ea7ff3b9e0adf78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd725dc4198de97e5b203ae45ca176caa') in 0.0068658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.078 2.mat
+  artifactKey: Guid(b1532fc5de20a472dbeba20a5b817030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.078 2.mat using Guid(b1532fc5de20a472dbeba20a5b817030) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4064c8bcfda000e757ebbb87ef779ac') in 0.0064341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.074 1.mat
+  artifactKey: Guid(3e73cf5939d594bb1be6912fb6587ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.074 1.mat using Guid(3e73cf5939d594bb1be6912fb6587ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a65b1d57e5ae70af05a52c08415012d') in 0.0060089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.080 1.mat
+  artifactKey: Guid(9689a2e4814774c7892e8c4c88acbee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.080 1.mat using Guid(9689a2e4814774c7892e8c4c88acbee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09f8b9674a9734e385f9d7d1be02358c') in 0.006825 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.082 2.mat
+  artifactKey: Guid(23e73de96e6fc44bda93bee7c078c091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.082 2.mat using Guid(23e73de96e6fc44bda93bee7c078c091) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e7815bf663658900a118ef53b710a8d9') in 0.0125062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.086.mat
+  artifactKey: Guid(52d20b674c98344159fee564987f30b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.086.mat using Guid(52d20b674c98344159fee564987f30b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d90a17e11ad4f5133c9f204f928c4bd') in 0.0062897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.088.mat
+  artifactKey: Guid(5d426f071651743699893ee3fc39fcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.088.mat using Guid(5d426f071651743699893ee3fc39fcea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c795cab867b40d5c30cd8882911fdaa1') in 0.0061576 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.083 2.mat
+  artifactKey: Guid(321f079ec7e1c4a989e6947bc8865492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.083 2.mat using Guid(321f079ec7e1c4a989e6947bc8865492) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'afbf92dbaa152244ddd032cdcba9228c') in 0.0067559 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.078.mat
+  artifactKey: Guid(3554d17d870be4fe19186e07ad02da24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.078.mat using Guid(3554d17d870be4fe19186e07ad02da24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '786c95146859b38ae095bdc91af9b8b3') in 0.0072726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.242332 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.090.mat
+  artifactKey: Guid(67642f3d6c2a94eb2a984f17209d0b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.090.mat using Guid(67642f3d6c2a94eb2a984f17209d0b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '706ee4e1a5bded27d4576ef857f1e12e') in 0.007037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.090 2.mat
+  artifactKey: Guid(b535d130c3846401094307bb20ffbb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.090 2.mat using Guid(b535d130c3846401094307bb20ffbb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b97b1da17e37fd828eaf27e4965d3284') in 0.0069961 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.092 1.mat
+  artifactKey: Guid(67965f4c3bc684c1c915d2962b27cdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.092 1.mat using Guid(67965f4c3bc684c1c915d2962b27cdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a25334fb4fdcc13949415f00f8e9d6e') in 0.0071609 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.091 1.mat
+  artifactKey: Guid(e8dcb0a023c7b4cfc90317792d104b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.091 1.mat using Guid(e8dcb0a023c7b4cfc90317792d104b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '09b93230d690eeab8c7a9c1f8ea3a4ff') in 0.0067035 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.097 2.mat
+  artifactKey: Guid(408b0b5d6fe964267b3a0a68046a70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.097 2.mat using Guid(408b0b5d6fe964267b3a0a68046a70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fbed0240377e9bb2cdbc2e4fbad39249') in 0.0065328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.097 1.mat
+  artifactKey: Guid(89c2aac0c0e974ae490d6da63a6679db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.097 1.mat using Guid(89c2aac0c0e974ae490d6da63a6679db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '739a3496ac020636f08e10d022d3e8f0') in 0.0058393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.098 1.mat
+  artifactKey: Guid(e970d8abcaaba4f46ae8e5736f913050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.098 1.mat using Guid(e970d8abcaaba4f46ae8e5736f913050) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b0a19194967426f96fd780d90005856b') in 0.0085282 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.098 2.mat
+  artifactKey: Guid(ec43fcbb670d84260853ab358cd21864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.098 2.mat using Guid(ec43fcbb670d84260853ab358cd21864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9750c48cb45f2ff97f3ebcf0786b685b') in 0.0061847 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.094.mat
+  artifactKey: Guid(f23b2a4c8ecfc4b7c91d9500ed1750e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.094.mat using Guid(f23b2a4c8ecfc4b7c91d9500ed1750e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '231e8dafede085133e89bbd3623c6531') in 0.006742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.099.mat
+  artifactKey: Guid(5c3ec0647ba724ab08b6bd37cfe75b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.099.mat using Guid(5c3ec0647ba724ab08b6bd37cfe75b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2200c8a5829d264cbb559733aeecdb4b') in 0.0097767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_51 2.mat
+  artifactKey: Guid(4f6d216861f37448eb10e16f5d7ff8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_51 2.mat using Guid(4f6d216861f37448eb10e16f5d7ff8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f81cf1cbc8f79e72f4f7a2937939d9bf') in 0.007267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/router_mat.mat
+  artifactKey: Guid(9f334346f8fc7468e9a1a17404ac3f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/router_mat.mat using Guid(9f334346f8fc7468e9a1a17404ac3f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf48cd210085d9d85160b25829a37edf') in 0.0064138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/ROGTRANSPARENT 1.mat
+  artifactKey: Guid(c37bd3dc45a3b4279a2d865252ae7358) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/ROGTRANSPARENT 1.mat using Guid(c37bd3dc45a3b4279a2d865252ae7358) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8df2acf759f40b539ec06f0f25608593') in 0.0058725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/router_mat 1.mat
+  artifactKey: Guid(3aaf29fe4f22e4bccbf9ad3e6041750d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/router_mat 1.mat using Guid(3aaf29fe4f22e4bccbf9ad3e6041750d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '165eae606f2c5592c61a19d1a961ab2a') in 0.0078431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_52 1.mat
+  artifactKey: Guid(b76bcbb91757f48809fcd3b5a9e8311f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_52 1.mat using Guid(b76bcbb91757f48809fcd3b5a9e8311f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1af01e5b0c2b6ce6d6845d603bbf9a2b') in 0.0066071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_50.mat
+  artifactKey: Guid(e5c69a56b61d94fc98605caf255a3c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_50.mat using Guid(e5c69a56b61d94fc98605caf255a3c5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '332a5c4eade72d3451f06318d0a11289') in 0.0067174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_50 2.mat
+  artifactKey: Guid(cc082652d7dd84e8e8f05577c578556d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_50 2.mat using Guid(cc082652d7dd84e8e8f05577c578556d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39edfb3a8fa4c3afbd0cacf8c182d608') in 0.0135884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/router_mat 2.mat
+  artifactKey: Guid(b2f68959529fc4c1aaa6a01c50145779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/router_mat 2.mat using Guid(b2f68959529fc4c1aaa6a01c50145779) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75f1bb1d09efec92b933de20547366bb') in 0.0070805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.091 2.mat
+  artifactKey: Guid(a1eced11a950a40ca80908f53d723ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.091 2.mat using Guid(a1eced11a950a40ca80908f53d723ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd571db6e84b2a26822b4877e4e1be21') in 0.005667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.098.mat
+  artifactKey: Guid(4291db37f9c544d34a259a222457ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.098.mat using Guid(4291db37f9c544d34a259a222457ff4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ca83c4f36da5f6f41bfd52010f15ae8') in 0.0060105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.095 2.mat
+  artifactKey: Guid(f303a8708ef214f3a9b09854d0ef62f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.095 2.mat using Guid(f303a8708ef214f3a9b09854d0ef62f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c763c3a902c6dceccbef2c147feed2a8') in 0.0083708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_51.mat
+  artifactKey: Guid(215205e74e2d54edfb4ed79f068c4325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_51.mat using Guid(215205e74e2d54edfb4ed79f068c4325) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0aea567408dbd97350f35d6ab6c0db51') in 0.0059634 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material_52.mat
+  artifactKey: Guid(78e5fa5e747a14c5186a6a69bec58c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material_52.mat using Guid(78e5fa5e747a14c5186a6a69bec58c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a99f5d396d29a1ff4912ceb64580e5e7') in 0.0062534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.093.mat
+  artifactKey: Guid(2b3ee8541896842fb81e2d46edaacdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.093.mat using Guid(2b3ee8541896842fb81e2d46edaacdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85e98be5a1c9853b72263e23d7fab2dd') in 0.0099868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.096 1.mat
+  artifactKey: Guid(7573464370f24446abdbe9fd81bc7545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.096 1.mat using Guid(7573464370f24446abdbe9fd81bc7545) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16e130a2269f405082c5d5901e70f5fc') in 0.0059575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Prefabs/Rooms/RoomsMaterials/Material.094 2.mat
+  artifactKey: Guid(895053719d6b346a2b3613f9bba3d96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/RoomsMaterials/Material.094 2.mat using Guid(895053719d6b346a2b3613f9bba3d96d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df6a55b5d847d1cd93d2f733aabef6a3') in 0.0065653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.704385 seconds.
+  path: Assets/Prefabs/Rooms/Room1.fbx
+  artifactKey: Guid(9f183f456f0494d91b92719b93e3fa5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/Room1.fbx using Guid(9f183f456f0494d91b92719b93e3fa5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cac85b5155513f3fbcc75f013c2e78b4') in 0.3620424 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 194
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Prefabs/Rooms/Room3.fbx
+  artifactKey: Guid(bd2feb76ad12842c18b14925ea458f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/Room3.fbx using Guid(bd2feb76ad12842c18b14925ea458f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f1a5b05af898bbe0121730041ec190e') in 0.1540785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 193
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Prefabs/Rooms/Room2.fbx
+  artifactKey: Guid(7c1723e12e21d40689b9de9ae5578d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Rooms/Room2.fbx using Guid(7c1723e12e21d40689b9de9ae5578d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a114afa6b8f3c64d4a2c52f41a511bdf') in 0.1529791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 189
+
+========================================================================
+Received Import Request.
+  Time since last request: 296.803938 seconds.
+  path: Assets/Prefabs/Canvases.prefab
+  artifactKey: Guid(34ce4da5429da47aab2436b9342035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Canvases.prefab using Guid(34ce4da5429da47aab2436b9342035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83523bb5e4d6154fff37c36fd9eef76f') in 0.0806494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1163
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.876047 seconds.
+  path: Assets/Prefabs/Network/lineMaterial.mat
+  artifactKey: Guid(87f589789226d46948639b6dafa8d799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Network/lineMaterial.mat using Guid(87f589789226d46948639b6dafa8d799) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bcc32758cd71c9fb0c1e5d00b38e37f1') in 0.0932732 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 213.258149 seconds.
+  path: Assets/Sprites/Manual/love.png
+  artifactKey: Guid(e69b3e900ac9749bfbf3c894ddd9bc4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Manual/love.png using Guid(e69b3e900ac9749bfbf3c894ddd9bc4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[Licensing::Client] Successfully resolved entitlement details
+ -> (artifact id: '6fbe6b4e0d45dbaf7d3942658c8c7c3c') in 0.2932009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Manual/stars.png
+  artifactKey: Guid(cdaabe2f2e92d4b17a54b11200ab6adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Manual/stars.png using Guid(cdaabe2f2e92d4b17a54b11200ab6adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '98864db2da6d2840f353380d0e9afaa3') in 0.0126446 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Manual/smile.png
+  artifactKey: Guid(ff6669a370c6649e2b762fe037451100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Manual/smile.png using Guid(ff6669a370c6649e2b762fe037451100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '45e689adfef507b418fa1dc0eb7ad0bb') in 0.0094399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Manual/tigreArt.png
+  artifactKey: Guid(63f376de55bb44dd3b5f143cb7bbb8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Manual/tigreArt.png using Guid(63f376de55bb44dd3b5f143cb7bbb8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d072b8462343aeb254f85a01f9c9c54') in 0.010868 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Manual/sheetSprite.png
+  artifactKey: Guid(76c7455b96d224e888c9dd90185df2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Manual/sheetSprite.png using Guid(76c7455b96d224e888c9dd90185df2d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'def57c8448536ce7f2e056da69dac438') in 0.0126686 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.196236 seconds.
+  path: Assets/Sprites/settings_icon/BackGroundAutorization_sprite.png
+  artifactKey: Guid(70e254d5339e54a10ac63bf51b5f3d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/settings_icon/BackGroundAutorization_sprite.png using Guid(70e254d5339e54a10ac63bf51b5f3d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc2ef8949a891a2a246d7ae65cfab71e') in 0.1464999 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/settings_icon/button_sprite.png
+  artifactKey: Guid(a5985196f38234eb9aee7c1ffbaeb518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/settings_icon/button_sprite.png using Guid(a5985196f38234eb9aee7c1ffbaeb518) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c8ab3b8c53432dab38705def4961a6f8') in 0.009184 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/settings_icon/password.png
+  artifactKey: Guid(0aa928a9b4087417bb4a92178bbc7f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/settings_icon/password.png using Guid(0aa928a9b4087417bb4a92178bbc7f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b7528c1e4bb55404427a7e34601773e5') in 0.005909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.995461 seconds.
+  path: Assets/Sprites/tabs 1/iconMenuSprite.png
+  artifactKey: Guid(598a3bcbf5f644991bb6672d079df18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tabs 1/iconMenuSprite.png using Guid(598a3bcbf5f644991bb6672d079df18e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6d27aa36677a3897c2c5c75c70897d5') in 0.0351779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Sprites/tabs 1/iconTabletSprite.png
+  artifactKey: Guid(93192c957c8fc408483117fc54632cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tabs 1/iconTabletSprite.png using Guid(93192c957c8fc408483117fc54632cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15263d74096827a9f3c52cfeb97a9336') in 0.0123916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/tabs 1/tabButtonSprite.png
+  artifactKey: Guid(a2c87c07fd380435fadd003548713bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tabs 1/tabButtonSprite.png using Guid(a2c87c07fd380435fadd003548713bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '71854979a3b36aea3de2e30a6b23647b') in 0.2030881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.189171 seconds.
+  path: Assets/Sprites/web_images/auth_settings_image.png
+  artifactKey: Guid(57934eaea9e5d4678ab0705472216d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/web_images/auth_settings_image.png using Guid(57934eaea9e5d4678ab0705472216d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa5fcd2e7e45e241b7ead75e3df2b1c7') in 0.3375489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/web_images/settnigs_Ipv4_image.png
+  artifactKey: Guid(b237d564acaae4e39b9adea2a0c6b7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/web_images/settnigs_Ipv4_image.png using Guid(b237d564acaae4e39b9adea2a0c6b7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3148ceb18236205782ac72c321c42043') in 0.0351154 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/web_images/work_mode_image.png
+  artifactKey: Guid(dfa84a4db063d4d21a427cca29d013a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/web_images/work_mode_image.png using Guid(dfa84a4db063d4d21a427cca29d013a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '08981eecb5ca5d2eae741b18f4194384') in 0.0326271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.742352 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+  artifactKey: Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc using Guid(c334973cef89a9840b0b0c507e0377ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47beb7c884ced54ab89c9411b99511f5') in 0.001786 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99940d794f286089ba2968a4e549d8bc') in 0.0012046 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
