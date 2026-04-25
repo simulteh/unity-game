@@ -1,0 +1,1702 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.12f1 (fca03ac9b0d5) revision 16556090'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32535 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User" at "2026-04-25T16:13:36.1645057Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-04-25T16:13:36Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/User/Downloads/unity-game-main
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64205
+-licensingIpc
+LicenseClient-User
+-job-worker-count
+9
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Users/User/Downloads/unity-game-main
+C:/Users/User/Downloads/unity-game-main
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+Player connection [25516]  Target information:
+
+Player connection [25516]  * "[IP] 192.168.3.9 [Port] 0 [Flags] 2 [Guid] 46966945 [EditorId] 46966945 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-372GENS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25516]  * "[IP] 26.241.109.66 [Port] 0 [Flags] 2 [Guid] 46966945 [EditorId] 46966945 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-372GENS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25516] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25516] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.12f1 (fca03ac9b0d5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Downloads/unity-game-main/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 (ID=0x2882)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.9144
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Module] Licensing is not yet initialized.
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.1'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-User"
+[Licensing::IpcConnector] LicenseClient-User channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User-6000.3.12" at "2026-04-25T16:13:37.1382462Z"
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              9a894695d982400899ce9f53c65490fe
+  Correlation Id:          8ac211010d4227e2d0166724a48471db
+  External correlation Id: 1150509382739555947
+  Machine Id:              RvJCNC0R1FNGGBJFoNwLvsbYcLg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-User-6000.3.12" (connect: 0.00s, validation: 0.00s, handshake: 0.91s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-User-6000.3.12-notifications" at "2026-04-25T16:13:38.0499873Z"
+[Licensing::Module] Licensing Background thread has ended after 1.89s
+[Licensing::Module] Licensing is initialized (took 1.24s).
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 10171520746230-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 1.244543 seconds.
+- Loaded All Assemblies, in  1.694 seconds
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.420 seconds
+Domain Reload Profiling: 2110ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (1296ms)
+	LoadAllAssembliesAndSetupDomain (198ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (194ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (175ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (420ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (383ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (63ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (147ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+- Loaded All Assemblies, in  0.736 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.611 seconds
+Domain Reload Profiling: 1340ms
+	BeginReloadAssembly (199ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (433ms)
+		LoadAssemblies (333ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (210ms)
+			TypeCache.Refresh (157ms)
+				TypeCache.ScanAssembly (139ms)
+			BuildScriptInfoCaches (43ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (611ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (492ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (130ms)
+			ProcessInitializeOnLoadAttributes (302ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3770 unused Assets / (0.9 MB). Loaded Objects now: 4393.
+Memory consumption went from 108.8 MB to 107.9 MB.
+Total: 6.108300 ms (FindLiveObjects: 0.512400 ms CreateObjectMapping: 0.175600 ms MarkObjects: 4.468900 ms  DeleteObjects: 0.950100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17488.458227 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/J1.mat
+  artifactKey: Guid(8bf8e8eb3c4ec9c4e9f79488c39bff59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/J1.mat using Guid(8bf8e8eb3c4ec9c4e9f79488c39bff59) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '144e4f33411df81a2af666dcf4a7f58b') in 0.1150879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TerrainData_1101cb17-701a-4f35-8004-43b67ebb796d.asset
+  artifactKey: Guid(6a7177127457fba46bfe5ac490ecf0f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_1101cb17-701a-4f35-8004-43b67ebb796d.asset using Guid(6a7177127457fba46bfe5ac490ecf0f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cdb68dc2675c75d141c9b2e13953db0d') in 0.0099573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Police_car.prefab
+  artifactKey: Guid(7500aebe3382441458c34a315bb6842b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Police_car.prefab using Guid(7500aebe3382441458c34a315bb6842b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b19331a6ce0e66d74c34c22067e2c26') in 0.0193853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings
+  artifactKey: Guid(bf61a2997700b9e449a9c2898e7dbb81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings using Guid(bf61a2997700b9e449a9c2898e7dbb81) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c16fecc3882b19d0aa5f6f53c199cdf7') in 0.006321 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Simple Vehicle Pack/Textures
+  artifactKey: Guid(ab9f03b61f4ea01419168bc069fbb008) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures using Guid(ab9f03b61f4ea01419168bc069fbb008) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f47e967393e75816bf21b1a3704704b8') in 0.0059558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Prefabs/Building_I_2_Prefab.prefab
+  artifactKey: Guid(1e198ff9400b5064c816d8f779eff296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Building_I_2_Prefab.prefab using Guid(1e198ff9400b5064c816d8f779eff296) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '268b293f1a1600e18df3f26362632fc1') in 0.008416 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/bench.mat
+  artifactKey: Guid(0cfe2f16ddac5b04b8acda9e8f8cb3ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/bench.mat using Guid(0cfe2f16ddac5b04b8acda9e8f8cb3ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd2d4638c355c4b2139a933e226c894ae') in 0.0077834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Material & Texture/Day.mat
+  artifactKey: Guid(dfd5fe4561034804291bb92fffe808d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Day.mat using Guid(dfd5fe4561034804291bb92fffe808d9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '951a06cbaf48427a798b3a142d0dbd14') in 0.0089322 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/Bench texture.png
+  artifactKey: Guid(9a4a04b84933213428ed33e0c31813b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/Bench texture.png using Guid(9a4a04b84933213428ed33e0c31813b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd102ec9e2fd93a1a1422096bcea47968') in 0.0530892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/B2.mat
+  artifactKey: Guid(792fa418de0281e4bab622f9a60c88b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/B2.mat using Guid(792fa418de0281e4bab622f9a60c88b2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a30fe112e21d49e35c325b9656f5df39') in 0.0074267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/ColaMachine.mat
+  artifactKey: Guid(439eb576ca1364e47a9cda1cab72e5dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/ColaMachine.mat using Guid(439eb576ca1364e47a9cda1cab72e5dd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1540e9f80f53dd91b1854dc730c4977') in 0.0078918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Mobile/Road.mat
+  artifactKey: Guid(4acac59ed0a644b4f854d5a6875dd8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Materials/Mobile/Road.mat using Guid(4acac59ed0a644b4f854d5a6875dd8e3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8bbc1135c6f7340e3a4835631b4fc60e') in 0.031491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Read_me.txt
+  artifactKey: Guid(1d6f4f38e90b0f447bf261e122432c41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Read_me.txt using Guid(1d6f4f38e90b0f447bf261e122432c41) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2e1595ccc88d80bad7f7fd9bd2f33949') in 0.0062569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/bus_AO.tif
+  artifactKey: Guid(9bb22276bb1cd5448b5106f8aab9f69b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/bus_AO.tif using Guid(9bb22276bb1cd5448b5106f8aab9f69b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fd3fa61d663751d6e153c81a6432c14') in 0.0120785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Mesh/Building_N.fbx
+  artifactKey: Guid(55ca7edad2f1e3b40b4dc5801b9f454b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Building_N.fbx using Guid(55ca7edad2f1e3b40b4dc5801b9f454b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cbd9727af617ed206c7b74f0c4ff382') in 0.0480952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/F1.mat
+  artifactKey: Guid(0bce4c2bd5151644a8ec6f537140cbd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/F1.mat using Guid(0bce4c2bd5151644a8ec6f537140cbd6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd8bba48fb93a864660eb1b71aa26272') in 0.0079599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/J3.mat
+  artifactKey: Guid(5fd1fed63457bc14abea612957703653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/J3.mat using Guid(5fd1fed63457bc14abea612957703653) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '799df78c64f015346b4634b3805067f6') in 0.0068719 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/TerrainData_51d524ef-03a3-40dd-b472-3c45cd571cab.asset
+  artifactKey: Guid(7ba940329c992f9408555386febfbf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_51d524ef-03a3-40dd-b472-3c45cd571cab.asset using Guid(7ba940329c992f9408555386febfbf16) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1c8f82734df38816e23e52a7406d2f9c') in 0.0232625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Vehicle Pack/Models/police_car.FBX
+  artifactKey: Guid(442255f864e16934790fbb3b49639885) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Models/police_car.FBX using Guid(442255f864e16934790fbb3b49639885) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f86425da2440f570bd184b881bd6eef') in 0.0126469 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/leafes tree 1.png
+  artifactKey: Guid(d77ac9832e1f7ce4e8ad8e45903243e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/leafes tree 1.png using Guid(d77ac9832e1f7ce4e8ad8e45903243e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'fa8a7ff9876a4324ef835e85aff663a4') in 0.0113807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/B1.mat
+  artifactKey: Guid(b1aa805cd8c03914ea529c0d11595111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/B1.mat using Guid(b1aa805cd8c03914ea529c0d11595111) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cca26d3118ef85150f558d990730ff74') in 0.007457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/G3.mat
+  artifactKey: Guid(ed6309fcf2465f8459ee0d575167c0ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/G3.mat using Guid(ed6309fcf2465f8459ee0d575167c0ed) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18fcc289c9339e95003f1b40ff8d70f5') in 0.0073972 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Simple Vehicle Pack/Models/bus.FBX
+  artifactKey: Guid(7f4f24cb528cb884a874e5266f87c831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Models/bus.FBX using Guid(7f4f24cb528cb884a874e5266f87c831) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd79728dde864e10b6c0a34f2043a7019') in 0.0140613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Bus_1.mat
+  artifactKey: Guid(39cfffc7cdb08644ca972fb9d7f6b125) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Materials/Bus_1.mat using Guid(39cfffc7cdb08644ca972fb9d7f6b125) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71aa56ad66bea2f6b6ff3a8195d75a6d') in 0.0141173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/Mobile/cars_2_diffuse.tif
+  artifactKey: Guid(41d0c53e915d46e49aaae294fe16d245) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/Mobile/cars_2_diffuse.tif using Guid(41d0c53e915d46e49aaae294fe16d245) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4167d2fa1f7f11948349f0d188d4ab99') in 0.0111485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Cars_2.mat
+  artifactKey: Guid(aa87e04130195564ba9a4d334968abc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Materials/Cars_2.mat using Guid(aa87e04130195564ba9a4d334968abc1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '648e36c0f3f8cf32b9e318aab3b69870') in 0.0294751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Vehicle Pack/Models/car_2.FBX
+  artifactKey: Guid(209fadb19c7c1f149830b00ad9d0c764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Models/car_2.FBX using Guid(209fadb19c7c1f149830b00ad9d0c764) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c9c2f72d0b427538911b3d2d8dcd202') in 0.0120593 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab
+  artifactKey: Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab using Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0c23d87295c52cbbd750c9ef99f14c30') in 0.0090853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/bus_albedo.tif
+  artifactKey: Guid(0d8404aae9da47b4aa860ef1fe29da0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/bus_albedo.tif using Guid(0d8404aae9da47b4aa860ef1fe29da0d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6c4a5e78967a519f47a354e21be2029') in 0.0112009 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/Mobile/bus_2_diffuse.tif
+  artifactKey: Guid(7d7f8880f115b9841ba7617ceec2604e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/Mobile/bus_2_diffuse.tif using Guid(7d7f8880f115b9841ba7617ceec2604e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3487b1e90187356670a5c9f0343fd20b') in 0.0109899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/Mobile/cars_diffuse.tif
+  artifactKey: Guid(c3068f29ef379c644ae6b65955275e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/Mobile/cars_diffuse.tif using Guid(c3068f29ef379c644ae6b65955275e9e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45881ccbbb66f307978acc1a5a60158e') in 0.0111774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Mobile/Cars_1.mat
+  artifactKey: Guid(fb57deec1f6b9d94b8cf6a09e249fc71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Materials/Mobile/Cars_1.mat using Guid(fb57deec1f6b9d94b8cf6a09e249fc71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bc78a01ead55d560f9ad1eb3b4939404') in 0.0077832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Car_1.prefab
+  artifactKey: Guid(0ae65270c30153049ab49eb3ebf070d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Car_1.prefab using Guid(0ae65270c30153049ab49eb3ebf070d6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e92993788e0507d941cf2c7be8439621') in 0.0071644 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Car_3.prefab
+  artifactKey: Guid(6d56b50e711a5204d9059e0c99b70eda) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Car_3.prefab using Guid(6d56b50e711a5204d9059e0c99b70eda) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63b1be1f1a5d29049231c0db955a4b3d') in 0.0073993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Taxi.prefab
+  artifactKey: Guid(50477af197889084e8a6d97f2b73b73b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Taxi.prefab using Guid(50477af197889084e8a6d97f2b73b73b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b99287291b91e33257f5d99d60670267') in 0.0073241 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/bus_metallic.tif
+  artifactKey: Guid(46ff6946c86f0a248ac2814db3be0301) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/bus_metallic.tif using Guid(46ff6946c86f0a248ac2814db3be0301) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80e61e7a3bdef5643557905a91e7304d') in 0.0123636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/cars_albedo_2.tif
+  artifactKey: Guid(7cb8cb42b17248f4a993ba742a595e5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Textures/cars_albedo_2.tif using Guid(7cb8cb42b17248f4a993ba742a595e5f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8bbb4888ac7f80ff50a5bf9e0eddfa96') in 0.0114561 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile
+  artifactKey: Guid(12cd57cac8700c442880dfd348d8c4dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile using Guid(12cd57cac8700c442880dfd348d8c4dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1f4f8e1e6847719210b64eea1854ccfa') in 0.0055167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple Vehicle Pack/Models/car_1.FBX
+  artifactKey: Guid(75fac0ffc516dac4fb20ed28a0b923fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Models/car_1.FBX using Guid(75fac0ffc516dac4fb20ed28a0b923fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b39713393ccc1936c3633f566b69e3f') in 0.0125595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/road_4.prefab
+  artifactKey: Guid(6d54332e11f957a43984db1df5538f5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/road_4.prefab using Guid(6d54332e11f957a43984db1df5538f5b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0a1489e151a4aca34efe439c1465ff04') in 0.0091822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Cars_1.mat
+  artifactKey: Guid(d1609d52f4f81da40955e6165cb60e78) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Materials/Cars_1.mat using Guid(d1609d52f4f81da40955e6165cb60e78) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4f4d01d2f34ff18981bd29d0b4c55d08') in 0.0256114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/J2.mat
+  artifactKey: Guid(fe6ba248f97095d49869fcb5611b50d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/J2.mat using Guid(fe6ba248f97095d49869fcb5611b50d4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f961ad6c17ef30572e8d2a48fc297293') in 0.0071034 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TerrainData_62f23b17-93f0-4733-ad63-152be577bdb9.asset
+  artifactKey: Guid(7cee40d84afffaa4ba78a6c6dcfcab73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/TerrainData_62f23b17-93f0-4733-ad63-152be577bdb9.asset using Guid(7cee40d84afffaa4ba78a6c6dcfcab73) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5d2ba770dd1ab4c9a278cf52c6028d0e') in 0.0087163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Car_2.prefab
+  artifactKey: Guid(2dc42346e5313b34c93d598a61994629) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Car_2.prefab using Guid(2dc42346e5313b34c93d598a61994629) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67d200f7be93aea1914bb843a59850ce') in 0.0073582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K3.mat
+  artifactKey: Guid(623f2cfcc0ce09149a6f467ad4256295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K3.mat using Guid(623f2cfcc0ce09149a6f467ad4256295) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a3a0fd9ff84c27319903bd873b968983') in 0.0070702 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple city plain/Prefabs/Big_trash_bin prefab.prefab
+  artifactKey: Guid(331560f2206dc024cb084301a19c05ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Big_trash_bin prefab.prefab using Guid(331560f2206dc024cb084301a19c05ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7b62065c3d324e78552849108118374c') in 0.007185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K7.mat
+  artifactKey: Guid(2100b85841ac32940a50ec36409b49c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K7.mat using Guid(2100b85841ac32940a50ec36409b49c0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3aa40874bbdf3f21906edf9f15bd0617') in 0.0066978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.154683 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/k12.mat
+  artifactKey: Guid(8d50894cec04b584c99d0e15c717bf2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/k12.mat using Guid(8d50894cec04b584c99d0e15c717bf2e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'afdaa9e38675164bdc955191ec4168d7') in 0.0119119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/street 3.mat
+  artifactKey: Guid(7e20040aa26e36443b2ae6d45e7b8ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/street 3.mat using Guid(7e20040aa26e36443b2ae6d45e7b8ff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05f01395348b4b7b1a4f8a1c75512b59') in 0.0082462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Grid.mat
+  artifactKey: Guid(beab92c893805284c9f3ff5ea05ece3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Grid.mat using Guid(beab92c893805284c9f3ff5ea05ece3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '684d31c3dd21c3e1b4c129779b4f6605') in 0.0084804 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K9.mat
+  artifactKey: Guid(8d368d2c617522b4f8385162f26cacfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K9.mat using Guid(8d368d2c617522b4f8385162f26cacfa) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8a36d9c73c8f09f8650535901ce2b5d7') in 0.0073654 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture
+  artifactKey: Guid(303261bbfeb508d44b9dd651e94c3611) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture using Guid(303261bbfeb508d44b9dd651e94c3611) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49b85f59bb58ec8b757d98e19dca9eae') in 0.0066805 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/Gas_pump_texture.png
+  artifactKey: Guid(eb51553d840fc824a9b6b45fefb28750) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/Gas_pump_texture.png using Guid(eb51553d840fc824a9b6b45fefb28750) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7e6b2be0d8724d4c8991ad7e1515d1f5') in 0.0110614 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Pot_tree.fbx
+  artifactKey: Guid(495aba848fd785f43bf771270ddea3dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Pot_tree.fbx using Guid(495aba848fd785f43bf771270ddea3dc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '654fc90f66a905047523b280a95f4849') in 0.016182 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K13.mat
+  artifactKey: Guid(385015333524c4947bf237c08e46d007) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K13.mat using Guid(385015333524c4947bf237c08e46d007) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7df8619c22d1d65f24d4bde6aab55d04') in 0.0077793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Simple city plain/Prefabs/Building_N_Prefab.prefab
+  artifactKey: Guid(bbad862e7e06efe4a8ad0346a53e3cde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Building_N_Prefab.prefab using Guid(bbad862e7e06efe4a8ad0346a53e3cde) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '19a89c101d77f4c94d8718d08eb9e4a9') in 0.0087299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/E2.mat
+  artifactKey: Guid(04ea80a7b7a8f25419eec6649973eba0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/E2.mat using Guid(04ea80a7b7a8f25419eec6649973eba0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '77fe7e91a6177f9439d147daf7c73b48') in 0.0074141 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/color_windows/Windows light 1.mat
+  artifactKey: Guid(d7636558dbd50f7429a53d5bc6352a44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/color_windows/Windows light 1.mat using Guid(d7636558dbd50f7429a53d5bc6352a44) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1159f113ba9e31723690313ff8fe2611') in 0.0076765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K8.mat
+  artifactKey: Guid(4a68a0cfc4d91c447b2fe408cb8e7dca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K8.mat using Guid(4a68a0cfc4d91c447b2fe408cb8e7dca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'df97c0dd49fa50c958625db0b01e6d67') in 0.0076997 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/H1.mat
+  artifactKey: Guid(764481942b4df2a40857026c71dfae1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/H1.mat using Guid(764481942b4df2a40857026c71dfae1f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '155da7bbceca41e18faecd127a2a4ca4') in 0.0074878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/Street_03.png
+  artifactKey: Guid(16380d10f7bec4543adccda1aeb700f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/Street_03.png using Guid(16380d10f7bec4543adccda1aeb700f0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5a8a788125ff8674190c9f44ce6b4c22') in 0.0116838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/stairs.mat
+  artifactKey: Guid(7e56fdda4493bac4da82b95aedf123d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/stairs.mat using Guid(7e56fdda4493bac4da82b95aedf123d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57b96a1d88796005517b88485fdcfde9') in 0.0073565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Mesh/street_.fbx
+  artifactKey: Guid(72e65272e9752d842a914dd27fd86306) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/street_.fbx using Guid(72e65272e9752d842a914dd27fd86306) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c48e47367362c65fe46bdcc62139db36') in 0.0138845 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Door_02.mat
+  artifactKey: Guid(eb5fbfb8e374a0a4fb4728e9d70b0bd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Door_02.mat using Guid(eb5fbfb8e374a0a4fb4728e9d70b0bd2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8ff4434df05a5c4418126f12fb6f740b') in 0.0073479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Prefabs/Street 3 Prefab.prefab
+  artifactKey: Guid(2224b63330275e5478ef024b2913f937) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Street 3 Prefab.prefab using Guid(2224b63330275e5478ef024b2913f937) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dcea2052e5aac3d7c40098f32ce95e2f') in 0.0073563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/F3.mat
+  artifactKey: Guid(2d6209e982156604ea6d7c513bc7b774) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/F3.mat using Guid(2d6209e982156604ea6d7c513bc7b774) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc9cd1ac5fe70baa76d63398daafb2a1') in 0.0079085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/SideWay.mat
+  artifactKey: Guid(826ead3abf95f194996cb8156de6f671) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/SideWay.mat using Guid(826ead3abf95f194996cb8156de6f671) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f0d0a17adb6e8f41a8fda60b9feb70fc') in 0.0079232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/grass.mat
+  artifactKey: Guid(9904cd0f6245e884999431c0bdf22fef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/grass.mat using Guid(9904cd0f6245e884999431c0bdf22fef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f517f79cf33e5caef0ba365c98beaab') in 0.0089677 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Prefabs/Building_I_1_prefab.prefab
+  artifactKey: Guid(931ecb32d754b3f40afc9a688c8cea66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Building_I_1_prefab.prefab using Guid(931ecb32d754b3f40afc9a688c8cea66) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '63bf8cddbaf1f047276da0718d5b0f13') in 0.008698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/F2.mat
+  artifactKey: Guid(125b8e3d7d52f1a4a9341372677b8015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/F2.mat using Guid(125b8e3d7d52f1a4a9341372677b8015) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2e238852a68ef00ff57b3387c24fb842') in 0.0077403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/color_windows
+  artifactKey: Guid(78b377d81b1300248b8a44bf8b46ca01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/color_windows using Guid(78b377d81b1300248b8a44bf8b46ca01) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6787d62bbed6a16496210f679545df27') in 0.0266007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Building_I_2.fbx
+  artifactKey: Guid(9f70c3b25552f8c4cbfc2dc5b60b2c0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Building_I_2.fbx using Guid(9f70c3b25552f8c4cbfc2dc5b60b2c0e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55e17d6f7924c5494d589c02fd83e033') in 0.0234236 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Windows_02.mat
+  artifactKey: Guid(f2d0814b400770243bdef2d17310a5c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Windows_02.mat using Guid(f2d0814b400770243bdef2d17310a5c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '76ec0bb9f68133cb4c05be6ffe18179e') in 0.0076483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple city plain/Mesh/Materials
+  artifactKey: Guid(4a4b36ce703a6424390a8ae5e8a3d05e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials using Guid(4a4b36ce703a6424390a8ae5e8a3d05e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '899a9911e8305a3e3a5719c7a499c0a4') in 0.0066183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Prefabs/Grass Prefab.prefab
+  artifactKey: Guid(7446a392a730ac14d9cc70d21cf7ace0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Grass Prefab.prefab using Guid(7446a392a730ac14d9cc70d21cf7ace0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4e36b01908983820cb127e0fbc168d62') in 0.0082314 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/Pot_tree.mat
+  artifactKey: Guid(3b40b8ee00299524ea7fc922043f7454) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/Pot_tree.mat using Guid(3b40b8ee00299524ea7fc922043f7454) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a456539e06d075bea15fb0092d593a6') in 0.00815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K6.mat
+  artifactKey: Guid(ee406a0d2cd53e046b9c7bcfdcc189a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K6.mat using Guid(ee406a0d2cd53e046b9c7bcfdcc189a7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0dfa155c2a6abaef9fc110dcae6b7b36') in 0.0082287 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Prefabs/Gas_station_A_PREFAB.prefab
+  artifactKey: Guid(01bbe20c855564648b02e0092e511cac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Gas_station_A_PREFAB.prefab using Guid(01bbe20c855564648b02e0092e511cac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '96cb38b8e52174ce10f28a282ba82f95') in 0.0090679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Hydrant.fbx
+  artifactKey: Guid(e929ac57e943d3c489f18cb67b6b4ac2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Hydrant.fbx using Guid(e929ac57e943d3c489f18cb67b6b4ac2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3be40cd08cca4ebf0543d4d5fdb378eb') in 0.0142094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/railing.mat
+  artifactKey: Guid(11952d08756f2fa4182cc5c29d52af33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/railing.mat using Guid(11952d08756f2fa4182cc5c29d52af33) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bca310b3f952ddadeef2fedf073b0190') in 0.008174 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K1.mat
+  artifactKey: Guid(1a0dec1fa084e1b4abd7c6cf33e568ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K1.mat using Guid(1a0dec1fa084e1b4abd7c6cf33e568ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a6df491ff03ce6f5f3449052f9ead619') in 0.0084588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Prefabs/Tree prefab.prefab
+  artifactKey: Guid(1be61187b5d765449be824463642cb0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/Tree prefab.prefab using Guid(1be61187b5d765449be824463642cb0f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6b0e4f265604746a6c6b85225b3f8cb9') in 0.0089575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/color_windows/Windows no light.mat
+  artifactKey: Guid(26df91506bf83b343b8083c5322323ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/color_windows/Windows no light.mat using Guid(26df91506bf83b343b8083c5322323ae) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '23386facda1b3944670975f1f26eb870') in 0.0077711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Simple city plain/Mesh
+  artifactKey: Guid(39267b5f31008cb4a9a2e2a2a7adcb4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh using Guid(39267b5f31008cb4a9a2e2a2a7adcb4b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd1a9306a9347d50e07bfda09a4ec99c') in 0.0071453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/pot_plant_leaf.png
+  artifactKey: Guid(cf21488ffdf03a249b361ac7b5f2d5f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/pot_plant_leaf.png using Guid(cf21488ffdf03a249b361ac7b5f2d5f5) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9a803ce62da546537d6a5722e7cf9d9') in 0.0130684 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/door 1.mat
+  artifactKey: Guid(10ae43a729c14c04da4f8fbf74aec772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/door 1.mat using Guid(10ae43a729c14c04da4f8fbf74aec772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f135308a01297aae0c06fb919460501d') in 0.0299402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/I2.mat
+  artifactKey: Guid(cea0c4191eb5cb440aa5355d44958681) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/I2.mat using Guid(cea0c4191eb5cb440aa5355d44958681) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2dc7c747924c1d9c4e8a2542f2a54ec0') in 0.0082553 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/C3.mat
+  artifactKey: Guid(91155d9f14bc7c24885accb7c3b9025f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/C3.mat using Guid(91155d9f14bc7c24885accb7c3b9025f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6afaa98ea5bdbb4999047d4c59dea0e1') in 0.0078806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/grid.png
+  artifactKey: Guid(9922cb1c199ed85459518a9fea40e481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/grid.png using Guid(9922cb1c199ed85459518a9fea40e481) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '490bebd0a003f37d70d8417a312a98b5') in 0.012433 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/tree leaf.mat
+  artifactKey: Guid(45aa121491da72e4b8c0fcdb4533272d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/tree leaf.mat using Guid(45aa121491da72e4b8c0fcdb4533272d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '87f83a7c5a2717461b518c06bbc08361') in 0.0091334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/congregate.mat
+  artifactKey: Guid(a9ac0d24fb056fd4d8851caeab07908d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/congregate.mat using Guid(a9ac0d24fb056fd4d8851caeab07908d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '493beaa8471b5d7fc60c9a213d7e1dea') in 0.0268514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/K10.mat
+  artifactKey: Guid(bdcbb625d2db6d344907f63d3439281d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/K10.mat using Guid(bdcbb625d2db6d344907f63d3439281d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '079e86c13a02170100811de078fb39a2') in 0.0080979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Metal.mat
+  artifactKey: Guid(2a151e0ae216b8a448c96514b23d11ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Metal.mat using Guid(2a151e0ae216b8a448c96514b23d11ec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '582578497e88c74bebc3fa9d27a28b30') in 0.0078616 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Door_04.mat
+  artifactKey: Guid(995792d8cc2ea7e45b3ba34a5b259bad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Door_04.mat using Guid(995792d8cc2ea7e45b3ba34a5b259bad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '31abd47df23dceef32065fdbdfe4a3e7') in 0.0083507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 9.prefab
+  artifactKey: Guid(b521fb06ba460a74dbd1cc19d33c90f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 9.prefab using Guid(b521fb06ba460a74dbd1cc19d33c90f1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db6a5f38d776c4dc62b1d66b94cff7a2') in 0.0243622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 13.prefab
+  artifactKey: Guid(71d5933ed7716244b901d5e31f047fb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 13.prefab using Guid(71d5933ed7716244b901d5e31f047fb4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e8d7c78efc1308fe99e204530d8a014a') in 0.0208741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Boxes/Wooden_box_v1/Source
+  artifactKey: Guid(ba9b5766534a5584e972fe2ba0d84b60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Boxes/Wooden_box_v1/Source using Guid(ba9b5766534a5584e972fe2ba0d84b60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '129df1d9067fa26a77cb5d505b5dbd42') in 0.0067775 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 1.prefab
+  artifactKey: Guid(e0af55f05423d1843bd0ae48fe867923) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 1.prefab using Guid(e0af55f05423d1843bd0ae48fe867923) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd9c9d858ed760950d932d884f2b003a1') in 0.0176582 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Leaf.mat
+  artifactKey: Guid(be5edca6d1132bf40a18f3f729bd5362) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Leaf.mat using Guid(be5edca6d1132bf40a18f3f729bd5362) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8c19afbb0fc42662b132da1cf3baa596') in 0.0086743 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD2through.prefab
+  artifactKey: Guid(7efb7a11251ce1342b172668cbdc65c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD2through.prefab using Guid(7efb7a11251ce1342b172668cbdc65c8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3451cabf7b73fcb052dc1579e57f3751') in 0.0238198 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/fire_escape_01.mat
+  artifactKey: Guid(b5bfab5f38cb93941b9965b7f851bf82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/fire_escape_01.mat using Guid(b5bfab5f38cb93941b9965b7f851bf82) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '181cec01503badbbcf9744ee37a333df') in 0.0091746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Facade_01.mat
+  artifactKey: Guid(67299e9b911066044bb6af9deb401b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Facade_01.mat using Guid(67299e9b911066044bb6af9deb401b7d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '33d500579e6a4e356e093df66668c51b') in 0.0085703 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 4.prefab
+  artifactKey: Guid(8a355f92415e9414f8687229414506b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 4.prefab using Guid(8a355f92415e9414f8687229414506b7) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e5e49f0ebfcb0abe18db9fc478c1ccc5') in 0.0261307 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 7.prefab
+  artifactKey: Guid(6fe532f2b58fa094281025c558c3d3cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 7.prefab using Guid(6fe532f2b58fa094281025c558c3d3cd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a8b147d397683fa5c747a80b3393416e') in 0.0296408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 14
+  artifactKey: Guid(56097e7278bdf1f4b999e7180f01cb3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 14 using Guid(56097e7278bdf1f4b999e7180f01cb3d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9f67b10533bca7cee93b8a7fb596a4c9') in 0.0073017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/anger stone 1.mat
+  artifactKey: Guid(293da3f24aaff1b48aa61bbc0cd5a18c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/anger stone 1.mat using Guid(293da3f24aaff1b48aa61bbc0cd5a18c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5d463bb65af64e4e4ea32ef14bd310fb') in 0.0087489 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD1doorL.prefab
+  artifactKey: Guid(39d44540e05010d4b93511df0bd6e20b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD1doorL.prefab using Guid(39d44540e05010d4b93511df0bd6e20b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b4c2740233ce1242ebcac9e1f5bb3a23') in 0.0337991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Windows_03.mat
+  artifactKey: Guid(6270ac8120f02a846bda918c3a587a63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Windows_03.mat using Guid(6270ac8120f02a846bda918c3a587a63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '681a90322478fd5466fa821b2ce2f366') in 0.0095309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/white.mat
+  artifactKey: Guid(29139066a2a040f4c96e9f7c3893ca15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/white.mat using Guid(29139066a2a040f4c96e9f7c3893ca15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9a1485b01d34bf4d1ae9b6a39b6126a7') in 0.0087498 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 9/Building 9.fbx
+  artifactKey: Guid(befd6a8ffd0b58f4189771c1c5fc9351) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 9/Building 9.fbx using Guid(befd6a8ffd0b58f4189771c1c5fc9351) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '305a35ddc7ad3d2d2974dc693fffdf45') in 0.0574974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 10.prefab
+  artifactKey: Guid(fe3f7830d8b2e934c9a08ae2d823ee09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 10.prefab using Guid(fe3f7830d8b2e934c9a08ae2d823ee09) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f93efaef7617578aa7176f7ba5fb8605') in 0.0178186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 12.prefab
+  artifactKey: Guid(d37752dae41113343935ada5ef32905f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 12.prefab using Guid(d37752dae41113343935ada5ef32905f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '945309d6fb7a128856560b1556f49b07') in 0.0146768 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 6/Building6.fbx
+  artifactKey: Guid(3afbcfa55eb911f4fa32188498b39b3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 6/Building6.fbx using Guid(3afbcfa55eb911f4fa32188498b39b3f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1df988d3b5aa8dcef3e5c08d29f25b7') in 0.0417206 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Assets_showcase_scene.unity
+  artifactKey: Guid(a8f7c31154bcc5e409be7f1bb14f0b08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Assets_showcase_scene.unity using Guid(a8f7c31154bcc5e409be7f1bb14f0b08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'aa33a9ea5cc0142fcea114d5bc79a7ae') in 0.0082843 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 14.prefab
+  artifactKey: Guid(b4fe6847423ae9f438e6635ee9d01172) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/Building 14.prefab using Guid(b4fe6847423ae9f438e6635ee9d01172) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '092ac71f1f0a271785fde567de3919fc') in 0.0311467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/window frames.mat
+  artifactKey: Guid(e620fec4ca8a3e041b90c0f9a8f9ea19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/window frames.mat using Guid(e620fec4ca8a3e041b90c0f9a8f9ea19) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95855016913c5c9360e96f62ca4b4296') in 0.0092797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 5
+  artifactKey: Guid(02a4c500a8c46ea46bb5d8c4baa1ec63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 5 using Guid(02a4c500a8c46ea46bb5d8c4baa1ec63) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6ff319fb8299a13dd9ce151a6c8bdcce') in 0.0073329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 10
+  artifactKey: Guid(b77fe3716034c19449f88bbeba068363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 10 using Guid(b77fe3716034c19449f88bbeba068363) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5b948ae0ea82c788f57caa60044fde7') in 0.0068863 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Demo
+  artifactKey: Guid(9c53962885c2c4f449125a979d6ad240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Demo using Guid(9c53962885c2c4f449125a979d6ad240) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '79cc471fbf11d0a3e6351b83e19054a1') in 0.006963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/door 2.mat
+  artifactKey: Guid(f3fdc1b4a0428294ab9481dc4f7df412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/door 2.mat using Guid(f3fdc1b4a0428294ab9481dc4f7df412) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '05a274808509eef681e23d93d1d2f56b') in 0.0083299 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 13/Building 13.fbx
+  artifactKey: Guid(06767df42b413194987c0c851e068feb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 13/Building 13.fbx using Guid(06767df42b413194987c0c851e068feb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '62fe4e4bf1ddb03e8115454b0cf880cc') in 0.0361431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Top_1700H.prefab
+  artifactKey: Guid(7b4b4865ed27d5f48b1c261c11db4f18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Top_1700H.prefab using Guid(7b4b4865ed27d5f48b1c261c11db4f18) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4a9cd9ad88620d33e88607fb474a8338') in 0.0093457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Frame_Scaffold/Documentation/Thumbnail/Image Sequence_005.png
+  artifactKey: Guid(a4f7f7ae7a4cb5e4199cb18719a649cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Documentation/Thumbnail/Image Sequence_005.png using Guid(a4f7f7ae7a4cb5e4199cb18719a649cb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '12de5db7e3d7b82c0361738d0412aeb3') in 0.0132627 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source/Cargo_container_v1.tga
+  artifactKey: Guid(b40ffba02b740d0449a254f7d2eb87af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source/Cargo_container_v1.tga using Guid(b40ffba02b740d0449a254f7d2eb87af) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '402744af0b8681329dee2f12b4cabc48') in 0.013649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 1
+  artifactKey: Guid(0147899c72d01374e812f4b49ba513f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 1 using Guid(0147899c72d01374e812f4b49ba513f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '08fe9477aca44b996d45b218700bf186') in 0.0068625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/SideWalk.005.mat
+  artifactKey: Guid(87e8f6c0be2d9ae48bbc298fa0aa63b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/SideWalk.005.mat using Guid(87e8f6c0be2d9ae48bbc298fa0aa63b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a84fd0424a692ff419e1c1100ea331b8') in 0.0095952 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Middle_1700H.prefab
+  artifactKey: Guid(ef83bb6ed731a084c9d08a05c8573773) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Middle_1700H.prefab using Guid(ef83bb6ed731a084c9d08a05c8573773) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a7004827ec601d8655d07446346fcc1e') in 0.0086319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 12
+  artifactKey: Guid(ad9885de7e72b4648852db48769d8d57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 12 using Guid(ad9885de7e72b4648852db48769d8d57) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13fb255c5b743798b9e25b4e80a7ed2e') in 0.0080854 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 4
+  artifactKey: Guid(d745df29ec0730447a4fd578a6571f3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 4 using Guid(d745df29ec0730447a4fd578a6571f3b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67b87208e1da04d6536fb21b693c4e2c') in 0.0068606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Wood.mat
+  artifactKey: Guid(7f09e8ad1bfaaf84a9faff39ae475d71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Wood.mat using Guid(7f09e8ad1bfaaf84a9faff39ae475d71) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b6d8f570f69aafdebfd2b86fdfdeb51f') in 0.0096431 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 9
+  artifactKey: Guid(721347763eb41094d875bc5e68173b2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 9 using Guid(721347763eb41094d875bc5e68173b2f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a04d24a49da2fa289b8b16407de357c4') in 0.0071039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mellow Fox studios
+  artifactKey: Guid(cd80b7c109ba64e4d808c1519a3c4778) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios using Guid(cd80b7c109ba64e4d808c1519a3c4778) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad16e90b5df862dc8083c556e91f3ad9') in 0.0070833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 2
+  artifactKey: Guid(359cd216ba8ef2f46b46b7049d843c07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 2 using Guid(359cd216ba8ef2f46b46b7049d843c07) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c8f29f35113b98f8fe94020e824cb51b') in 0.0072316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers
+  artifactKey: Guid(cd63de5b760df6248a9c2eb92b2552eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers using Guid(cd63de5b760df6248a9c2eb92b2552eb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b7a725fc7059ef0b744236f38bcf640') in 0.0069578 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Facade_02.mat
+  artifactKey: Guid(655d5a8f225309844bf97fdaf386b6ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Facade_02.mat using Guid(655d5a8f225309844bf97fdaf386b6ea) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3fffd5a3932c7ec44d88cb3622086db') in 0.011527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source/Cargo_container_v1.mat
+  artifactKey: Guid(725065c3e256d624785aad798a8d0762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source/Cargo_container_v1.mat using Guid(725065c3e256d624785aad798a8d0762) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8815cdc07a66e8a880892d81bfe3e3bc') in 0.0099761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/parking meter texture.mat
+  artifactKey: Guid(d5de5d7521c58af40b2397559ae4e3a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/parking meter texture.mat using Guid(d5de5d7521c58af40b2397559ae4e3a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a149e314ff11ee06498e460c74c3478d') in 0.0213075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Frame_Scaffold
+  artifactKey: Guid(1a147c87eca61d94ab80c68afb81a0ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold using Guid(1a147c87eca61d94ab80c68afb81a0ff) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5f07eaf132ef2b62e968be18d45cf65') in 0.0067901 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 7
+  artifactKey: Guid(660a67b0be66c0242a6c549450bb8a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 7 using Guid(660a67b0be66c0242a6c549450bb8a7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f9e76f1b6a45c62a3b0df7579c2d3d25') in 0.0077407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Frame_Scaffold/Documentation/Thumbnail/Image Sequence_004.png
+  artifactKey: Guid(500d004971c1e374ea396ad0e5a15424) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Documentation/Thumbnail/Image Sequence_004.png using Guid(500d004971c1e374ea396ad0e5a15424) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dcb68825e7343766e1c1a40e7436e361') in 0.0610893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Barrels
+  artifactKey: Guid(5e08619e167fbc04ea4c8c676ef68107) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Barrels using Guid(5e08619e167fbc04ea4c8c676ef68107) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e49d120d71443daef29924fa258b8f2d') in 0.0066641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development
+  artifactKey: Guid(771bb0b314bfbc8458108075e943bbf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development using Guid(771bb0b314bfbc8458108075e943bbf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '859ea36169ec98fc7070e4221df4ac7f') in 0.0080244 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 5/Building5.fbx
+  artifactKey: Guid(11692adde33e5a542964ef842584c571) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 5/Building5.fbx using Guid(11692adde33e5a542964ef842584c571) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e3ee8f7dd02517e262ba9891ad6919f9') in 0.0240552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Materials/Grey Ground Mat.mat
+  artifactKey: Guid(ee890e2e2fd95424b9ab3f9133a99e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Materials/Grey Ground Mat.mat using Guid(ee890e2e2fd95424b9ab3f9133a99e48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e56c3f136a7526e81861d92f79608abe') in 0.0088243 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/WhiteWood.mat
+  artifactKey: Guid(c6b9b5befc93773448734355d9307511) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/WhiteWood.mat using Guid(c6b9b5befc93773448734355d9307511) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f1c6c8e39c243962f429322e117b8fa1') in 0.00875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 10/Building 10.fbx
+  artifactKey: Guid(fe3e9b54b7ff09e4bae9e1b62e91c995) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 10/Building 10.fbx using Guid(fe3e9b54b7ff09e4bae9e1b62e91c995) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '4c07013065ffed488512b7779df242a7') in 0.0269357 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Roof_03.mat
+  artifactKey: Guid(d7bcc5b2f28c5ef4f96f8e8ae9f2fb7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Roof_03.mat using Guid(d7bcc5b2f28c5ef4f96f8e8ae9f2fb7f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13fd1a759af72eddd2f08f95f72b2e54') in 0.0082953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 14/Building 14.fbx
+  artifactKey: Guid(71d382ac37190bb4cbe3073d6abcd014) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 14/Building 14.fbx using Guid(71d382ac37190bb4cbe3073d6abcd014) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e9e766bdf87a922b0556bfefab74feee') in 0.0320265 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Frame_Scaffold/Models/FrameScaffold_Bottom_1900H.fbx
+  artifactKey: Guid(8a429c900d9a87e44a3f5dfb4b53340d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Models/FrameScaffold_Bottom_1900H.fbx using Guid(8a429c900d9a87e44a3f5dfb4b53340d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1cc21ef706f48bd53cfda6a785c5308d') in 0.0114242 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Material.mat
+  artifactKey: Guid(47bf17f22f22ec742a03d492dc52e081) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Material.mat using Guid(47bf17f22f22ec742a03d492dc52e081) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a882a282ca3424022f8d6db397a427ee') in 0.0074633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/window 2.mat
+  artifactKey: Guid(b50c4fe25b114d343b62988b0344fff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/window 2.mat using Guid(b50c4fe25b114d343b62988b0344fff6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '096d1979a189eddaac780bc73d71bc15') in 0.0075793 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Frame_Scaffold/Prefabs/Parts
+  artifactKey: Guid(2a421b2cf48b1894f930bad5066b9827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Prefabs/Parts using Guid(2a421b2cf48b1894f930bad5066b9827) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f75bbad83a8dd96e31ee9d25abded74a') in 0.0062267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/fire_escape_02.mat
+  artifactKey: Guid(8f227089d73988a4cabc5667b4f39f21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/fire_escape_02.mat using Guid(8f227089d73988a4cabc5667b4f39f21) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '70200e159f503bcb51758aa4db03e0e9') in 0.0079649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Barrels/Barrel_v1/Source/Barrel_v1.FBX
+  artifactKey: Guid(ffd14148582c4f84f867ad56a7b3dafd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Barrels/Barrel_v1/Source/Barrel_v1.FBX using Guid(ffd14148582c4f84f867ad56a7b3dafd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '69af7d456b6de75e24f14af053fa1b64') in 0.0128751 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Frame_Scaffold/Scenes/Sample_Scene.unity
+  artifactKey: Guid(fe9e9be54df874f4b945b16a873cd2ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Scenes/Sample_Scene.unity using Guid(fe9e9be54df874f4b945b16a873cd2ad) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b41465a023ea089938725137263675b2') in 0.0081683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Bottom_1900H.prefab
+  artifactKey: Guid(7d3586a1157d0e44d8cfe4660b5b3e14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Prefabs/Parts/FrameScaffold_Bottom_1900H.prefab using Guid(7d3586a1157d0e44d8cfe4660b5b3e14) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0511a2888bd38a676b43992387b10864') in 0.0081871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Frame_Scaffold/Scenes
+  artifactKey: Guid(a1d0600abc2da4a47a18016be8d4b42a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Scenes using Guid(a1d0600abc2da4a47a18016be8d4b42a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '41146a5543fbbff1d1b4dde5a9cfdc82') in 0.005871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Stone_02.mat
+  artifactKey: Guid(cb8a32381882fe34e80ceb0cafad36bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Stone_02.mat using Guid(cb8a32381882fe34e80ceb0cafad36bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1a4028025186fcdeee9b3d5b1e72288') in 0.0078467 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Roof_01.mat
+  artifactKey: Guid(750190be312194d41b4000584c91a8b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Roof_01.mat using Guid(750190be312194d41b4000584c91a8b3) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5894c1432bb0bb9d44f417b511742aa7') in 0.0071089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Brown.mat
+  artifactKey: Guid(6d70472bb74e26541b6d8653e0be94bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Brown.mat using Guid(6d70472bb74e26541b6d8653e0be94bf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0b1848ec5aded0d681315b35988647d0') in 0.0073294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Gold.mat
+  artifactKey: Guid(cb45257935a6a90438bccbea31aa06c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Gold.mat using Guid(cb45257935a6a90438bccbea31aa06c4) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '00586b1241d1873d0b7f40d32ea09e1b') in 0.0074607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 4/Building4.fbx
+  artifactKey: Guid(98ff5b83cacc7174584d649257fa7a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 4/Building4.fbx using Guid(98ff5b83cacc7174584d649257fa7a05) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9172ab093729cbb8bc0e151f5f3ea975') in 0.0218039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 6
+  artifactKey: Guid(1379cd7ca5ff06548a3b9dadb168ac15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 6 using Guid(1379cd7ca5ff06548a3b9dadb168ac15) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1fb99ffc00fac7018243ad10e627bca0') in 0.0066413 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes
+  artifactKey: Guid(4060c192c2f216f488c902c8e1fc01bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes using Guid(4060c192c2f216f488c902c8e1fc01bc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'edc49029cc7ab88c3d417bf2c6e7434a') in 0.0063687 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Boxes/Wooden_box_v1/Wooden_box_v1_LD1square.prefab
+  artifactKey: Guid(6857ff1d3761e21479727f3b27cc8f68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Boxes/Wooden_box_v1/Wooden_box_v1_LD1square.prefab using Guid(6857ff1d3761e21479727f3b27cc8f68) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3c207a3286bd9964648dcb18a044b252') in 0.0115256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Frame_Scaffold/Documentation/README_Frame Scaffold.pdf
+  artifactKey: Guid(f114b483649aa2145bcc3ef7afca1d9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Documentation/README_Frame Scaffold.pdf using Guid(f114b483649aa2145bcc3ef7afca1d9d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3467a9584156e121fa8e4944049ac829') in 0.0063175 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple city plain/Material & Texture/Colors_buildings/k11.mat
+  artifactKey: Guid(a7f2d3722f408d146b37cba315bc996f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Colors_buildings/k11.mat using Guid(a7f2d3722f408d146b37cba315bc996f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '13b3533e510cec405b2776a00421e007') in 0.0079745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple city plain
+  artifactKey: Guid(12c8aabc53f693d46a54f1aaccc9b9d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain using Guid(12c8aabc53f693d46a54f1aaccc9b9d2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0f4b1384a244f5e517349a8dc74bba2b') in 0.0062897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD2close.prefab
+  artifactKey: Guid(58d97d456aead63499ac7d5316541f78) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Cargo_container_v1_LD2close.prefab using Guid(58d97d456aead63499ac7d5316541f78) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5e3baab29e8b70f1df55bc06071407d') in 0.0103082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/building 11.prefab
+  artifactKey: Guid(05e23b72b802e9d4ab5aef43396237c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Prefabs/building 11.prefab using Guid(05e23b72b802e9d4ab5aef43396237c1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f5200aa5e68b3bb94c7f7f08965d7e04') in 0.0131773 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 1/Building1.fbx
+  artifactKey: Guid(f01f9fc8b7325884ab3733a6c425aa8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 1/Building1.fbx using Guid(f01f9fc8b7325884ab3733a6c425aa8c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '73197aae36f57e286bad28e0bf2a36e5') in 0.0356308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple city plain/scene
+  artifactKey: Guid(c7dd9d330f3f56241bb983fcb0bd9d50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/scene using Guid(c7dd9d330f3f56241bb983fcb0bd9d50) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b506e82bd64365e43b25105e66544094') in 0.0071099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Frame_Scaffold/Models/FrameScaffold_Middle_1700H.fbx
+  artifactKey: Guid(bbadae874f20cee4284e092af9698124) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Models/FrameScaffold_Middle_1700H.fbx using Guid(bbadae874f20cee4284e092af9698124) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '71897a74c252c0731284c7bae1d1231a') in 0.0120837 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 13
+  artifactKey: Guid(80b72a35dab4a464e9872d59b5c6e7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Mellow Fox studios/Versatile Building Kit - 15 Medium Poly Models for Game Development/Meshes/Building 13 using Guid(80b72a35dab4a464e9872d59b5c6e7f8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e25688ec606074c0435f42a178ffcc14') in 0.0062708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Sidewalk_05.fbx
+  artifactKey: Guid(5b37bebced2befa4cb0fa7e92016e465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Sidewalk_05.fbx using Guid(5b37bebced2befa4cb0fa7e92016e465) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '735f20fc2746fd618dede35a1e905345') in 0.0127831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Assets_showcase_sceneSettings.lighting
+  artifactKey: Guid(667898d44b61d4241ae5f7edd08a2f75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Assets_showcase_sceneSettings.lighting using Guid(667898d44b61d4241ae5f7edd08a2f75) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter)LightingSettings: switching bake backend from 2 to 1.
+ -> (artifact id: '54869143068b67d26c40489e5597fcc6') in 0.0158462 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple city plain/Mesh/Materials/Floor.mat
+  artifactKey: Guid(78cb4c2722d6560429ed3a75e2ce50fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Mesh/Materials/Floor.mat using Guid(78cb4c2722d6560429ed3a75e2ce50fd) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '723ee8edc1683a30240e741b28e4e304') in 0.0073218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Frame_Scaffold/Prefabs/FrameScaffold_3Level_5.3m.prefab
+  artifactKey: Guid(eac0e40956b726e4c9d60ce401b50f76) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Prefabs/FrameScaffold_3Level_5.3m.prefab using Guid(eac0e40956b726e4c9d60ce401b50f76) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '29b495a0eef1876d889ce1a6cbabd834') in 0.0082217 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Frame_Scaffold/Documentation
+  artifactKey: Guid(4681c10f528116a4486a321f814bd547) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Documentation using Guid(4681c10f528116a4486a321f814bd547) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bec993c837902005cf72257404ec694c') in 0.0059645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple city plain/Material & Texture/Material mesh/coke_machine_texture.png
+  artifactKey: Guid(1936ed2defc3a7f4b906965a34d00aaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Material & Texture/Material mesh/coke_machine_texture.png using Guid(1936ed2defc3a7f4b906965a34d00aaf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a6dec1952b31fedd59786700f77ea59') in 0.0109779 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source
+  artifactKey: Guid(28d1583161d025f44a005c9abbecdfc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/RPG_FPS_game_assets_industrial/Containers/Cargo_container_v1/Source using Guid(28d1583161d025f44a005c9abbecdfc8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'eea67f17460138010886b076aca735d0') in 0.0059567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Frame_Scaffold/Materials/M_Floor.mat
+  artifactKey: Guid(44f211f96c4d8e64f8311156c117ace0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Frame_Scaffold/Materials/M_Floor.mat using Guid(44f211f96c4d8e64f8311156c117ace0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6deece378182e8536067bc00a4d83ecc') in 0.0103632 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Simple city plain/Prefabs/street_lamp 1 prefab.prefab
+  artifactKey: Guid(6825a3fe8a1605f42a0d0589e582ac40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Simple city plain/Prefabs/street_lamp 1 prefab.prefab using Guid(6825a3fe8a1605f42a0d0589e582ac40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc8f4d25eb0dc9ee58ffaf6d8e34282a') in 0.0074211 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
+
