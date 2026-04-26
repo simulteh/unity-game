@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 14c224eddafde4047aef3943850c0b22
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 240247
+  packageName: USA Building With Terrace (HDRP, PBR)
+  packageVersion: 1.0
+  assetPath: Assets/USA Building With Terrace (HDRP, PBR)/Materials/brick.mat
+  uploadId: 546164

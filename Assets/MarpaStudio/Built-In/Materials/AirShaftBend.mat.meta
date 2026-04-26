@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b161a0d2262cc6248af9142fac5f8ccf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 329079
+  packageName: Office environment
+  packageVersion: 1.0
+  assetPath: Assets/MarpaStudio/Built-In/Materials/AirShaftBend.mat
+  uploadId: 779268

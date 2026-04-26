@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 55c1acbb559a3ed45a19cb5e9e930d34
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 358426
+  packageName: LowPolyNature-MiniPack
+  packageVersion: 1.0
+  assetPath: Assets/LowPolyNature-MiniPack/Demo/Ground.mat
+  uploadId: 855450

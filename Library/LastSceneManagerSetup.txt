@@ -1,5 +1,13 @@
 sceneSetups:
-- path: Assets/Scenes/Scene1.unity
+- path: Assets/Enviroment/enviroment/Office building/scene/office building.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/Scene1.unity
+  isLoaded: 1
+  isActive: 0
+  isSubScene: 0
+- path: Assets/lvl7.unity
+  isLoaded: 1
+  isActive: 0
   isSubScene: 0

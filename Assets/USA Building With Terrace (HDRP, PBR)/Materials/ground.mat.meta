@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 701946598f339c143acf724badc12642
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 240247
+  packageName: USA Building With Terrace (HDRP, PBR)
+  packageVersion: 1.0
+  assetPath: Assets/USA Building With Terrace (HDRP, PBR)/Materials/ground.mat
+  uploadId: 546164

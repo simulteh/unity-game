@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: af59de3ed6b1f614aafd342827e15b0e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 240247
+  packageName: USA Building With Terrace (HDRP, PBR)
+  packageVersion: 1.0
+  assetPath: Assets/USA Building With Terrace (HDRP, PBR)/Sample/LightingData.asset
+  uploadId: 546164

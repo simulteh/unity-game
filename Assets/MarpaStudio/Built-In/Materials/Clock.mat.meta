@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 715c9769820d48743a18ae96306eb8e0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 329079
+  packageName: Office environment
+  packageVersion: 1.0
+  assetPath: Assets/MarpaStudio/Built-In/Materials/Clock.mat
+  uploadId: 779268

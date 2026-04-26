@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 34f5bf25cb169ac4ea108a480895283b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 240247
+  packageName: USA Building With Terrace (HDRP, PBR)
+  packageVersion: 1.0
+  assetPath: Assets/USA Building With Terrace (HDRP, PBR)/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  uploadId: 546164
