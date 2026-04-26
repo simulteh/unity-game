@@ -15,3 +15,10 @@ UserSettings/
 *.booproj
 *.svd
 .DS_Store
+Library/
+Logs/
+UserSettings/
+Temp/
+Obj/
+Build/
+Builds/
