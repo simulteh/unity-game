@@ -1,0 +1,695 @@
+Unity Editor version:    6000.3.12f1 (fca03ac9b0d5)
+Branch:                  6000.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 26.3.1 (a) (Build 25D771280a)
+Darwin version:          25.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Date:                    2026-04-26T21:18:21Z
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-fushkov" at "2026-04-26T21:18:21.060133Z"
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/fushkov/unity-game
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58920
+-licensingIpc
+LicenseClient-fushkov
+-job-worker-count
+4
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name AssetImport
+Successfully changed project path to: /Users/fushkov/unity-game
+/Users/fushkov/unity-game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8490299648]  Target information:
+
+Player connection [8490299648]  * "[IP] 192.168.0.44 [Port] 0 [Flags] 2 [Guid] 292476750 [EditorId] 292476750 [Version] 1048832 [Id] OSXEditor(0,MacBook-Air-Fushkov.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8490299648]  * "[IP] 198.18.0.1 [Port] 0 [Flags] 2 [Guid] 292476750 [EditorId] 292476750 [Version] 1048832 [Id] OSXEditor(0,MacBook-Air-Fushkov.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8490299648] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8490299648] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 4
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.12f1 (fca03ac9b0d5)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/fushkov/unity-game/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+ preferred device: Apple M4 (high power)
+Metal devices available: 1
+0: Apple M4 (high power)
+Using device Apple M4 (high power)
+Initializing Metal device caps: Apple M4
+Mac GPU Family: 2
+Apple GPU Family: 9
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56665
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000730 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.1+9fbee8e
+  Session Id:              18030fdd9cc742e7a5b014ae163ca58a
+  Correlation Id:          1fb052409527fd77e4b4a9bb7a23f53d
+  External correlation Id: 7448969364697013749
+  Machine Id:              vrWqZt7OCSr6+bTFHQUlGs0ervM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-fushkov" (connect: 0.00s, validation: 0.00s, handshake: 0.41s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-fushkov-notifications" at "2026-04-26T21:18:21.473363Z"
+[Licensing::Module] Licensing Background thread has ended after 0.41s
+- Loaded All Assemblies, in  0.227 seconds
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.187 seconds
+Domain Reload Profiling: 413ms
+	BeginReloadAssembly (88ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (91ms)
+		LoadAssemblies (88ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (89ms)
+			TypeCache.Refresh (88ms)
+				TypeCache.ScanAssembly (79ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (187ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (164ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (62ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[CoreBusinessMetrics] Unexpected thread when updating session info.
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 10171565150359-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.330 seconds
+Refreshing native plugins compatible for Editor in 0.13 ms, found 1 plugins.
+Native extension for OSXStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.263 seconds
+Domain Reload Profiling: 593ms
+	BeginReloadAssembly (63ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (11ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (224ms)
+		LoadAssemblies (162ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (91ms)
+			TypeCache.Refresh (73ms)
+				TypeCache.ScanAssembly (65ms)
+			BuildScriptInfoCaches (13ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (263ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (210ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (138ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.12f1/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3770 unused Assets / (0.8 MB). Loaded Objects now: 4370.
+Memory consumption went from 90.0 MB to 89.2 MB.
+Total: 4.012917 ms (FindLiveObjects: 0.306166 ms CreateObjectMapping: 0.088167 ms MarkObjects: 3.184291 ms  DeleteObjects: 0.434167 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 406297.743703 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20115.png
+  artifactKey: Guid(c4eb6ae308b114df6a237e8a8f94df38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20115.png using Guid(c4eb6ae308b114df6a237e8a8f94df38) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '55bcfb011e26453def35d43a44e0e97e') in 0.05595625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20140.png
+  artifactKey: Guid(cc11c3c9b6fe540f582b9fba1e440d36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20140.png using Guid(cc11c3c9b6fe540f582b9fba1e440d36) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '04e80bc2ad4bd2a1c3b8e947557eca42') in 0.003646792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20035.png
+  artifactKey: Guid(818f122cd925e43648f07bd4a90c4eec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20035.png using Guid(818f122cd925e43648f07bd4a90c4eec) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '385aeae803bfe61ff7b25761b73cb98b') in 0.005629542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20139.png
+  artifactKey: Guid(b167c96c913384fe888b9f91eb9d65f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20139.png using Guid(b167c96c913384fe888b9f91eb9d65f9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f185396281989970b01aa8e8cf53c185') in 0.004014084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20162.png
+  artifactKey: Guid(200ef291ce7be45dea977e156e99a368) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20162.png using Guid(200ef291ce7be45dea977e156e99a368) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'bf4c1c885abcc8d1b6615870cae1aaa4') in 0.0044145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20040.png
+  artifactKey: Guid(cf1879657586544e28936e996e4da19b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20040.png using Guid(cf1879657586544e28936e996e4da19b) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67653eab0cc83cfbd06552c9e225aa15') in 0.005007125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20034.png
+  artifactKey: Guid(217032969e87f4685a1b00ee0ccdb5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20034.png using Guid(217032969e87f4685a1b00ee0ccdb5a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2ef6db94c861f109259cb7d14b0403be') in 0.004355584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20154.png
+  artifactKey: Guid(09cb6db8c7c7847fdbc66ebc409a5574) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20154.png using Guid(09cb6db8c7c7847fdbc66ebc409a5574) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '640decbb774150614dc315520ae2128f') in 0.004550584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20102.png
+  artifactKey: Guid(2e88e551baf564fe59a8608532d63a62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20102.png using Guid(2e88e551baf564fe59a8608532d63a62) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2a37e70e10f39aa74ffdb582cad4e14d') in 0.0052365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20110.png
+  artifactKey: Guid(54d91fa542a5d42d0991f12e3631c2a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20110.png using Guid(54d91fa542a5d42d0991f12e3631c2a8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7c87920a8021ce9014a12a5c04d9f32b') in 0.004835 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20121.png
+  artifactKey: Guid(4cf75225ab02f42b58a4d3c505baac7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20121.png using Guid(4cf75225ab02f42b58a4d3c505baac7e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f043573a1ff5699081c2091ae416bf2') in 0.004334041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20083.png
+  artifactKey: Guid(31be43e985be1428694357756d066dab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20083.png using Guid(31be43e985be1428694357756d066dab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '9e2d299a530e5b66a079332aaafd5a2c') in 0.005153792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20136.png
+  artifactKey: Guid(6c2af22a37760419182de7c7c1e30222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20136.png using Guid(6c2af22a37760419182de7c7c1e30222) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ada839ba243b6156851995459d07267e') in 0.004716667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20078.png
+  artifactKey: Guid(8527c627363254e988f8d21848b32639) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20078.png using Guid(8527c627363254e988f8d21848b32639) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '0fef821af698c1b56911eaea648a5d81') in 0.004426709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20114.png
+  artifactKey: Guid(22aa9cd3d967b4f278d9c7913e092094) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20114.png using Guid(22aa9cd3d967b4f278d9c7913e092094) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'da1714965cb68278a1ae68cc845f7098') in 0.004917875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20151.png
+  artifactKey: Guid(e850a06163c7443c6aad5b1ed8b38f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20151.png using Guid(e850a06163c7443c6aad5b1ed8b38f08) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2f265909cecccca228cc6be98c78f9aa') in 0.005471875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20124.png
+  artifactKey: Guid(b4d2b8e72e94b45beb2fbea9cc4dfad9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20124.png using Guid(b4d2b8e72e94b45beb2fbea9cc4dfad9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '18276b200da7fbf660f9d57c1fb49fea') in 0.004346666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20043.png
+  artifactKey: Guid(c4ad891d83487439d94a727750fe66e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20043.png using Guid(c4ad891d83487439d94a727750fe66e8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '60280a47d59741debc81338b56af04cf') in 0.004992084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20067.png
+  artifactKey: Guid(21d7ebd8c6d054f5d8ce0bfacddd85a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20067.png using Guid(21d7ebd8c6d054f5d8ce0bfacddd85a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7f779cac2f26c915439d7e33cf674095') in 0.005762875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20064.png
+  artifactKey: Guid(2e886787a9e4141db99956c8ce23f7fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20064.png using Guid(2e886787a9e4141db99956c8ce23f7fb) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '8caa09377a9babcf0de93fb80440b8f5') in 0.004466333 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20100.png
+  artifactKey: Guid(c5113c62f4070491ca33efb5bcc8f3a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20100.png using Guid(c5113c62f4070491ca33efb5bcc8f3a0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1ae2d8b0d9fac68b73f3d4116daf66c') in 0.004494167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20079.png
+  artifactKey: Guid(e3b801b7ab851456bb5fc0b80d1c7de0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20079.png using Guid(e3b801b7ab851456bb5fc0b80d1c7de0) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ec2829fd748fc379a2e4d8f1a7f2997e') in 0.004978 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20112.png
+  artifactKey: Guid(146baf73cbb594271a64810a4505eef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20112.png using Guid(146baf73cbb594271a64810a4505eef2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0d33f82189084af541b661649d799d7') in 0.00664875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20159.png
+  artifactKey: Guid(7a21ba8c90f92425399093a23d3f5b8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20159.png using Guid(7a21ba8c90f92425399093a23d3f5b8f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1df3905abcda8d70fa6da69a8dcf54ec') in 0.004324375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20041.png
+  artifactKey: Guid(d044a21996340492dae4d71b89a43b87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20041.png using Guid(d044a21996340492dae4d71b89a43b87) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80dfc4266de2564759e97bc8c0f66da7') in 0.004860708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20065.png
+  artifactKey: Guid(d3746a6bee1264bb79650b42217297fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20065.png using Guid(d3746a6bee1264bb79650b42217297fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b9cd72c1cbaa8938a057ca5812628195') in 0.004576791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20149.png
+  artifactKey: Guid(af06e66b4111a4dc9b502ecb792d7f48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20149.png using Guid(af06e66b4111a4dc9b502ecb792d7f48) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '47f9b6ee83ca1f271659f8ca1e5f8e45') in 0.003299958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20063.png
+  artifactKey: Guid(96dcdb0c630de499590b9cde9b15f2d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20063.png using Guid(96dcdb0c630de499590b9cde9b15f2d1) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'cc73c4df92524981980f26aad04012c8') in 0.003504708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20108.png
+  artifactKey: Guid(8653d9dc5b834494f94e6a29db34f279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20108.png using Guid(8653d9dc5b834494f94e6a29db34f279) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e28dcec02e09cce6bb11b507f41a2285') in 0.003466792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20123.png
+  artifactKey: Guid(516a996401a6340c3b91531525115f40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20123.png using Guid(516a996401a6340c3b91531525115f40) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21a89f5645dbdca1c4c9ff0aee71e8b5') in 0.004741917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20137.png
+  artifactKey: Guid(67932874c733d40c499969515fc76dcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20137.png using Guid(67932874c733d40c499969515fc76dcc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd664e98720cbecf1e2140a8d9b0f3a1a') in 0.003820541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20025.png
+  artifactKey: Guid(1adb30b876c80498c8fe14ee438550e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20025.png using Guid(1adb30b876c80498c8fe14ee438550e6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c11aab852812c09daff8de5a6a25ce48') in 0.004132375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20111.png
+  artifactKey: Guid(02727a584772f47bb9a11b523153d20e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20111.png using Guid(02727a584772f47bb9a11b523153d20e) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'a0858b5a4f7d2c1f10dfddf6c721f8e3') in 0.00451875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20092.png
+  artifactKey: Guid(4e6b789a5eb5b439c83d7854ca32ce67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20092.png using Guid(4e6b789a5eb5b439c83d7854ca32ce67) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1403d10b293630ba4eb4ee19891a00e2') in 0.004139917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20050.png
+  artifactKey: Guid(ef39a72848c64437b98acdc7cd00d516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20050.png using Guid(ef39a72848c64437b98acdc7cd00d516) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ccaf7ce9c1c497ca8b284c746b76ae4b') in 0.00359725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20126.png
+  artifactKey: Guid(030114ea255cc407cb8d855712f385ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20126.png using Guid(030114ea255cc407cb8d855712f385ef) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '45a3160a3e125e20ee2a26a196356180') in 0.0045605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20056.png
+  artifactKey: Guid(ed41770675e9d44fb81a2038f7f87779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20056.png using Guid(ed41770675e9d44fb81a2038f7f87779) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e22eee8888821cbabb664e1fd163a968') in 0.003467833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20076.png
+  artifactKey: Guid(3b32132d29cf84295bbfe17266591b98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20076.png using Guid(3b32132d29cf84295bbfe17266591b98) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '878187e0ac16ed508d7be23049694ccd') in 0.003438167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20061.png
+  artifactKey: Guid(8784636d356324ab7a49e70d3c7650ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20061.png using Guid(8784636d356324ab7a49e70d3c7650ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '88f038f184a7ee16f5a61e9d4fe7f0f8') in 0.003754541 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20021.png
+  artifactKey: Guid(4edd454d89c944d84853be16020f9a60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20021.png using Guid(4edd454d89c944d84853be16020f9a60) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1998d27d3b3159c3232a0ec0b83ce279') in 0.004108833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20026.png
+  artifactKey: Guid(11cef55d48b4047f28bb5925dd45c2e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20026.png using Guid(11cef55d48b4047f28bb5925dd45c2e9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '447b7d5db70ed8acc67abc71904fc24a') in 0.003331375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20118.png
+  artifactKey: Guid(20f205f331ce64213b3014663d4dabf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20118.png using Guid(20f205f331ce64213b3014663d4dabf9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '57290fdd90402f3ac0e715d98d1166b1') in 0.003428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20091.png
+  artifactKey: Guid(9a2b0c99aaaa84efe97fb97c607425fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20091.png using Guid(9a2b0c99aaaa84efe97fb97c607425fc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '80293d85366422e07b45693ec122db8b') in 0.003202792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20161.png
+  artifactKey: Guid(79a425a8c10bd42fdac743ea866dadf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20161.png using Guid(79a425a8c10bd42fdac743ea866dadf6) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '146e3a593527b1a83e25208bcee48415') in 0.004924042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20132.png
+  artifactKey: Guid(0f543df602b8b4421a19872b9cab554a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20132.png using Guid(0f543df602b8b4421a19872b9cab554a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67059dc12f67046190bb42b180d86ec8') in 0.003396875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20087.png
+  artifactKey: Guid(06f5061960dcc4b0a8c32d815f97cba8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20087.png using Guid(06f5061960dcc4b0a8c32d815f97cba8) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd95e9006a045994eeef9094c61f86304') in 0.003350542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20072.png
+  artifactKey: Guid(4cbdebe0bd1e54994a0a7624046a7805) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20072.png using Guid(4cbdebe0bd1e54994a0a7624046a7805) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f72cd5b6e462d7b787b672de988c7fac') in 0.003729292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20062.png
+  artifactKey: Guid(179dc79619f3b4fc1a456b920daabc2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20062.png using Guid(179dc79619f3b4fc1a456b920daabc2c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '21e09808b713ab04407a787412f1dd56') in 0.003529042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20127.png
+  artifactKey: Guid(3fa3fcf6db3bd4b868c8c54403deb803) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20127.png using Guid(3fa3fcf6db3bd4b868c8c54403deb803) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'db6cb40144b40cb8e0b92b8c6bdc3dca') in 0.003377417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20142.png
+  artifactKey: Guid(5207c7d4a593641d98d0db26823777ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20142.png using Guid(5207c7d4a593641d98d0db26823777ee) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f25ca56bb65ed7114d38ffa9acb2751a') in 0.003759375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.237967 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20032.png
+  artifactKey: Guid(536c5edde638e4283a18f0f47153ea35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20032.png using Guid(536c5edde638e4283a18f0f47153ea35) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ffad4861edc873d6b079b5c5d26904b9') in 0.005050625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20153.png
+  artifactKey: Guid(4c453f8e897074cb8a94ae29d687315a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20153.png using Guid(4c453f8e897074cb8a94ae29d687315a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '3e6d599d250d0c40ca70d46c7500a23a') in 0.004232167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20109.png
+  artifactKey: Guid(febf1bfd5aee941be9d1ce8a8298c19f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20109.png using Guid(febf1bfd5aee941be9d1ce8a8298c19f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28dda668cdc10f5dd696ecdf123ddbdb') in 0.004703208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20125.png
+  artifactKey: Guid(4750221f261f14b8f83d2c6a3d47089d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20125.png using Guid(4750221f261f14b8f83d2c6a3d47089d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '2b406f09cc7c9f2156d42b6f92e719b9') in 0.0046415 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20128.png
+  artifactKey: Guid(3aa7f2eeec4cc47dab98222e4b9be321) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20128.png using Guid(3aa7f2eeec4cc47dab98222e4b9be321) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c57d01fa6923e5be1c6e40360a2c7e69') in 0.004166083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001137 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20160.png
+  artifactKey: Guid(7179ab0ea44c24502a650d2168084979) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20160.png using Guid(7179ab0ea44c24502a650d2168084979) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '5724ab228c3d9f7656b5a2ba04b1f2a1') in 0.005778041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20077.png
+  artifactKey: Guid(6254771edc7984c4aa229f132c0fe5b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20077.png using Guid(6254771edc7984c4aa229f132c0fe5b9) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '51c99e5843f5afd0e0f34adecfc5faaa') in 0.004068375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/LoadScenes/scen 1/Безымянный-20074.png
+  artifactKey: Guid(3b6e0b5e16c954dd28865d9da5fdc42c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Sprites/LoadScenes/scen 1/Безымянный-20074.png using Guid(3b6e0b5e16c954dd28865d9da5fdc42c) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd0c394412e7fcd2fa54c5b6f7eacf9ce') in 0.003702291 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
