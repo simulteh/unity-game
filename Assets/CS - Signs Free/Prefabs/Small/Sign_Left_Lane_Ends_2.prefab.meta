@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b2fdf9fe663841b49b2559360d22a104
+timeCreated: 1578600744
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Small/Sign_Left_Lane_Ends_2.prefab
+  uploadId: 378237

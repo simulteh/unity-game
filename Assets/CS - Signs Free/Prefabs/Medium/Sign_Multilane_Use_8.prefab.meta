@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f8a1eadbb27a16846a6124babfe2900e
+timeCreated: 1578612366
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Multilane_Use_8.prefab
+  uploadId: 378237

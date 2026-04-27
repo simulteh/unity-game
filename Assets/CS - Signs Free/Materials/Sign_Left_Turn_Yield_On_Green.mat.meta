@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f9e73825d51f5f540b88016e271eb37f
+timeCreated: 1578610512
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Materials/Sign_Left_Turn_Yield_On_Green.mat
+  uploadId: 378237

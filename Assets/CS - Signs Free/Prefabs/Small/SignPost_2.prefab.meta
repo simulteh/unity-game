@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 58a631588acc2ca448fa0912885cfcfb
+timeCreated: 1578619115
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Small/SignPost_2.prefab
+  uploadId: 378237

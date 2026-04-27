@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: cc8511b416bc1264e8893c80f9c6eada
+timeCreated: 1578610535
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Left_Turn_Yield_On_Green.prefab
+  uploadId: 378237

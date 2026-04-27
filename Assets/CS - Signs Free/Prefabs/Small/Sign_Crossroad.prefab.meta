@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ee7671ca6426a8545b456546f210795f
+timeCreated: 1582917411
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Small/Sign_Crossroad.prefab
+  uploadId: 378237

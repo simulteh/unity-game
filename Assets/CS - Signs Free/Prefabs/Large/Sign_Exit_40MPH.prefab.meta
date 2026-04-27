@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5f1f36c452f87a14d949302f2c5dcbac
+timeCreated: 1578610860
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Exit_40MPH.prefab
+  uploadId: 378237

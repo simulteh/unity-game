@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6d67ceead3facc1429660a752932ac21
+timeCreated: 1578603725
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Materials/Sign_No_U_Turn.mat
+  uploadId: 378237

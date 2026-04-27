@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 42895cee220f866488c721ad1edc65c4
+timeCreated: 1578600429
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Small/Sign_Merge.prefab
+  uploadId: 378237

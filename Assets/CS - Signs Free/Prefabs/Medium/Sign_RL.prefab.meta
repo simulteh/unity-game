@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b4476b4187a7e2a459c4f0d22b108cbb
+timeCreated: 1578600801
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_RL.prefab
+  uploadId: 378237

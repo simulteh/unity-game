@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f5a193701f891b2449072595226c7ac0
+timeCreated: 1578599446
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Clearance_12_6.prefab
+  uploadId: 378237

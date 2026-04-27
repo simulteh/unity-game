@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: e4305ecf3c231904c9c445d17f41cd1b
+timeCreated: 1584749442
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Materials/Sign_Freeway_Exit_L.mat
+  uploadId: 378237

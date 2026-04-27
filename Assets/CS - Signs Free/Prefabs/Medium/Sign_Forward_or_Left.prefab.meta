@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3ca2af5c7bb396b478771f205d8e5195
+timeCreated: 1578611581
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Forward_or_Left.prefab
+  uploadId: 378237

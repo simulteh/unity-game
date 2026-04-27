@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c3c9fc770e2947347b82e27bbbb0d23f
+timeCreated: 1582921509
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Tab_Arrow_Diagonal.prefab
+  uploadId: 378237

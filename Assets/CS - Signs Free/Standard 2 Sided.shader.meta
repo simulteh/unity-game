@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 736bf69d62cb0664aa7564100de4d247
+timeCreated: 1583261670
+licenseType: Store
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Standard 2 Sided.shader
+  uploadId: 378237

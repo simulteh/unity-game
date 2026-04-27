@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ccce3eeb57e5b8748b3cc3ffb9197b6b
+timeCreated: 1578600941
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Sharp_RL.prefab
+  uploadId: 378237

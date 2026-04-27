@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 689b9ec66c2115143848705e4222d2f0
+timeCreated: 1578612356
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Materials/Sign_Multilane_Use_8.mat
+  uploadId: 378237

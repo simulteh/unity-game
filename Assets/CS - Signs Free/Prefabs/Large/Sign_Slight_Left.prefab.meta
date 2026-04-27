@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5f3aaf835ed6c4946a48821bb448693a
+timeCreated: 1578601121
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Slight_Left.prefab
+  uploadId: 378237

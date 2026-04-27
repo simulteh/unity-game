@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a575aab2964ae2b499ac52a18862a411
+timeCreated: 1578613221
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Do_Not_Enter.prefab
+  uploadId: 378237

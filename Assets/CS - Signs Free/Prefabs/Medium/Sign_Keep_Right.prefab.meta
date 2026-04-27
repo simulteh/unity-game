@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 0fc085ca3b32c7d4fb436a443ad43831
+timeCreated: 1582918809
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Keep_Right.prefab
+  uploadId: 378237

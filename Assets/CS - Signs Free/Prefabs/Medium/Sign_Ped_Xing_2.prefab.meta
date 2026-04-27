@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 98c8f02b6a0ef25439a341768f488869
+timeCreated: 1584748230
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_Ped_Xing_2.prefab
+  uploadId: 378237

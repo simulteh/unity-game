@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 417e17bca46acc04ea1116a8f316ed48
+timeCreated: 1582917716
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Hill.prefab
+  uploadId: 378237

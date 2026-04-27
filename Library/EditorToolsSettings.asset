@@ -70,6 +70,24 @@ MonoBehaviour:
   - groupType: UnityEngine.LightProbeGroup, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     collapsed: 0
+  - groupType: UnityEngine.Light, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    collapsed: 0
+  - groupType: UnityEngine.LightAnchor, Unity.RenderPipelines.Core.Runtime, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    collapsed: 0
+  - groupType: UnityEditor.EditorTools.NullTargetKey, UnityEditor.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    collapsed: 0
+  - groupType: UnityEngine.ProBuilder.Shapes.ProBuilderShape, Unity.ProBuilder, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    collapsed: 0
+  - groupType: UnityEngine.ProBuilder.ProBuilderMesh, Unity.ProBuilder, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    collapsed: 0
+  - groupType: UnityEngine.ProBuilder.PolyShape, Unity.ProBuilder, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    collapsed: 0
   m_LastPivotModeTypeString: UnityEditor.CenterPivotMode, UnityEditor.CoreModule,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_LastPivotRotationTypeString: UnityEditor.LocalPivotRotation, UnityEditor.CoreModule,

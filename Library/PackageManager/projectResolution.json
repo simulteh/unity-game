@@ -88,6 +88,16 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.probuilder@6.0.9": {
+      "name": "com.unity.probuilder",
+      "displayName": "ProBuilder",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.probuilder@1f279ab829b7",
+      "fingerprint": "1f279ab829b7ed3bbe362a4beda666724eacffbf",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "6.0.9",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.test-framework@1.6.0": {
       "name": "com.unity.test-framework",
       "displayName": "Test Framework",
@@ -426,6 +436,26 @@
       "source": "builtin",
       "testable": false
     },
+    "com.unity.shadergraph@17.3.0": {
+      "name": "com.unity.shadergraph",
+      "displayName": "Shader Graph",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.shadergraph@c0ba2e178c6b",
+      "fingerprint": "c0ba2e178c6be421498aae2b63ae072edec9863c",
+      "editorCompatibility": "6000.3.0a1",
+      "version": "17.3.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.settings-manager@2.1.1": {
+      "name": "com.unity.settings-manager",
+      "displayName": "Settings Manager",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.settings-manager@0b8638c5ce86",
+      "fingerprint": "0b8638c5ce86009d785da17b17aaf629047f64ce",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "2.1.1",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.editorcoroutines@1.0.1": {
       "name": "com.unity.editorcoroutines",
       "displayName": "Editor Coroutines",
@@ -456,13 +486,73 @@
       "source": "registry",
       "testable": false
     },
-    "com.unity.settings-manager@2.1.1": {
-      "name": "com.unity.settings-manager",
-      "displayName": "Settings Manager",
-      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.settings-manager@0b8638c5ce86",
-      "fingerprint": "0b8638c5ce86009d785da17b17aaf629047f64ce",
+    "com.unity.render-pipelines.core@17.3.0": {
+      "name": "com.unity.render-pipelines.core",
+      "displayName": "Scriptable Render Pipeline Core",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.render-pipelines.core@84bf82d10e47",
+      "fingerprint": "84bf82d10e47fe9c6952143a444af22c06dd44d8",
+      "editorCompatibility": "6000.3.0a1",
+      "version": "17.3.0",
+      "source": "builtin",
+      "testable": false
+    },
+    "com.unity.searcher@4.9.4": {
+      "name": "com.unity.searcher",
+      "displayName": "Searcher",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.searcher@d45a78918735",
+      "fingerprint": "d45a78918735dd5b1de2247c6e3567c60aa24115",
+      "editorCompatibility": "2019.1.0a1",
+      "version": "4.9.4",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.burst@1.8.28": {
+      "name": "com.unity.burst",
+      "displayName": "Burst",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.burst@07790c2d06d9",
+      "fingerprint": "07790c2d06d99e35fe39459bd582a965d07700c4",
       "editorCompatibility": "2022.3.0a1",
-      "version": "2.1.1",
+      "version": "1.8.28",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.mathematics@1.3.3": {
+      "name": "com.unity.mathematics",
+      "displayName": "Mathematics",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.mathematics@19a9377c4ffa",
+      "fingerprint": "19a9377c4ffa59370edad3e6a34e4445529badde",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.3",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.collections@2.6.5": {
+      "name": "com.unity.collections",
+      "displayName": "Collections",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.collections@12999e356c23",
+      "fingerprint": "12999e356c23ff259c1818d8c92b464bca5037df",
+      "editorCompatibility": "2022.3.20f1",
+      "version": "2.6.5",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.nuget.mono-cecil@1.11.6": {
+      "name": "com.unity.nuget.mono-cecil",
+      "displayName": "Mono Cecil",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.nuget.mono-cecil@ecb9724e46ff",
+      "fingerprint": "ecb9724e46fff855c46a4f37f0a3377a3cfffc06",
+      "editorCompatibility": "2019.4.0a1",
+      "version": "1.11.6",
+      "source": "registry",
+      "testable": false
+    },
+    "com.unity.test-framework.performance@3.2.0": {
+      "name": "com.unity.test-framework.performance",
+      "displayName": "Performance testing API",
+      "resolvedPath": "C:\\UnityProjects\\unity-game\\Library\\PackageCache\\com.unity.test-framework.performance@0840f58e4562",
+      "fingerprint": "0840f58e45624f7677679a0f8b6a5137689e607f",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "3.2.0",
       "source": "registry",
       "testable": false
     }

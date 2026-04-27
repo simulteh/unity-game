@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b4ef553f84424864f9f2d427028d2205
+timeCreated: 1578611640
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Large/Sign_Left_Turn_Only.prefab
+  uploadId: 378237

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d6d84dec9f56ca641b03b38dfb8ed915
+timeCreated: 1582920121
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 164941
+  packageName: US Road Signs Free
+  packageVersion: 1.1
+  assetPath: Assets/CS - Signs Free/Prefabs/Medium/Sign_One_Way_L1.prefab
+  uploadId: 378237
