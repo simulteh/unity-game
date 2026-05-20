@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\Networks\Base\Router.cs" />
     <Compile Include="Assets\Scripts\NetworkDevice.cs" />
     <Compile Include="Assets\Level5\Scripts\StatsPanel.cs" />
+    <Compile Include="Assets\Level5\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\TCP.cs" />
     <Compile Include="Assets\Prefabs\Network\NetObject.cs" />
     <Compile Include="Assets\Level5\Scripts\DebugUIToggle.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\Level5\Scripts\Level5Maneger.cs" />
     <Compile Include="Assets\Scripts\ClockScript.cs" />
+    <Compile Include="Assets\Level5\Scripts\NetworkFrame.cs" />
     <Compile Include="Assets\Scripts\Managers\MouseDetector.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraZoom.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\NAT.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\Scripts\Networks\Protocols\HTTP.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\DHCP.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\ARP.cs" />
+    <Compile Include="Assets\Level5\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\OSPF.cs" />
     <Compile Include="Assets\Scripts\Networks\Base\MACAddress.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\UDP.cs" />
@@ -97,6 +100,7 @@
     <Compile Include="Assets\Level5\Scripts\RouterUI.cs" />
     <Compile Include="Assets\Scripts\Managers\ONC.cs" />
     <Compile Include="Assets\Prefabs\Network\CanvasEdgeSpawner.cs" />
+    <Compile Include="Assets\Level5\Scripts\NetworkConnection.cs" />
     <Compile Include="Assets\Level5\Scripts\TerminalAutoScroll.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneManagment.cs" />
     <Compile Include="Assets\Scripts\Networks\Protocols\DNS.cs" />

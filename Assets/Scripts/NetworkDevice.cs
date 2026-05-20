@@ -1,35 +1,83 @@
+using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class NetworkDevice : MonoBehaviour
 {
-        public string Name { get; private set; }
-        public string IP { get; set; }
-        public string Gateway { get; set; }
-        public string DNS { get; set; }
-        public bool UseDHCP { get; set; }
+    [Header("Network Identity")]
+    [SerializeField] private string deviceName;
+    [SerializeField] private string ipAddress;
+    [SerializeField] private string macAddress;
+    [SerializeField] private int vlanId = 1;
 
-        public NetworkDevice(string name, string ip, bool useDHCP = false)
+    [Header("Configuration")]
+    [SerializeField] private bool isProperlyConfigured = true;
+
+    [Header("Connections")]
+    [SerializeField] private List<NetworkConnection> connections = new List<NetworkConnection>();
+
+    // ========== —¬Œ…—“¬¿ ==========
+    public string Name
+    {
+        get => string.IsNullOrEmpty(deviceName) ? gameObject.name : deviceName;
+        set => deviceName = value;
+    }
+
+    public string IP
+    {
+        get => ipAddress;
+        set => ipAddress = value;
+    }
+
+    public string MacAddress
+    {
+        get => macAddress;
+        set => macAddress = value;
+    }
+
+    public int VlanId
+    {
+        get => vlanId;
+        set => vlanId = value;
+    }
+
+    public List<NetworkConnection> Connections => connections;
+
+    // ========== Ã≈“Œƒ€ ƒÀﬂ UI ==========
+    // ›ÚÓ Ã≈“Œƒ, ‡ ÌÂ Ò‚ÓÈÒÚ‚Ó ó Ú‡Í ÓÊË‰‡ÂÚ AdminTableUI
+    public bool IsConfiguredProperly()
+    {
+        return isProperlyConfigured;
+    }
+
+    public void SetConfiguredProperly(bool value)
+    {
+        isProperlyConfigured = value;
+    }
+
+    // ========== —≈“≈¬€≈ Ã≈“Œƒ€ ==========
+    public void AddConnection(NetworkConnection connection)
+    {
+        if (!connections.Contains(connection))
+            connections.Add(connection);
+    }
+
+    public void RemoveConnection(NetworkConnection connection)
+    {
+        connections.Remove(connection);
+    }
+
+    public void SendFrame(NetworkFrame frame, Switch targetSwitch)
+    {
+        if (targetSwitch != null)
         {
-            Name = name;
-            IP = ip;
-            UseDHCP = useDHCP;
-            Gateway = "192.168.1.1";
-            DNS = "8.8.8.8";
-        }
-
-        public bool IsConfiguredProperly()
-        {
-            if (UseDHCP)
-                return true; // –î–æ–ø—É—Å—Ç–∏–º, DHCP —Ä–∞–±–æ—Ç–∞–µ—Ç –ø—Ä–∞–≤–∏–ª—å–Ω–æ
-
-            // –ü—Ä–∏–º–∏—Ç–∏–≤–Ω—ã–µ –ø—Ä–æ–≤–µ—Ä–∫–∏ ‚Äî —Ä–∞—Å—à–∏—Ä—è–µ–º—ã–µ
-            return IsValidIP(IP) && IsValidIP(Gateway) && IsValidIP(DNS);
-        }
-
-        private bool IsValidIP(string ip)
-        {
-            System.Net.IPAddress address;
-            return System.Net.IPAddress.TryParse(ip, out address);
+            Debug.Log($"[{Name}] Sending frame from {frame.SourceMac} to {frame.DestinationMac} (VLAN {frame.VlanId})");
+            targetSwitch.ReceiveFrame(frame, this);
         }
     }
 
+    public void ReceiveFrame(NetworkFrame frame)
+    {
+        Debug.Log($"[{Name}] Received frame from {frame.SourceMac}, payload: \"{frame.Payload}\" (VLAN {frame.VlanId})");
+    }
+}
