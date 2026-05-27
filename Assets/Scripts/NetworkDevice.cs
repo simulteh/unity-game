@@ -16,7 +16,7 @@ public class NetworkDevice : MonoBehaviour
     [Header("Connections")]
     [SerializeField] private List<NetworkConnection> connections = new List<NetworkConnection>();
 
-    // ========== ÑÂÎÉÑÒÂÀ ==========
+    // ========== ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ==========
     public string Name
     {
         get => string.IsNullOrEmpty(deviceName) ? gameObject.name : deviceName;
@@ -43,8 +43,8 @@ public class NetworkDevice : MonoBehaviour
 
     public List<NetworkConnection> Connections => connections;
 
-    // ========== ÌÅÒÎÄÛ ÄËß UI ==========
-    // Ýòî ÌÅÒÎÄ, à íå ñâîéñòâî — òàê îæèäàåò AdminTableUI
+    // ========== ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ UI ==========
+    // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ AdminTableUI
     public bool IsConfiguredProperly()
     {
         return isProperlyConfigured;
@@ -55,7 +55,7 @@ public class NetworkDevice : MonoBehaviour
         isProperlyConfigured = value;
     }
 
-    // ========== ÑÅÒÅÂÛÅ ÌÅÒÎÄÛ ==========
+    // ========== ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ==========
     public void AddConnection(NetworkConnection connection)
     {
         if (!connections.Contains(connection))
@@ -71,13 +71,13 @@ public class NetworkDevice : MonoBehaviour
     {
         if (targetSwitch != null)
         {
-            Debug.Log($"[{Name}] Sending frame from {frame.SourceMac} to {frame.DestinationMac} (VLAN {frame.VlanId})");
+            Debug.Log($"[{Name}] ÐžÑ‚Ð¿Ñ€Ð°Ð²ÐºÐ° ÐºÐ°Ð´Ñ€Ð° Ð¾Ñ‚ {frame.SourceMac} Ðº {frame.DestinationMac} (VLAN {frame.VlanId})");
             targetSwitch.ReceiveFrame(frame, this);
         }
     }
 
     public void ReceiveFrame(NetworkFrame frame)
     {
-        Debug.Log($"[{Name}] Received frame from {frame.SourceMac}, payload: \"{frame.Payload}\" (VLAN {frame.VlanId})");
+        Debug.Log($"[{Name}] ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½ ÐºÐ°Ð´Ñ€ Ð¾Ñ‚ {frame.SourceMac}, Ð´Ð°Ð½Ð½Ñ‹Ðµ: \"{frame.Payload}\" (VLAN {frame.VlanId})");
     }
 }

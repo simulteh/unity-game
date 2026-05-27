@@ -1,8 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// ========== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ ==========
-
 [System.Serializable]
 public class SwitchPort
 {
@@ -28,37 +26,31 @@ public class MacTableEntry
     public int PortNumber;
 }
 
-// ========== ОСНОВНОЙ КЛАСС КОММУТАТОРА ==========
-
 public class Switch : MonoBehaviour
 {
-    [Header("Port Configuration")]
+    [Header("РљРѕРЅС„РёРіСѓСЂР°С†РёСЏ РїРѕСЂС‚РѕРІ")]
     public List<SwitchPort> ports = new List<SwitchPort>();
 
-    [Header("MAC Address Table")]
+    [Header("РўР°Р±Р»РёС†Р° MAC-Р°РґСЂРµСЃРѕРІ")]
     public Dictionary<string, MacTableEntry> macTable = new Dictionary<string, MacTableEntry>();
 
-    [Header("Connected Devices")]
+    [Header("РџРѕРґРєР»СЋС‡С‘РЅРЅС‹Рµ СѓСЃС‚СЂРѕР№СЃС‚РІР°")]
     public List<NetworkDevice> connectedDevices = new List<NetworkDevice>();
 
-    // Регистрация устройства (простая)
     public void RegisterDevice(NetworkDevice device)
     {
         if (!connectedDevices.Contains(device))
         {
             connectedDevices.Add(device);
-            Debug.Log($"[Switch] Registered device: {device.Name} with VLAN {device.VlanId}");
+            Debug.Log($"[Switch] Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРѕ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ: {device.Name} (VLAN {device.VlanId})");
         }
     }
 
-    // Регистрация устройства с портом
     public void RegisterDevice(int portNumber, NetworkDevice device, bool isTrunk = false)
     {
-        // Добавляем в список устройств
         if (!connectedDevices.Contains(device))
             connectedDevices.Add(device);
 
-        // Создаём или обновляем порт
         var existingPort = ports.Find(p => p.PortNumber == portNumber);
         if (existingPort != null)
         {
@@ -81,10 +73,9 @@ public class Switch : MonoBehaviour
             ports.Add(newPort);
         }
 
-        Debug.Log($"[Switch] Device {device.Name} registered on port {portNumber} ({(isTrunk ? "Trunk" : "Access")}, VLAN {device.VlanId})");
+        Debug.Log($"[Switch] РЈСЃС‚СЂРѕР№СЃС‚РІРѕ {device.Name} РїРѕРґРєР»СЋС‡РµРЅРѕ Рє РїРѕСЂС‚Сѓ {portNumber} ({(isTrunk ? "Trunk" : "Access")}, VLAN {device.VlanId})");
     }
 
-    // Получить VLAN для устройства
     public int GetVlanForDevice(NetworkDevice device)
     {
         var port = ports.Find(p => p.ConnectedDevice == device);
@@ -96,29 +87,24 @@ public class Switch : MonoBehaviour
         return device.VlanId;
     }
 
-    // Получить номер порта для устройства
     private int GetPortNumberForDevice(NetworkDevice device)
     {
         var port = ports.Find(p => p.ConnectedDevice == device);
         return port?.PortNumber ?? -1;
     }
 
-    // Основной метод приёма кадра
     public void ReceiveFrame(NetworkFrame frame, NetworkDevice sourceDevice)
     {
-        Debug.Log($"[Switch] Received frame from {sourceDevice.Name} (MAC: {frame.SourceMac}, VLAN: {frame.VlanId})");
+        Debug.Log($"[Switch] РџРѕР»СѓС‡РµРЅ РєР°РґСЂ РѕС‚ {sourceDevice.Name} (MAC: {frame.SourceMac}, VLAN: {frame.VlanId})");
 
-        // Узнаём VLAN источника
         int sourceVlan = GetVlanForDevice(sourceDevice);
 
-        // Если VLAN не совпадает с VLAN кадра (для access портов)
         if (sourceVlan != frame.VlanId)
         {
-            Debug.LogWarning($"[Switch] VLAN mismatch! Source device VLAN {sourceVlan} != Frame VLAN {frame.VlanId}");
+            Debug.LogWarning($"[Switch] РќРµСЃРѕРІРїР°РґРµРЅРёРµ VLAN! РЈСЃС‚СЂРѕР№СЃС‚РІРѕ {sourceVlan} != РљР°РґСЂ {frame.VlanId}");
             return;
         }
 
-        // Обучаем MAC-таблицу
         if (!macTable.ContainsKey(frame.SourceMac))
         {
             macTable[frame.SourceMac] = new MacTableEntry
@@ -127,43 +113,37 @@ public class Switch : MonoBehaviour
                 VlanId = sourceVlan,
                 PortNumber = GetPortNumberForDevice(sourceDevice)
             };
-            Debug.Log($"[Switch] Learned MAC {frame.SourceMac} on VLAN {sourceVlan}");
+            Debug.Log($"[Switch] MAC {frame.SourceMac} РёР·СѓС‡РµРЅ РЅР° VLAN {sourceVlan}");
         }
 
-        // Ищем получателя
         if (macTable.TryGetValue(frame.DestinationMac, out var destination))
         {
-            // Проверяем, что в том же VLAN
             if (destination.VlanId == sourceVlan)
             {
-                Debug.Log($"[Switch] Forwarding frame directly to {destination.Device.Name}");
+                Debug.Log($"[Switch] РљР°РґСЂ РѕС‚РїСЂР°РІР»РµРЅ РЅР°РїСЂСЏРјСѓСЋ в†’ {destination.Device.Name}");
                 destination.Device.ReceiveFrame(frame);
             }
             else
             {
-                Debug.Log($"[Switch] Destination {frame.DestinationMac} is in different VLAN {destination.VlanId}, blocking frame");
+                Debug.Log($"[Switch] РџРѕР»СѓС‡Р°С‚РµР»СЊ {frame.DestinationMac} РІ РґСЂСѓРіРѕРј VLAN {destination.VlanId}, РєР°РґСЂ Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅ");
             }
         }
         else
         {
-            // Flood внутри VLAN
-            Debug.Log($"[Switch] MAC {frame.DestinationMac} unknown, flooding within VLAN {sourceVlan}");
+            Debug.Log($"[Switch] MAC {frame.DestinationMac} РЅРµРёР·РІРµСЃС‚РµРЅ, С„Р»СѓРґ РІ VLAN {sourceVlan}");
             FloodWithinVlan(frame, sourceVlan, sourceDevice);
         }
     }
 
-    // Рассылка всем устройствам в VLAN (кроме отправителя)
     private void FloodWithinVlan(NetworkFrame frame, int vlanId, NetworkDevice sender)
     {
         foreach (var device in connectedDevices)
         {
-            // Не отправляем обратно отправителю
             if (device == sender) continue;
 
-            // Проверяем, что устройство в том же VLAN
             if (device.VlanId == vlanId)
             {
-                Debug.Log($"[Switch] Flooding frame to {device.Name}");
+                Debug.Log($"[Switch] Р¤Р»СѓРґ в†’ {device.Name}");
                 device.ReceiveFrame(frame);
             }
         }

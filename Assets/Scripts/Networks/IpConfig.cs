@@ -10,9 +10,12 @@ public class IpConfig : MonoBehaviour
 
     private void Start()
     {
-        ip = "0.0.0.0";
-        subnetMask = "255.255.255.255";
-        gateway = "0.0.0.0";
+        if (string.IsNullOrEmpty(ip) || ip == "0.0.0.0")
+            ip = "0.0.0.0";
+        if (string.IsNullOrEmpty(subnetMask))
+            subnetMask = "255.255.255.255";
+        if (string.IsNullOrEmpty(gateway))
+            gateway = "0.0.0.0";
     }
 
 }
